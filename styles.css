@@ -1,0 +1,512 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "vw-head";
+  font-weight: 400;
+  font-display: swap;
+  src: url("types/vwhead-regular.woff2") format("woff2"),
+    url("types/vwhead-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-head";
+  font-weight: 700;
+  font-display: swap;
+  src: url("types/vwhead-bold.woff2") format("woff2"),
+    url("types/vwhead-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-head";
+  font-weight: 200;
+  font-display: swap;
+  src: url("types/vwhead-light.woff2") format("woff2"),
+    url("types/vwhead-light.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-text";
+  font-weight: 400;
+  font-display: swap;
+  src: url("types/vwtext-regular.woff2") format("woff2"),
+    url("types/vwtext-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-text";
+  font-weight: 700;
+  font-display: swap;
+  src: url("types/vwtext-bold.woff2") format("woff2"),
+    url("types/vwtext-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-head-ar";
+  font-weight: 700;
+  font-display: swap;
+  src: url("types/HelveticaNeueArabicBD.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-text-ar";
+  font-weight: 400;
+  font-display: swap;
+  src: url("types/HelveticaNeueArabicLT.woff") format("woff");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0 !important;
+  font-family: "vw-text", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+body {
+  background-position: center 0px !important;
+  background-repeat: no-repeat !important;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  position: relative;
+  font-family: "vw-head", sans-serif;
+  font-weight: 700;
+  color: #002f62;
+  margin-bottom: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #00a8e5;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #a11f05;
+}
+
+/*contenedor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 29px 20px 25px 20px;
+    color: #ffffff;
+}
+.contenedor::before, .contenedor::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 21px 0 21px;
+}
+*/
+
+button:focus {
+  outline: none;
+}
+
+svg {
+  vertical-align: unset;
+}
+.space {
+  word-break: break-all;
+}
+
+/*Menu flotante */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main p {
+  width: 300px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #001e50;
+  font-size: 15px;
+}
+.link-stretch {
+  font-size: 16px;
+  color: var(--hub-color-prussian-blue);
+  line-height: 16px;
+  opacity: 1;
+  transition: opacity 0.4s 0.1s ease;
+  position: absolute;
+  left: 64px;
+}
+
+.menu-btn {
+  background: #4cc7f4;
+  width: 64px;
+  transition: width 0.4s 0.1s;
+}
+
+.menu-btn2 {
+  cursor: pointer;
+  position: relative;
+  height: 64px;
+  width: 64px;
+  border-radius: 40px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.menu-btn2:hover {
+  width: 240px;
+}
+
+.menu-btn svg {
+  fill: #001e50;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 20px;
+}
+
+/*Menu */
+
+.menu {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 12px;
+  padding-top: 16px;
+}
+
+.menu-button {
+  display: flex;
+  padding-left: 6.16vw;
+}
+
+.button-menu:hover {
+  color: #4cc7f4;
+}
+
+.button-menu {
+  cursor: pointer;
+  display: block;
+  width: auto;
+  height: 24px;
+  text-align: left;
+  font-size: 0px;
+  color: rgb(255, 255, 255);
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+}
+
+.menu-svg {
+  display: inline-block;
+}
+
+.menu-text-container {
+  display: inline-block;
+  vertical-align: text-bottom;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-left: 10px;
+  max-width: calc(25vw);
+  overflow: hidden;
+}
+
+.menu-text {
+  color: inherit;
+  word-break: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.04px;
+  margin: -1.5px 0px 1.5px;
+}
+
+/* Header */
+.header {
+  background-image: url(img/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.amarok {
+  font-size: 76px;
+}
+
+.b-amarok {
+  border-radius: 20px;
+  width: 10rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.b-amarok:hover {
+  background-color: #4cc7f4;
+}
+
+.logito {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.logito::after,
+.logito::before {
+  content: "";
+  flex: 1;
+  /*border-bottom: 2px solid #ffffff;
+    margin: 0 21px 0 21px;*/
+  height: 2px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+.logito a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo-w {
+  margin: 0 15px 0 15px;
+}
+
+/*Animation Header */
+
+.menucolor {
+  color: rgb(0, 30, 80);
+}
+
+.menucolor1 {
+  background: rgb(0, 30, 80) none repeat scroll 0% 0%;
+}
+
+.hola svg {
+  color: rgb(0, 30, 80);
+}
+
+.scrolled {
+  background: #fff;
+}
+
+.link {
+  position: relative;
+  font-size: 20px;
+  color: #001e50;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentcolor;
+  text-decoration: none;
+}
+
+.title-car {
+  margin-top: 30px;
+}
+
+/*Cars*/
+
+.cars {
+  margin-top: 100px;
+}
+
+.cars-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.car1 {
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+.car2 {
+  grid-row: 1;
+  grid-column: 4/6;
+}
+
+.car3 {
+  grid-row: 1;
+  grid-column: 7/9;
+}
+
+/*bicicletas */
+.bicicletas-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.bicicletas-title {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+.img-bicicletas {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+/*avanzando juntos */
+.avance-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.ventas {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.covid {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+/*empeza tu camino */
+
+.road-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+}
+
+.imagen-avanzando {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+.title-avanzando {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+/*Live container */
+
+.live-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.imagen-live {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+.title-live-volkswagen {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+/*autoahorro container */
+
+.autoahorro-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.autoahorro {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.financial {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+/*parte del camino container */
+
+.road-part-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/*Volkswagen informa */
+
+.inform-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.title-inform {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.image-inform {
+  grid-row: 1;
+  grid-column: 5/9;
+}
+
+.title-section {
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.bicicletas h2 {
+  font-size: 50px;
+}
+
+/* Animation img */
+
+.animated {
+  transition: transform 2.2s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
+}
+
+.animated:hover {
+  transform: scale(1.03);
+}
+
+/*Footer */
+
+.links1,
+.links2,
+.links3,
+.links4 li {
+  list-style: none;
+}
+
+.links1,
+.links2,
+.links3,
+.links4 li a {
+  text-decoration: none;
+}
+
+.footer {
+  border-top: 2px solid rgb(0, 30, 80);
+  padding: 44px 0px;
+}
+
+@media (min-width: 560px) {
+  .footer {
+    padding-top: 72px;
+    padding-left: 4.16vw;
+    padding-right: 4.16vw;
+  }
+}
