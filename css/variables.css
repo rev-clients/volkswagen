@@ -1,0 +1,194 @@
+body {
+  --font-family-head: vw-head, Helvetica, Arial, sans-serif;
+  --font-family-text: vw-text, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-text);
+  -webkit-font-smoothing: antialiased;
+
+  --textappearances-copy100-fontsize: 12px;
+  --textappearances-copy100-reducedfontsize: 12px;
+  --textappearances-copy100-lineheight: 20px;
+  --textappearances-copy100-letterspacing: 0.09px;
+
+  --textappearances-copy150-fontsize: 14px;
+  --textappearances-copy150-reducedfontsize: 12px;
+  --textappearances-copy150-lineheight: 24px;
+  --textappearances-copy150-letterspacing: 0.04px;
+
+  --textappearances-copy200-fontsize: 16px;
+  --textappearances-copy200-reducedfontsize: 12px;
+  --textappearances-copy200-lineheight: 24px;
+  --textappearances-copy200-letterspacing: 0px;
+
+  --textappearances-copy250-fontsize: 20px;
+  --textappearances-copy250-reducedfontsize: 12px;
+  --textappearances-copy250-lineheight: 32px;
+  --textappearances-copy250-letterspacing: -0.09px;
+
+  --textappearances-copy300-fontsize: 24px;
+  --textappearances-copy300-reducedfontsize: 12px;
+  --textappearances-copy300-lineheight: 36px;
+  --textappearances-copy300-letterspacing: -0.17px;
+
+  --textappearances-headline200-fontsize: 16px;
+  --textappearances-headline200-reducedfontsize: 12px;
+  --textappearances-headline200-lineheight: 20px;
+  --textappearances-headline200-letterspacing: 0px;
+
+  --textappearances-headline250-fontsize: 20px;
+  --textappearances-headline250-reducedfontsize: 12px;
+  --textappearances-headline250-lineheight: 24px;
+  --textappearances-headline250-letterspacing: -0.09px;
+
+  --textappearances-headline300-fontsize: 24px;
+  --textappearances-headline300-reducedfontsize: 12px;
+  --textappearances-headline300-lineheight: 28px;
+  --textappearances-headline300-letterspacing: -0.17px;
+
+  --textappearances-headline350-fontsize: 28px;
+  --textappearances-headline350-reducedfontsize: 16px;
+  --textappearances-headline350-lineheight: 32px;
+  --textappearances-headline350-letterspacing: -0.26px;
+
+  --textappearances-headline400-fontsize: 32px;
+  --textappearances-headline400-reducedfontsize: 16px;
+  --textappearances-headline400-lineheight: 36px;
+  --textappearances-headline400-letterspacing: -0.35px;
+
+  --textappearances-headline450-fontsize: 44px;
+  --textappearances-headline450-reducedfontsize: 24px;
+  --textappearances-headline450-lineheight: 52px;
+  --textappearances-headline450-letterspacing: -0.61px;
+
+  --textappearances-headline500-fontsize: 56px;
+  --textappearances-headline500-reducedfontsize: 28px;
+  --textappearances-headline500-lineheight: 64px;
+  --textappearances-headline500-letterspacing: -0.88px;
+
+  --textappearances-headline550-fontsize: 84px;
+  --textappearances-headline550-reducedfontsize: 44px;
+  --textappearances-headline550-lineheight: 96px;
+  --textappearances-headline550-letterspacing: -1.49px;
+
+  --textappearances-headline600-fontsize: 100px;
+  --textappearances-headline600-reducedfontsize: 52px;
+  --textappearances-headline600-lineheight: 112px;
+  --textappearances-headline600-letterspacing: -1.84px;
+
+  --textappearances-label100-fontsize: 12px;
+  --textappearances-label100-reducedfontsize: 12px;
+  --textappearances-label100-lineheight: 16px;
+  --textappearances-label100-letterspacing: 0.09px;
+
+  --textappearances-label150-fontsize: 14px;
+  --textappearances-label150-reducedfontsize: 12px;
+  --textappearances-label150-lineheight: 16px;
+  --textappearances-label150-letterspacing: 0.04px;
+
+  --textappearances-label200-fontsize: 16px;
+  --textappearances-label200-reducedfontsize: 12px;
+  --textappearances-label200-lineheight: 20px;
+  --textappearances-label200-letterspacing: 0px;
+
+  --textappearances-label250-fontsize: 20px;
+  --textappearances-label250-reducedfontsize: 12px;
+  --textappearances-label250-lineheight: 24px;
+  --textappearances-label250-letterspacing: -0.09px;
+
+  --textappearances-label300-fontsize: 24px;
+  --textappearances-label300-reducedfontsize: 12px;
+  --textappearances-label300-lineheight: 28px;
+  --textappearances-label300-letterspacing: -0.17px;
+
+  --size-grid001: 4.16vw;
+  --size-grid002: 8.33vw;
+  --size-grid003: 12.5vw;
+  --size-grid004: 16.66vw;
+  --size-grid005: 20.83vw;
+  --size-grid006: 25vw;
+  --size-grid007: 29.16vw;
+  --size-grid008: 33.33vw;
+  --size-grid009: 37.5vw;
+  --size-grid010: 41.66vw;
+  --size-grid011: 45.83vw;
+  --size-grid012: 50vw;
+  --size-grid013: 54.16vw;
+  --size-grid014: 58.33vw;
+  --size-grid015: 62.5vw;
+  --size-grid016: 66.66vw;
+  --size-grid017: 70.83vw;
+  --size-grid018: 75vw;
+  --size-grid019: 79.16vw;
+  --size-grid020: 83.33vw;
+  --size-grid021: 87.5vw;
+  --size-grid022: 91.66vw;
+  --size-grid023: 95.83vw;
+  --size-grid024: 100vw;
+  --size-dynamic0020: 4px;
+  --size-dynamic0040: 12px;
+  --size-dynamic0050: 12px;
+  --size-dynamic0100: 20px;
+  --size-dynamic0120: 24px;
+  --size-dynamic0130: 24px;
+  --size-dynamic0140: 28px;
+  --size-dynamic0150: 28px;
+  --size-dynamic0200: 32px;
+  --size-dynamic0250: 44px;
+  --size-dynamic0270: 56px;
+  --size-dynamic0300: 72px;
+  --size-dynamic0350: 100px;
+  --size-dynamic0450: 156px;
+}
+/* Clase principal del objeto
+    Variables que necesitara para ses espacio
+    Mas que todo para las fuentes 
+
+ */
+
+@media (min-width: 560px) {
+  body {
+    --textappearances-headline350-fontsize: 32px;
+    --textappearances-headline350-reducedfontsize: 16px;
+    --textappearances-headline350-lineheight: 36px;
+    --textappearances-headline350-letterspacing: -0.35px;
+
+    --textappearances-headline400-fontsize: 48px;
+    --textappearances-headline400-reducedfontsize: 24px;
+    --textappearances-headline400-lineheight: 56px;
+    --textappearances-headline400-letterspacing: -0.7px;
+
+    --textappearances-headline450-fontsize: 60px;
+    --textappearances-headline450-reducedfontsize: 32px;
+    --textappearances-headline450-lineheight: 68px;
+    --textappearances-headline450-letterspacing: -0.96px;
+
+    --textappearances-headline500-fontsize: 72px;
+    --textappearances-headline500-reducedfontsize: 36px;
+    --textappearances-headline500-lineheight: 80px;
+    --textappearances-headline500-letterspacing: -1.22px;
+
+    --textappearances-headline550-fontsize: 96px;
+    --textappearances-headline550-reducedfontsize: 48px;
+    --textappearances-headline550-lineheight: 108px;
+    --textappearances-headline550-letterspacing: -1.75px;
+
+    --textappearances-headline600-fontsize: 116px;
+    --textappearances-headline600-reducedfontsize: 60px;
+    --textappearances-headline600-lineheight: 128px;
+    --textappearances-headline600-letterspacing: -2.19px;
+
+    --size-dynamic0020: 4px;
+    --size-dynamic0040: 20px;
+    --size-dynamic0050: 20px;
+    --size-dynamic0100: 24px;
+    --size-dynamic0120: 20px;
+    --size-dynamic0130: 40px;
+    --size-dynamic0140: 32px;
+    --size-dynamic0150: 52px;
+    --size-dynamic0200: 56px;
+    --size-dynamic0250: 68px;
+    --size-dynamic0270: 80px;
+    --size-dynamic0300: 96px;
+    --size-dynamic0350: 132px;
+    --size-dynamic0450: 172px;
+  }
+}

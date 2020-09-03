@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "vw-head";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../types/vwhead-bold.woff2") format("woff2"),
+    url("../types/vwhead-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vw-head";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../types/vwhead-regular.woff2") format("woff2"),
+    url("../types/vwhead-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vw-head";
+  font-weight: 200;
+  font-display: swap;
+  src: url("../types/vwhead-light.woff2") format("woff2"),
+    url("../types/vwhead-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "vw-text";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../types/vwtext-regular.woff2") format("woff2"),
+    url("../types/vwtext-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-text";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../types/vwtext-bold.woff2") format("woff2"),
+    url("../types/vwtext-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-head-ar";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../types/HelveticaNeueArabicBD.woff") format("woff");
+}
+@font-face {
+  font-family: "vw-text-ar";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../types/HelveticaNeueArabicLT.woff") format("woff");
+}

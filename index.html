@@ -1,317 +1,1089 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel=”icon” type=”image/icon” href="favicon/favicon.ico" sizes="32x32"/>
-		<link rel="stylesheet" href="styles.css">
-		<title>Volkswagen Argentina</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel=”icon” type=”image/icon” href="favicon/favicon.ico" sizes="32x32" />
 
-	<body>
-		<div class="container-fluid">
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/default.css" />
 
-	<!-- Inicio Botonera Derecha-->
-			<div class="fixed-bottom">
-				<div class="menu-animation">
-					<div class="main">
-						<a id="menubutton1" class="menu-btn menu-btn2" href="#">
-							<p class="link-stretch">Modelos y configurador</p>
-							<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
-								<circle cx="12" cy="15.95" r="1"></circle>
-								<path d="M22.12 12.22h-1.45l.24.54v.09l.05.08a4.32 4.32 0 01.58 1.52c-1.5.21-3.06.39-4.67.51l.1 1.32c1.6-.12 3.16-.29 4.66-.5v5.7a.29.29 0 01-.28.28h-2a.28.28 0 01-.28-.28v-1.82H4.89v1.81a.3.3 0 01-.3.29h-2a.28.28 0 01-.28-.28v-5.67c1.54.21 3.13.38 4.77.5L7.19 15a70.09 70.09 0 01-4.78-.5A4.7 4.7 0 013 12.93V12.76l.73-1.66c2.09.25 4.19.4 6.28.46V10.2c-1.9 0-3.81-.16-5.71-.38L5.49 7.3A2.06 2.06 0 017 6.42h3.1V5.09H6.91a3.36 3.36 0 00-2.59 1.58L3 9.66Q1.69 9.5.39 9.27H.33l-.11.66-.06.66c.76.13 1.52.24 2.29.35l-.58 1.29A5.87 5.87 0 001 15.29v6.19a1.61 1.61 0 001.61 1.61h2a1.63 1.63 0 001.63-1.62V21h11.54v.49a1.61 1.61 0 001.61 1.61h2A1.62 1.62 0 0023 21.48v-6.19a5.87 5.87 0 00-.87-3.07z"></path>
-								<path d="M22.67 1.33v8.34h-8.34V1.33zM24 0H13v11h11z"></path>
-								<path d="M17.6 8.41l-2.47-2.47.94-.94 1.53 1.53L21.13 3l.94.94z"></path>
-							</svg>
-						</a>
-						<a id="menubutton2" class="menu-btn menu-btn2" href="#">
-							<p class="link-stretch">Pedí tu presupuesto</p>
-							<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" role="img">
-								<path d="M7 10.33h2v1.33H7zM11 10.33h2v1.33h-2zM7 14.33h2v1.33H7zM11 14.33h2v1.33h-2zM15 10.33h2v1.33h-2zM7 18.33h2v1.33H7zM11 18.33h2v1.33h-2zM15.33 14.5h1.33V20h-1.33z"></path>
-								<path d="M19.44 1.33a.23.23 0 01.23.23v20.88a.23.23 0 01-.23.23H4.56a.23.23 0 01-.23-.23V1.56a.23.23 0 01.23-.23zm0-1.33H4.56A1.56 1.56 0 003 1.56v20.88A1.56 1.56 0 004.56 24h14.88A1.56 1.56 0 0021 22.44V1.56A1.56 1.56 0 0019.44 0z"></path>
-								<path d="M16.67 4.33v2.34H7.33V4.33zM18 3H6v5h12z"></path>
-							</svg>
-						</a>
-						<a id="menubutton3" class="menu-btn menu-btn2" href="#">
-							<p class="link-stretch">Encontranos</p>
-							<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
-								<path d="M12 1c4 0 7 3 7 7.1 0 3.1-1.1 6.5-2.9 9.8-1.5 2.8-3.2 5.1-4.1 5.1s-2.6-2.2-4.1-5.1C6.1 14.6 5 11.2 5 8.1 5 4 8 1 12 1zm0 1.3C8.7 2.3 6.3 4.7 6.3 8c0 2.7.9 5.9 2.7 9.2 1.4 2.7 2.5 3.9 3 4.3.5-.4 1.5-1.6 3-4.3 1.8-3.3 2.7-6.5 2.7-9.2 0-3.3-2.4-5.7-5.7-5.7zM12 5c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3z"></path>
-							</svg>
-						</a>
-						<a id="menubutton4" class="menu-btn menu-btn2" href="#">
-							<p class="link-stretch">Pedí mas información</p>
-							<svg height="24" viewBox="0 0 24 23" width="24" xmlns="http://www.w3.org/2000/svg" role="img">
-								<path d="M21.7.8H11.2c-.8 0-1.5.6-1.5 1.5v3.5c-2.3 0-4.3 1.8-4.5 4.1-.2 2.3 1.5 4.4 3.8 4.8 2.3.4 4.5-1.1 5.1-3.4s-.8-4.6-3-5.3V2.3v-.1h10.6c.1 0 .1 0 .1.1v15.6c0 .1 0 .1-.1.1H18l-.2-1c-.2-1.1-1-2-2-2.4L14 14l-.5 1.2 1.9.7c.6.2 1 .7 1.2 1.4l.8 3.9h-2.3l-.3-2.3-1.3.2.3 2.2c-2.6.1-5.3.1-7.9 0l.1-2.2-1.3-.2-.3 2.3c-.8 0-1.5 0-2.2-.1l.8-3.8c.1-.6.6-1.2 1.2-1.4l1.8-.7-.5-1.2-1.9.7c-1 .4-1.8 1.3-2 2.4l-.8 3.8c-.1.4 0 .8.3 1.1s.6.5 1 .5c2.5.1 5.1.2 7.6.2s5.1-.1 7.6-.2c.4 0 .8-.2 1-.5s.3-.7.3-1.1l-.3-1.5h3.4c.8 0 1.5-.6 1.5-1.5V2.3c0-.8-.7-1.5-1.5-1.5zm-8.9 9.4c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1z"></path>
-								<path d="M15.5 4.4H20v1.3h-4.5zM15.5 7.4H20v1.3h-4.5z"></path>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-	<!-- Fin Botonera Derecha-->
+    <link rel="stylesheet" href="styles.css" />
 
-	<!-- Inicio Header-->
-			<div class="row header">
-				<div class="fixed-top heading">
-					<div class="menu-container">
-						<div class="menu">
-							<div direction="ltr" class="menu-button">
-								<button aria-hidden="true" class="button-menu" type="button" name="button">
-									<div class="menu-svg">
-										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img"><path d="M0 4h24v2H0zM0 11h14v2H0zM0 18h20v2H0z"></path></svg>
-									</div>
-									<div class="menu-text-container">
-										<div class="menu-text">Menú</div>
-									</div>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="logito">
-						<span class="logo-w">
-							<a href="#">
-								<svg width="54" height="54" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img"><path d="M12 22.586c-5.786 0-10.543-4.8-10.543-10.586 0-1.2.214-2.357.6-3.471l6.172 12c.085.171.171.3.385.3.215 0 .3-.129.386-.3l2.871-6.386c.043-.086.086-.129.129-.129.086 0 .086.086.129.129l2.914 6.386c.086.171.171.3.386.3.214 0 .3-.129.385-.3l6.172-12c.385 1.071.6 2.228.6 3.471-.043 5.786-4.8 10.586-10.586 10.586zm0-13.329c-.086 0-.086-.086-.129-.128l-3.3-7.115a10.117 10.117 0 016.858 0l-3.3 7.115c-.043.042-.043.128-.129.128zm-3.471 7.714c-.086 0-.086-.085-.129-.128L3 6.47c.943-1.542 2.314-2.828 3.9-3.728l3.814 8.228c.086.172.172.215.3.215h1.972c.128 0 .214-.043.3-.215l3.771-8.228c1.586.9 2.957 2.186 3.9 3.728L15.6 16.843c-.043.086-.086.128-.129.128-.085 0-.085-.085-.128-.128L13.286 12.3c-.086-.171-.172-.214-.3-.214h-1.972c-.128 0-.214.043-.3.214l-2.057 4.543c-.043.043-.043.128-.128.128zM12 24c6.643 0 12-5.357 12-12S18.643 0 12 0 0 5.357 0 12s5.357 12 12 12z"></path></svg>
-							</a>
-						</span>
-					</div>
-				</div>
-				<div class="d-flex align-items-center ml-5">
-					<div class="d-inline-flex flex-column ml-5">
-						<h1 class="text-white amarok">Nueva Amarok <br>V6 258 cv</h1>
-						<button type="button" class="btn btn-light btn-sm b-amarok" src="#">Descubrí más</button>
-					</div>
-				</div>
-			</div>
-	<!-- Fin Header -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu-module.css" />
+    <link rel="stylesheet" href="css/botonera-derecha.css" />
 
-			<div class="content-container">
-	<!-- Inicio Contenido autos -->
-				<div class="cars">
-					<h2 class="text-center title-section"><b>Hay un Volkswagen para vos</b></h2>
-					<div class="cars-container">
-						<div class="car1">
-							<img class="img-fluid animated" src="img/car1.jpg">
-							<h3 class="title-car"><b>Nuevo T-Cross</b></h3>
-							<a class="link" href="#">Descubrí más</a>
-						</div>
-						<div class="car2">
-							<img class="img-fluid animated" src="img/car2.jpg">
-							<h3 class="title-car"><b>Polo</b></h3>
-							<a class="link" href="#">Descubrí más</a>
-						</div>
-						<div class="car3">
-							<img class="img-fluid animated" src="img/car3.jpg">
-							<h3 class="title-car"><b>Nuevo Nivus</b></h3>
-							<a class="link" href="#">Descubrí más</a>
-						</div>
-					</div>
-				</div>
-	<!-- Fin contenido autos -->
+    <link rel="stylesheet" href="css/sections.css" />
+    
+    <link rel="stylesheet" href="css/section-1.css" />
+    <link rel="stylesheet" href="css/section-2.css" />
+    <link rel="stylesheet" href="css/section-3.css" />
+    <link rel="stylesheet" href="css/section-4.css" />
+    <link rel="stylesheet" href="css/section-5.css" />
 
-        <!-- Contenido bicicletas -->
-        <div class="bicicletas mt-5">
-          <div class="bicicletas-container">
-            <div class="bicicletas-title">
-              <h2><b>Colección de bicicletas VW</b></h2>
-              <a class="link" href="#">Conocelas</a>
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <title>Volkswagen Argentina</title>
+  </head>
+
+  <body>
+    <div class="contenedor-principal">
+
+      <!-- Page Main -->
+      <div class="main gaxEIq">
+        <!-- Incio section 1 -->
+        <div class="section-1">
+          <div class="container-background">
+            <div>
+              <img src="img/header.jpg" alt="carro">
             </div>
-            <div class="img-bicicletas">
-              <img class="img-fluid animated" src="img/bicicletas.jpg">
+          </div>
+          <div class="container-block">
+            <div class="divisor-block">
+              <div direction="ltr" class="primera">
+                <div>
+                  <h1 class="titulo">
+                    <span class="capsula">
+                      <b>Nueva Amarok <br>V6 258 cv</b><br>
+                    </span>
+                  </h1>
+                </div>
+                <div class="container-link">
+                  <a href="" target="_self" class="link">
+                    <div class="texto-link">Descubrí más</div>
+                  </a>
+                </div>
+              </div>
+              <div class="segunda"></div>
+              <div class="tercera">
+                <div class="container-animacion">
+                  <div class="animacion"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Fin contenido bicicletas -->
+        <!-- Fin section 1 -->
 
-        <!-- Inicio contenido avanzando -->
-        <div class="avance mt-5">
-          <h3 class="title-section"><b>Seguimos Avanzando juntos</b></h3>
-          <div class="avance-container">
-            <div class="ventas">
-              <img class="img-fluid" src="img/whatsapp.jpg">
-              <h4>Whatsapp Ventas y Postventa</h4>
-              <h3>Más cerca <b>tuyo. </b>Contactate por Whatsapp con tu concesionario.</h3>
-              <p>Ahora podés comunicarte via WhatsApp y recibir toda la información que necesites en el momento que quieras.</p>
-              <a class="link" href="#">Conocé más</a>
+        <div class="iDzyCS"></div>
+        
+        <!-- Inicio sections -->
+        <div class="sections">
+
+          <!-- Section 2 Incio -->
+          <div class="section-2">
+
+            <!-- Titulo Incio -->
+            <div class="container-title">
+              <div class="container-text">
+                <span class="capsula">
+                  <b>Hay un&nbsp;<span class="jKMnlo">Volkswagen</span>&nbsp;para vos</b>
+                </span>
+              </div>
             </div>
-            <div class="covid">
-              <img class="img-fluid" src="img/covid.jpg">
-              <h4>COVID-19</h4>
-              <h3>Más cerca <b>avanzando.</b></h3>
-              <p>Sabemos que son tiempos difíciles para todos y por eso estamos haciendo lo posible para ayudarte. Vamos a seguir estando cerca tuyo, respondiendo y ayudándote en todo lo que tenga que ver con tu Volkswagen para hacer que este camino sea cada vez menos complicado.</p>
-              <a class="link" href="#">Conocé más</a>
+            <!-- Titulo Fin -->
+
+            <!-- Seccion 2 Incio -->
+            <div> 
+              <!-- Seccion 2-1 Incio -->
+              <div class="section2-1">
+                <!-- Contenedor de las tres imagenes Desktop Inicio -->
+                <div class="desktop">
+
+                  <div class="block-img blq-1">
+                    <a href="#" target="_self" class="link-image">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/m%C3%B3dulos%20v2%20_2?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT04MDAmYWxpZ249MC4wMCwwLjAwJmEzZWU=" />
+                      </div>
+                    </a>
+                    
+                    <div class="container-links">
+                      <div class="container-link-title">
+                        <a href="#" target="_self" class="link-title">
+                          <div class="link-text-title">
+                            <span class="capsula">
+                              <b>Nuevo Virtus Línea GTS</b><br />
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="container-link-subtitle">
+                        <div class="link-text-subtitle">
+                          <a href="#" target="_self" class="link-subtitle">Descubrí más
+                            <svg class="svg-link" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img">
+                              <path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path>
+                              <path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path>
+                            </svg></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+          
+                  <div class="block-img blq-2">
+                    <a href="#" target="_self" class="link-image">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/m%C3%B3dulos%20v2%20_1?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT0xMDY3JmFsaWduPTAuMDAsMC4wMCYzOGJh"/>
+                      </div>
+                    </a>
+
+                    <div class="container-links">
+                      <div class="container-link-title">
+                        <a href="#" target="_self" class="link-title">
+                          <div class="link-text-title">
+                            <span class="capsula">
+                              <b>Nuevo Polo Línea GTS</b><br /></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="container-link-subtitle">
+                        <div class="link-text-subtitle">
+                          <a href="#" target="_self" class="link-subtitle">Descubrí más
+                            <svg class="svg-link"
+                              width="24" height="24" viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                              role="img">
+                              <path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path>
+                              <path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="block-img blq-3">
+                    <a href="" target="_self" class="link-image">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/TUNEL-2?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT02MDAmYWxpZ249MC4wMCwwLjAwJjRiNWM="/>
+                      </div>
+                    </a>
+                    <div class="container-links">
+                      <div class="container-link-title">
+                        <a href="#" target="_self" class="link-title">
+                          <div class="link-text-title">
+                            <span class="capsula">
+                              <b>Nuevo Nivus</b>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="container-link-subtitle">
+                        <div class="link-text-subtitle">
+                          <a href="#" target="_self" class="link-subtitle">Descubrí más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            
+                <div class="mobile">
+                  <div >
+                    <ul direction="ltr" class="sc-ifAKCX list-blocks" style="transform: translate3d(0%, 0px, 0px); transition: all 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s; ">
+              
+                      <li class="block-img-mb" style="opacity: 1;">
+                        <a href="#" target="_self" class="link-image">
+                          <div class="container-img">
+                            <img src="https://s7g10.scene7.com/is/image/volkswagenag/m%C3%B3dulos%20v2%20_2?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT04MDAmYWxpZ249MC4wMCwwLjAwJmEzZWU=" />
+                          </div>
+                        </a>
+                        <div class="container-links">
+                          <div class="container-link-title">
+                            <a href="#" target="_self" class="link-title">
+                              <div class="link-text-title">
+                                <span class="capsula">
+                                  <b>Nuevo Virtus Línea GTS</b><br />
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="container-link-subtitle">
+                            <div class="link-text-subtitle">
+                              <a href="#" target="_self" class="link-subtitle">Descubrí más
+                                <svg class="svg-link" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img">
+                                  <path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path>
+                                  <path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path>
+                                </svg></a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+              
+                      <li class="block-img-mb" style="opacity: 0.5;">
+                        <a href="#" target="_self" class="link-image">
+                          <div class="container-img">
+                            <img src="https://s7g10.scene7.com/is/image/volkswagenag/m%C3%B3dulos%20v2%20_1?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT04MDAmYWxpZ249MC4wMCwwLjAwJmEzZWU=" />
+                          </div>
+                        </a>
+                        <div class="container-links">
+                          <div class="container-link-title">
+                            <a href="#" target="_self" class="link-title">
+                              <div class="link-text-title">
+                                <span class="capsula">
+                                  <b>Nuevo Virtus Línea GTS</b><br />
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+    
+                          <div class="container-link-subtitle">
+                            <div class="link-text-subtitle">
+                              <a href="#" target="_self" class="link-subtitle">Descubrí más
+                                <svg class="svg-link"
+                                  width="24" height="24" viewBox="0 0 24 24"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                  role="img">
+                                  <path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path>
+                                  <path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path>
+                                </svg></a>
+                            </div>
+                            <!-- Contenedor Link subtitle-block Fin -->
+    
+                          </div>
+                          <!-- Contenedor Link subtitle-block Fin -->
+                          
+                        </div>
+                      </li>
+              
+                      <li class="block-img-mb" style="opacity: 0.5;">
+                        <a href="" target="_self" class="link-image">
+                          <div class="container-img">
+                            <img src="https://s7g10.scene7.com/is/image/volkswagenag/TUNEL-2?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT04MDAmYWxpZ249MC4wMCwwLjAwJmEzZWU=" />                  
+                          </div>
+                        </a>
+                        <div class="container-links">
+                          <div class="container-link-title">
+                            <a href="#" target="_self" class="link-title">
+                              <div class="link-text-title">
+                                <span class="capsula">
+                                  <b>Nuevo Nivus</b>
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="container-link-subtitle">
+                            <div class="link-text-subtitle">
+                              <a href="#" target="_self" class="link-subtitle">Descubrí más</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+            
+                    </ul>
+                  
+                  </div>
+            
+                </div>
+                                      
+              </div>
+              <!-- Seccion 2-1 Fin -->
+            
+              <!-- Seccion 2-2 Incio -->
+              <div class="section-2-2">
+                <div class="grid">
+                  <div class="block-1">
+
+                    <div sizes="115vw" class="mobile">
+                      <a href="" target="_self" class="link-image">
+                        <div class="container-img">
+                          <img src="img/bicicletas-mobile.jpg" />
+                        </div>
+                      </a>
+                    </div>
+              
+                    <div sizes="60vw" class="desktop">
+                      <a href="" target="_self" class="link-image">
+                        <div class="container-img">
+                          <img src="img/bicicletas.jpg" />
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+                
+                  <div class="block-2">
+                    <div class="container-links">
+                      <div class="container-link">
+                        <a href="" target="_self" class="link-title">
+                          <div class="link-text-title">
+                            <span class="capsula"><b>Colección de bicicletas VW</b></span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="container-link">
+                        <div class="link-text-subtitle">
+                          <a href="" target="_self" class="link-subtitle">Conocelas</a>
+                        </div>
+                      </div>                      
+                    </div>                    
+                  </div>
+
+                </div>
+              </div>
+              <!-- Seccion 2.2 Fin -->
+
+            </div>                          
+            <!-- Seccion 2 Fin -->
+
+            
+
+          </div>
+          <!-- Section 2 Fin -->
+
+          <!-- Section 3 Incio -->
+          <div class="section-3">
+
+            <!-- Titulo Incio -->
+            <div class="container-title">
+              <div class="container-text">
+                <span class="capsula">
+                  <b>Seguimos avanzando juntos</b>
+                </span>
+              </div>
+            </div>
+            <!-- Titulo Fin -->
+
+            <!-- Seccion 3 Incio -->
+            <div> 
+
+              <!-- Seccion 2.1 Incio -->
+              <div class="section-3-1">
+                <!-- Contenedor de las tres imagenes Desktop Inicio -->
+
+                <div>
+                  <div class=grid>
+                    <div class="block-1">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/whatsapp?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula"><p><b>WhatsApp Ventas y Postventa</b></p></span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh"><span class="sc-EHOje capsula">Más cerca <b>tuyo</b>. Contactate por WhatsApp con tu concesionario.</span></h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Ahora podés comunicarte vía WhatsApp y recibir toda la información que necesites en el momento que quieras.&nbsp;</p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle"><span class="StyledTextComponent-sc-hqqa9q ciuMvh"><span class="sc-EHOje hbKBHO">Conocé más</span></span></a>
+                      </div>
+                    </div>
+
+                    <div class="block-2">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/IN0038_couple-with-phone-on-couch-16-9-f-cc-3?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula"><b>COVID-19</b></span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                          <span class="sc-EHOje capsula">Sigamos <b>avanzando</b><br></span>  
+                        </h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Sabemos que son tiempos difíciles para todos y por eso estamos haciendo lo posible para ayudarte. Vamos a seguir estando cerca tuyo, respondiendo y ayudándote en todo lo que tenga que ver con tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> para hacer que este camino sea cada vez menos complicado.</p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle"><span class="StyledTextComponent-sc-hqqa9q ciuMvh"><span class="sc-EHOje hbKBHO">Conocé más</span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                                      
+              </div>
+              <!-- Seccion 2.1 Fin -->
+            
+              <!-- Seccion 2.2 Incio -->
+              <div class="section-3-2">
+                <div class="grid">
+                  <div class="block-1">
+                    <div class="container-img">
+                      <img src="https://s7g10.scene7.com/is/image/volkswagenag/ofertas-2?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT02MDAmYWxpZ249MC4wMCwwLjAwJjRiNWM=" />
+                    </div>
+                  </div>
+                
+                  <div class="block-2">
+                    <div class="title-block">
+                      <span class="capsula"><b>Ofertas</b></span>
+                    </div>
+                    <div class="subtitle-block">
+                      <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                        <span class="sc-EHOje capsula">Empezá tu <b>camino</b></span>
+                      </h2>
+                    </div>
+                    <div class="content-block">
+                      <span class="sc-EHOje hbKBHO">
+                        <p>Conocé los mejores precios, ofertas y planes de pago que te acercan cada vez más a tu propio<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span>.&nbsp;</p>
+                      </span>
+                    </div>
+                    <div class="link-text-subtitle">
+                      <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                        <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                          <span class="sc-EHOje hbKBHO">Conocé más</span>
+                          <svg class="StyledExternalLinkIndicator-sc-1wpzb1v svg-link" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img"><path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path><path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path></svg>
+                        </span>
+                      </a>
+                    </div>                 
+                  </div>
+
+                </div>
+              </div>
+              <!-- Seccion 2.2 Fin -->
+
+            </div>                          
+            <!-- Seccion 3 Fin -->
+
+            
+
+          </div>
+          <!-- Section 3 Fin -->
+
+          <!-- Section 4 Incio -->
+          <div class="section-4">
+
+            <!-- Titulo Incio -->
+            <div class="container-title">
+              <div class="container-text">
+                <span class="capsula">
+                  <b>Viví tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span></b>
+                </span>
+              </div>
+            </div>
+            <!-- Titulo Fin -->
+
+            <div> 
+              <!-- Section 4-1 Incio -->
+              <div class="section-4-1">
+                <div class="grid">
+                  <div class="block-1">
+                    <div class="container-img">
+                      <img src="https://s7g10.scene7.com/is/image/volkswagenag/ST_16-9_Owners-users-15?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" />
+                    </div>
+                  </div>
+                
+                  <div class="block-2">
+                    <div class="title-block">
+                      <span class="capsula">
+                        <b>Postventa</b>
+                      </span>
+                    </div>
+                    <div class="subtitle-block">
+                      <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                        <span class="sc-EHOje capsula">Existe el mejor cuidado para&nbsp;<b>tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span></b><br></span>
+                      </h2>
+                    </div>
+                    <div class="content-block">
+                      <span class="sc-EHOje hbKBHO">
+                        <p>Nos aseguramos de que tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> esté siempre en condiciones con nuestros servicios de Postventa<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span>, para que puedas seguir tu camino de la mejor manera.&nbsp;</p>
+                      </span>
+                    </div>
+                    <div class="link-text-subtitle">
+                      <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                        <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                          <span class="sc-EHOje hbKBHO">Conocé más</span>
+                        </span>
+                      </a>
+                    </div>                 
+                  </div>
+
+                </div>
+              </div>
+              <!-- Section 4-1 Fin -->
+            
+              <!-- Section 4-2 Incio -->
+              <div class="section-4-2">
+                <div>
+                  <div class=grid>
+
+                    <div class="block-1">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/autoahorro?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula">
+                          <b>Autoahorro</b>
+                        </span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                          <span class="sc-EHOje capsula">Más de <b>42&nbsp;años</b> acercando a la gente a su 0km.<br></span>  
+                        </h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Encontrá el plan indicado para vos y subite a tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span>.<br></p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                          <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                            <span class="sc-EHOje hbKBHO">Conocé más</span>
+                            <svg class="StyledExternalLinkIndicator-sc-1wpzb1v svg-link" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img"><path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path><path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path></svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="block-2">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/financialserviceshome?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT0xMDAwJmFsaWduPTAuMDAsMC4wMCZkODYx" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula">
+                          <b><span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> Financial Services</b>
+                        </span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                          <span class="sc-EHOje capsula">Hay una manera más fácil de subirte a <b>tu 0Km.</b><br></span>
+                        </h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Ya elegiste un<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span>, ahora elegí la mejor financiación.<br>Nueva Web. Más Simple. Más moderna.<br><span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> Financial Services.</p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                          <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                            <span class="sc-EHOje hbKBHO">Conocé más</span>
+                            <svg class="StyledExternalLinkIndicator-sc-1wpzb1v svg-link" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img"><path d="M23.489.483c-.621-.611-.728-.645-10.934-.085l.184 3.39c2.268-.123 4.02-.338 5.427-.39L7.635 13.866l2.398 2.408L20.562 5.777c-.061 1.34-.265 3.162-.404 5.404l3.394.21c.623-10.06.591-10.237-.063-10.908z"></path><path d="M19.6 15.014h3.398V24H0V1h9v3.395H3.399v16.21H19.6z"></path></svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                                      
+              </div>
+              <!-- Section 4-2 Fin -->
+            </div>                          
+          </div>
+          <!-- Section 4 Fin -->
+
+          <!-- Section 5 Incio -->
+          <div class="section-5">
+
+            <!-- Titulo Incio -->
+            <div class="container-title">
+              <div class="container-text">
+                <span class="capsula">
+                  <b>Sos parte de nuestro camino</b>
+                </span>
+              </div>
+            </div>
+            <!-- Titulo Fin -->
+
+            <div> 
+            
+              <!-- Section 5-1 Incio -->
+              <div class="section-5-1">
+                <div>
+                  <div class=grid>
+
+                    <div class="block-1">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/cobertura-vw?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT0xMjAwJmFsaWduPTAuMDAsMC4wMCYzMGYz" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula">
+                          <b>Cobertura VW</b>
+                        </span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                          <span class="sc-EHOje capsula">Una Cobertura para cada <b>necesidad</b><br></span>
+                        </h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Encontrá las mejores opciones de seguro para tu próximo<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span>.</p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                          <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                            <span class="sc-EHOje hbKBHO">Conocé más</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="block-2">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/venta-empresas?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT02MDAmYWxpZ249MC4wMCwwLjAwJjRiNWM=" />
+                      </div>
+                      <div class="title-block">
+                        <span class="capsula">
+                          <b>Ventas Corporativas</b>
+                        </span>
+                      </div>
+                      <div class="subtitle-block">
+                        <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                          <span class="sc-EHOje capsula">A la medida de tus <b>necesidades</b><br></span>
+                        </h2>
+                      </div>
+                      <div class="content-block">
+                        <span class="sc-EHOje hbKBHO">
+                          <p>Encontrá el mejor asesoramiento y propuestas diferenciales para tu empresa.&nbsp;</p>
+                        </span>
+                      </div>
+                      <div class="link-text-subtitle">
+                        <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                          <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                            <span class="sc-EHOje hbKBHO">Conocé más</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                                      
+              </div>
+              <!-- Section 5-1 Fin -->
+
+              <!-- Section 5-2 Incio -->
+              <div class="section-5-2">
+                <div class="grid">
+                  <div class="block-1">
+                    <div class="container-img">
+                      <video muted="" loop="" title="innovacion y tecnologia" playsinline="" preload="metadata" class="sc-jnlKLf caGyns" src="https://assets.volkswagen.com/is/content/volkswagenag/Mobility-Services_Semistill_16-9_f-cc-0x360-730k-2"></video>
+                    </div>
+                  </div>
+                
+                  <div class="block-2">
+                    <div class="title-block">
+                      <span class="capsula">
+                        <b>Innovación y tecnología</b>
+                      </span>
+                    </div>
+                    <div class="subtitle-block">
+                      <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                        <span class="sc-EHOje capsula">Conocé la ultima tecnología<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> pensada <b>para vos</b></span>
+                      </h2>
+                    </div>
+                    <div class="content-block">
+                      <span class="sc-EHOje hbKBHO">
+                        <p>Tu<!-- --> <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> ahora es más que sólo un auto. Conectate&nbsp; y descubrí un mundo de posibilidades con la nueva tecnología pensada para que cada viaje sea más fácil, seguro y entretenido.</p>
+                      </span>
+                    </div>
+                    <div class="link-text-subtitle">
+                      <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                        <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                          <span class="sc-EHOje hbKBHO">Conocé más</span>
+                        </span>
+                      </a>
+                    </div>                 
+                  </div>
+
+                </div>
+              </div>
+              <!-- Section 5-2 Fin -->
+
+              <!-- Section 5-3 Incio -->
+              <div class="section-5-3">
+                <div class="grid">
+
+                  <div class="block-1">
+                    <div class="title-block">
+                      <span class="capsula">
+                        <b><span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span> Informa</b>
+                      </span>
+                    </div>
+                    <div class="subtitle-block">
+                      <h2 class="StyledTextComponent-sc-hqqa9q ktFoQh">
+                        <span class="sc-EHOje capsula">Sos parte de <b>nuestro camino</b><br></span>
+                      </h2>
+                    </div>
+                    <div class="content-block">
+                      <span class="sc-EHOje hbKBHO">
+                        <p>Ingresá tu VIN para verificar si tu vehículo se encuentra alcanzado por la presente campaña relativa a vehículos con motores diésel 2.0l EA 189</p>
+                      </span>
+                    </div>
+                    <div class="link-text-subtitle">
+                      <a href="" target="_self" title="Conocé más" class="link-subtitle">
+                        <span class="StyledTextComponent-sc-hqqa9q ciuMvh">
+                          <span class="sc-EHOje hbKBHO">Conocé más</span>
+                        </span>
+                      </a>
+                    </div>                 
+                  </div>
+
+                  <div class="block-2">
+                    <div class="container-img">
+                      <img src="https://s7g10.scene7.com/is/image/volkswagenag/16-9_Batteries-Partner-Story_1-4?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" data-src="https://s7g10.scene7.com/is/image/volkswagenag/16-9_Batteries-Partner-Story_1-4?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk=" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Section 5-3 Fin -->
+
+
+            </div>                          
+          </div>
+          <!-- Section 5 Fin -->
+
+        </div>
+        <!-- Sections Fin -->
+      </div>
+      <!-- pagemain Fin -->
+
+      <span></span>
+
+      <footer>
+        <div class="grid">
+          <div class="container-footer">
+            <div class="c-b-footer">
+
+              <div class="footer-block">
+                <div class="title-footer">
+                  <div>Institucional</div>
+                </div>
+                <ul class="list-links-footer">
+                  <li> <a href="">Homepage</a> </li>
+                  <li> <a href="">Postventa</a> </li>
+                  <li> <a href="">Volkswagen Group Argentina</a> </li>
+                  <li> <a href="">Contacto</a> </li>
+                </ul>
+              </div>
+              <div class="footer-block">
+                <div class="title-footer">
+                  <div>Innovación y tecnología</div>
+                </div>
+                <ul class="list-links-footer">
+                  <li> <a href="">Innovación y tecnología</a> </li>
+                </ul>
+              </div>
+              <div class="footer-block">
+                <div class="title-footer">
+                  <div>Redes Sociales</div>
+                </div>
+                <ul class="list-links-footer">
+                  <li> <a href="">Facebook</a> </li>
+                  <li> <a href="">Instagram</a> </li>
+                  <li> <a href="">Twitter</a> </li>
+                  <li> <a href="">Linkedin</a> </li>
+                  <li> <a href="">Youtube</a> </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="bottom-footer">
+              <div class="block-1">
+                <div class="c-f-text">© Volkswagen 2020</div>
+              </div>
+              <div class="block-2">
+                <div class="c-b-f-link">
+                  <div >
+                    <a href="" >Política de privacidad</a>
+                  </div>
+                </div>
+                <div class="c-b-f-link">
+                  <div >
+                    <a href="" >Terminos y condiciones</a>
+                  </div>
+                </div>
+                <div class="c-b-f-link">
+                  <div >
+                    <a href="" >Politica de cookies</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="line-footer"></div>
         </div>
-        <!-- Fin contenido avanzando-->
+      </footer>
 
-        <!-- Inicio contenido empeza tu camino-->
-        <div class="road mt-5">
-          <div class="road-container">
-            <div class="imagen-avanzando">
-              <img class="img-fluid" src="img/avanzando.jpg">
-            </div>
-            <div class="title-avanzando">
-              <p>Ofertas</p>
-              <h4>Empezá tu <b>camino</b></h4>
-              <p>Conocé los mejores precios, ofertas y planes de pago que te acercan cada vez más a tu propio Volkswagen.</p>
-              <a class="link" href="#">Conoce más</a>
+      <!-- Inicio Botonera Derecha-->
+      <div class="buttons-widget">
+        <div class="container-widget">
+          <div class="position-buttons">
+            <div class="container-buttons">
+              <a id="" class="button-widget button-widget-backgroundColor" href="#">
+                <p class="text">Modelos y configurador</p>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
+                  <circle cx="12" cy="15.95" r="1"></circle>
+                  <path d="M22.12 12.22h-1.45l.24.54v.09l.05.08a4.32 4.32 0 01.58 1.52c-1.5.21-3.06.39-4.67.51l.1 1.32c1.6-.12 3.16-.29 4.66-.5v5.7a.29.29 0 01-.28.28h-2a.28.28 0 01-.28-.28v-1.82H4.89v1.81a.3.3 0 01-.3.29h-2a.28.28 0 01-.28-.28v-5.67c1.54.21 3.13.38 4.77.5L7.19 15a70.09 70.09 0 01-4.78-.5A4.7 4.7 0 013 12.93V12.76l.73-1.66c2.09.25 4.19.4 6.28.46V10.2c-1.9 0-3.81-.16-5.71-.38L5.49 7.3A2.06 2.06 0 017 6.42h3.1V5.09H6.91a3.36 3.36 0 00-2.59 1.58L3 9.66Q1.69 9.5.39 9.27H.33l-.11.66-.06.66c.76.13 1.52.24 2.29.35l-.58 1.29A5.87 5.87 0 001 15.29v6.19a1.61 1.61 0 001.61 1.61h2a1.63 1.63 0 001.63-1.62V21h11.54v.49a1.61 1.61 0 001.61 1.61h2A1.62 1.62 0 0023 21.48v-6.19a5.87 5.87 0 00-.87-3.07z"></path>
+                  <path d="M22.67 1.33v8.34h-8.34V1.33zM24 0H13v11h11z"></path>
+                  <path d="M17.6 8.41l-2.47-2.47.94-.94 1.53 1.53L21.13 3l.94.94z"></path>
+                </svg>
+              </a>
+
+              <a id="" class="button-widget button-widget-backgroundColor " href="#">
+                <p class="text">Pedí tu presupuesto</p>
+
+                <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" role="img">
+                  <path d="M7 10.33h2v1.33H7zM11 10.33h2v1.33h-2zM7 14.33h2v1.33H7zM11 14.33h2v1.33h-2zM15 10.33h2v1.33h-2zM7 18.33h2v1.33H7zM11 18.33h2v1.33h-2zM15.33 14.5h1.33V20h-1.33z"></path>
+                  <path d="M19.44 1.33a.23.23 0 01.23.23v20.88a.23.23 0 01-.23.23H4.56a.23.23 0 01-.23-.23V1.56a.23.23 0 01.23-.23zm0-1.33H4.56A1.56 1.56 0 003 1.56v20.88A1.56 1.56 0 004.56 24h14.88A1.56 1.56 0 0021 22.44V1.56A1.56 1.56 0 0019.44 0z"></path>
+                  <path d="M16.67 4.33v2.34H7.33V4.33zM18 3H6v5h12z"></path>
+                </svg>
+              </a>
+
+              <a id="" class="button-widget button-widget-backgroundColor" href="#">
+                <p class="text">Encontranos</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
+                  <path d="M12 1c4 0 7 3 7 7.1 0 3.1-1.1 6.5-2.9 9.8-1.5 2.8-3.2 5.1-4.1 5.1s-2.6-2.2-4.1-5.1C6.1 14.6 5 11.2 5 8.1 5 4 8 1 12 1zm0 1.3C8.7 2.3 6.3 4.7 6.3 8c0 2.7.9 5.9 2.7 9.2 1.4 2.7 2.5 3.9 3 4.3.5-.4 1.5-1.6 3-4.3 1.8-3.3 2.7-6.5 2.7-9.2 0-3.3-2.4-5.7-5.7-5.7zM12 5c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3z"></path>
+                </svg>
+              </a>
+
+              <a id="" class="button-widget button-widget-backgroundColor" href="#">
+                <p class="text">Pedí más información</p>
+
+                <svg height="24" viewBox="0 0 24 23" width="24" xmlns="http://www.w3.org/2000/svg" role="img">
+                  <path d="M21.7.8H11.2c-.8 0-1.5.6-1.5 1.5v3.5c-2.3 0-4.3 1.8-4.5 4.1-.2 2.3 1.5 4.4 3.8 4.8 2.3.4 4.5-1.1 5.1-3.4s-.8-4.6-3-5.3V2.3v-.1h10.6c.1 0 .1 0 .1.1v15.6c0 .1 0 .1-.1.1H18l-.2-1c-.2-1.1-1-2-2-2.4L14 14l-.5 1.2 1.9.7c.6.2 1 .7 1.2 1.4l.8 3.9h-2.3l-.3-2.3-1.3.2.3 2.2c-2.6.1-5.3.1-7.9 0l.1-2.2-1.3-.2-.3 2.3c-.8 0-1.5 0-2.2-.1l.8-3.8c.1-.6.6-1.2 1.2-1.4l1.8-.7-.5-1.2-1.9.7c-1 .4-1.8 1.3-2 2.4l-.8 3.8c-.1.4 0 .8.3 1.1s.6.5 1 .5c2.5.1 5.1.2 7.6.2s5.1-.1 7.6-.2c.4 0 .8-.2 1-.5s.3-.7.3-1.1l-.3-1.5h3.4c.8 0 1.5-.6 1.5-1.5V2.3c0-.8-.7-1.5-1.5-1.5zm-8.9 9.4c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1z"></path>
+                  <path d="M15.5 4.4H20v1.3h-4.5zM15.5 7.4H20v1.3h-4.5z"></path>
+                </svg>
+              </a>
             </div>
           </div>
-        </div>
-        <!-- Fin contenido empeza tu camino-->
 
-        <!--Inicio contenido vivi tu volkswagen -->
-        <div class="live-volkswagen mt-5">
-          <h2 class="title-section"><b>Viví tu Volkswagen</b></h2>
-          <div class="live-container">
-            <div class="imagen-live">
-              <img class="img-fluid" src="img/postventa.jpg">
-            </div>
-            <div class="title-live-volkswagen">
-              <p>Postventa</p>
-              <h4>Existe el mejor cuidado para <b>tu Volkswagen</b></h4>
-              <p>Nos aseguramos de que tu Volkswagen esté siempre en condiciones con nuestros servicios de Postventa Volkswagen, para que puedas seguir tu camino de la mejor manera.</p>
-              <a class="link" href="#">Conoce más</a>
+          <div class="container-mobile">
+            <button class="button-mobile">
+              <svg width="24px" height="24px" viewBox="20 20 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                <g stroke-width="1" fill-rule="evenodd">
+                  <g transform="translate(32.000000, 32.000000) rotate(45.000000) translate(-32.000000, -32.000000) translate(20.000000, 20.000000)">
+                    <path d="M20.956 3.985 20.014 3.044 12 11.059 3.985 3.044 3.044 3.985 11.059 12 3.044 20.015 3.985 20.956 12 12.941 20.014 20.956 20.956 20.015 12.941 12z"></path>
+                  </g>
+                </g>
+              </svg>
+
+              <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" role="img">
+                <path d="M20.956 3.985l-.942-.941L12 11.059 3.985 3.044l-.941.941L11.059 12l-8.015 8.015.941.941L12 12.941l8.014 8.015.942-.941L12.941 12z"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-        <div class="autoahorro-container mt-5">
-          <div class="autoahorro">
-            <img class="img-fluid" src="img/autoahorro.jpg">
-            <p>Autoahorro</p>
-              <h4>Más de <b>42 años</b> acercando a la gente a su 0km.</h4>
-              <p>Encontrá el plan indicado para vos y subite a tu Volkswagen.</p>
-              <a class="link" href="#">Conoce más</a>
-          </div>
-          <div class="financial">
-            <img class="img-fluid" src="img/financialservices.jpg">
-            <p>Volkswagen Financial Services</p>
-            <h4>Hay una manera más fácil de subirte a <b>tu 0Km</b></h4>
-            <p>Volkswagen Financial Services ofrece financiación en todos nuestros modelos para que puedas acercarte cada vez más a tu Volkswagen.
-            </p>
-            <p>Las mejores tasas y financiaciones pensadas para que puedas subirte a tu 0KM</p>
-            <a class="link" href="#">Conoce más</a>
+      <!-- Fin Botonera Derecha-->
+
+      <!-- Inicio header -->
+      <div class="header">
+        <div>
+          <div class="container-header">
+            <div class="grid-header">
+              <div>
+                <div class="box-header">
+                  <div direction="ltr" class="container-button">
+                    <button aria-hidden="true" class="button-menu button-menu-open">
+                      <div class="container-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img">
+                          <path d="M0 4h24v2H0zM0 11h14v2H0zM0 18h20v2H0z"></path>
+                        </svg>
+                      </div>
+                      <div class="container-text">
+                        <div class="text-menu">Menú</div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-line">
+              <span class="grid-box-line">
+                <div class="container-icon">
+                  <a href="" class="link-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img">
+                      <path d="M12 22.586c-5.786 0-10.543-4.8-10.543-10.586 0-1.2.214-2.357.6-3.471l6.172 12c.085.171.171.3.385.3.215 0 .3-.129.386-.3l2.871-6.386c.043-.086.086-.129.129-.129.086 0 .086.086.129.129l2.914 6.386c.086.171.171.3.386.3.214 0 .3-.129.385-.3l6.172-12c.385 1.071.6 2.228.6 3.471-.043 5.786-4.8 10.586-10.586 10.586zm0-13.329c-.086 0-.086-.086-.129-.128l-3.3-7.115a10.117 10.117 0 016.858 0l-3.3 7.115c-.043.042-.043.128-.129.128zm-3.471 7.714c-.086 0-.086-.085-.129-.128L3 6.47c.943-1.542 2.314-2.828 3.9-3.728l3.814 8.228c.086.172.172.215.3.215h1.972c.128 0 .214-.043.3-.215l3.771-8.228c1.586.9 2.957 2.186 3.9 3.728L15.6 16.843c-.043.086-.086.128-.129.128-.085 0-.085-.085-.128-.128L13.286 12.3c-.086-.171-.172-.214-.3-.214h-1.972c-.128 0-.214.043-.3.214l-2.057 4.543c-.043.043-.043.128-.128.128zM12 24c6.643 0 12-5.357 12-12S18.643 0 12 0 0 5.357 0 12s5.357 12 12 12z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </span>
+            </div>
           </div>
         </div>
-        <!--Fin contenido vivi tu volkswagen -->
+      </div>
+      <!-- Fin header -->
 
-        <!--Inicio contenido parte del camino -->
-         <!--<div class="road-part mt-5">
-            <h2 class="text-center title-section">Sos parte de nuestro camino</h2>
-            <div class="road-part-container">
-              <div class="cobertura">
-                <img class="img-fluid" src="img/cobertura-vw.jpg">
-                <p>Cobertura VW</p>
-                <h4>Una Cobertura para cada <b>necesidad.</b></h4>
-                <p>Encontrá las mejores opciones de seguro para tu próximo Volkswagen.</p>
-                <a class="link" href="#">Conoce más</a>
+      <!-- Inicio Menu -->
+      <div class="menu-pagina">
+        <div class="container">
+          <div class="container-top">
+            <div class="container-button">
+              <button type="button" class="button-menu-close" src="#">
+                <div>
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" role="img">
+                    <path d="M21.474 3.467l-.942-.941L12 11.059 3.466 2.526l-.94.941L11.059 12l-8.533 8.532.94.942L12 12.941l8.532 8.533.942-.942L12.941 12z"></path>
+                  </svg>
+                  <span class="eDVgLw">
+                    <span class="sc-esjQYD iiKZkU">Cerrar</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="container-content">
+              <div class="main-navigation">
+                <div>
+                  <div direction="ltr" class="container-list">
+                    <ul >
+                      <li>
+                        <a href="/es/modelos-y-configurador.html" title="Modelos y configurador" class="sc-cbkKFq jDQIYm">Modelos y
+                          configurador</a>
+                      </li>
+                      <li>
+                        <a href="/es/bicicletas.html" title="Bicicletas" class="sc-cbkKFq jDQIYm">Bicicletas</a>
+                      </li>
+                      <li>
+                        <a href="https://www.volkswagen.com.ar/app/local/ofertas-d6/" title="Ofertas" class="sc-cbkKFq jDQIYm">Ofertas</a>
+                      </li>
+                      <li>
+                        <a href="/es/postventa.html" title="Postventa" class="sc-cbkKFq jDQIYm">Postventa</a>
+                      </li>
+                      <li>
+                        <a href="/es/ventas-corporativas.html" title="Ventas Corporativas" class="sc-cbkKFq jDQIYm">Ventas
+                          Corporativas</a>
+                      </li>
+                      <li>
+                        <a href="/es/innovacion-y-tecnologia.html" title="Innovación &amp; Tecnología" class="sc-cbkKFq jDQIYm">Innovación
+                          &amp; Tecnología</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div direction="ltr" class="container-line"></div>
+                </div>
+  
               </div>
-              <div class="corporativas">
-                <img class="img-fluid" src="img/venta-empresas.jpg">
-                <p>Ventas Corporativas</p>
-                <h4>A la medida de tus <b>necesidades</b></h4>
-                <p>Encontrá el asesoramiento asesoramiento y propuestas diferenciales para tu empresa.</p>
-                <a class="link" href="#">Conoce más</a>
+              <div class="promotional">
+                <div wrap="always" class="StyledChildWrapper-sc-1d21nde fxjPIw">
+                  <div class="StyledTextComponent-sc-hqqa9q jppkwY">Conocé más sobre Volkswagen </div>
+                </div>
+
+                <div class="container-list-promotional">
+                  <ul class="sc-dUjcNx iaVHFk">
+                    <li class="sc-gHboQg eebzXp">
+                      <a href="https://www.volkswagen.com.ar/app/formulario/vw-ar/contacteme/es/+/+/+/+/+/+/+/+/+/+/+/+/+/+/+"
+                        class="StyledLink-sc-jijr17 bdomQM">Contacto</a>
+                    </li>
+                    <li class="sc-gHboQg eebzXp">
+                      <a href="https://www.volkswagen.com.ar/app/local/atencion-al-cliente-d6/"
+                        class="StyledLink-sc-jijr17 bdomQM">Atención al cliente</a>
+                    </li>
+                    <li class="sc-gHboQg eebzXp">
+                      <a href="https://www.volkswagen.com.ar/app/local/precios-vigentes-d6/" class="StyledLink-sc-jijr17 bdomQM">Precios
+                        Vigentes</a>
+                    </li>
+                    <li class="sc-gHboQg eebzXp">
+                      <a href="/es/volkswagen-group-argentina.html" class="StyledLink-sc-jijr17 bdomQM">Volkswagen Group Argentina</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <div class="block-img">
+                    <a href="#" target="_self" class="link-image">
+                      <div class="container-img">
+                        <img src="https://s7g10.scene7.com/is/image/volkswagenag/KV-3-VW-Nivus?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT02MDAmYWxpZ249MC44MywwLjAwJjBjN2Q=" />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="container-link-title">
+                    <a href="#" target="_self" class="link-title">
+                      <div class="link-text-title">
+                        <span class="capsula">
+                          <span class="sc-EHOje eVEvMV">Bienvenido a tu&nbsp;<b>Nuevo <span class="StyledSafeWord-gZTXrG jKMnlo">Volkswagen</span></b><br></span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+
+
+              </div>
+              <div class="bottom">
+                <div direction="ltr" class="sc-daURTG kbzFvV">
+                  <span class="StyledTextComponent-sc-hqqa9q kboOBU">
+                    <span class="sc-kIPQKe cjbXxL">
+                      <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                        <a href="/es/informaciones-legales/politica-de-privacidad.html" class="StyledLink-sc-jijr17 bdomQM">Política de
+                          privacidad</a>
+                      </span>
+                    </span>
+                    <span class="sc-kIPQKe cjbXxL">
+                      <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                        <a href="/es/informaciones-legales/terminos-y-condiciones.html" class="StyledLink-sc-jijr17 bdomQM">Terminos y
+                          condiciones</a>
+                      </span>
+                    </span>
+                    <span class="sc-kIPQKe cjbXxL">
+                      <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                        <a href="/es/informaciones-legales/politica-de-cookies.html" class="StyledLink-sc-jijr17 bdomQM">Política de
+                          cookies</a>
+                      </span>
+                    </span>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>-->
-          <!--Fin contenido parte del camino-->
 
-          <!--Inicio contenido innovación-->
-         <!-- <div class="innovation">
-            <div class="innovation-video">
-              <video src=""></video>
-            </div>
-            <div class="innovation-text">
-              <p>Innovación y tecnología</p>
-              <h4>Conocé la ultima tecnología Volkswagen pensada<b> para vos</b></h4>
-              <p>Tu Volkswagen ahora es más que sólo un auto.<br>
-                Conectate y descubrí un mundo de posibilidades con la <br>nueva tecnología pensada para que cada viaje sea más<br>
-                fácil, seguro y entretenido.
-              </p>
-              <a class="link" href="#">Conoce más</a>
-            </div>
-          </div>-->
-          <!-- Fin contenido innovación-->
+          </div>
 
-          <!--Inicio contenido Volkswagen informa-->
-          <div class="volkswagen-inform mt-5">
-            <div class="inform-container">
-              <div class="title-inform">
-                <p>Volkswagen Informa</p>
-                <h4>Sos parte de <b>nuestro camino</b></h4>
-                <p>Ingresá tu VIN  para verificar si tu vehiculo se encuentra alcanzado por la presente campañara relativa a vehículos con motores diésel 2.0l EA 189
-              </p>
-              <a class="link" href="#">Conoce más</a>
-              </div>
-              <div class="image-inform">
-                <img class="img-fluid" src="img/informa.jpg" width="800px">
-              </div>
+          <div class="container-bottom">
+            <div class="StyledChildWrapper-sc-1d21nde cCIpcJ">
+              <span class="StyledTextComponent-sc-hqqa9q kboOBU">
+                <span class="sc-kIPQKe cjbXxL">
+                  <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                    <a href="/es/informaciones-legales/politica-de-privacidad.html" class="StyledLink-sc-jijr17 bdomQM">Política de
+                      privacidad</a>
+                  </span>
+                </span>
+                <span class="sc-kIPQKe cjbXxL">
+                  <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                    <a href="/es/informaciones-legales/terminos-y-condiciones.html" class="StyledLink-sc-jijr17 bdomQM">Terminos y
+                      condiciones</a>
+                  </span>
+                </span>
+                <span class="sc-kIPQKe cjbXxL">
+                  <span class="StyledTextComponent-sc-hqqa9q goQAPu">
+                    <a href="/es/informaciones-legales/politica-de-cookies.html" class="StyledLink-sc-jijr17 bdomQM">Política de
+                      cookies</a>
+                  </span>
+                </span>
+              </span>
             </div>
           </div>
-          <!-- Fin contenido Volkswagen informa-->
+          
+        </div>
+      </div>
+      <!-- Fin Menu -->
     </div>
-          <!--<div class="container">-->
-          <!--Inicio Footer-->
-          <div class="footer mt-5">
-            <div class="listas d-flex justify-content-between">
-              <div class="institucional">
-                <p>Institucional</p>
-                <ul class="links1">
-                  <li><a href="#">Homepage</a></li>
-                  <li><a href="#">Postventa</a></li>
-                  <li><a href="#">Volkwagen Group Argentina</a></li>
-                  <li><a href="#">Contacto</a></li>
-                </ul>
-              </div>
-              <div class="tecnología">
-                <p>Innovacion</p>
-                <ul class="links2">
-                  <li><a href="#">Innovacion</a></li>
-                </ul>
-              </div>
-              <div class="social">
-                <p>Redes sociales</p>
-                <ul class="links3">
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Linkedin</a></li>
-                  <li><a href="#">Youtube</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="privacidad d-flex justify-content-between">
-              <div class="politicas">
-                <ul class="links4 d-flex">
-                  <li><a href="#">Política de privacidad|  </a></li>
-                  <li><a href="#">Terminos y condiciones|  </a></li>
-                  <li><a href="#">Política de cookies</a></li>
-                </ul>
-              </div>
-              <div class="copyright">
-                <p>© Volkswagen 2020</p>
-              </div>
-            </div>
-          </div>
-          <!--Fin footer-->
-        <!--</div>-->
-
-    </div>
-    <script src="app.js"></script>
     
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+   ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+   ></script>
 
+    <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+  </body>
 </html>
-
-
-
 
 <!--<div class="contenedor">
     <span class="logo">aca pone SVG VW</span>
