@@ -21,7 +21,7 @@
   );
   height: var(--s2-one-hub-navigation-top-bar-height);
   transform: translateZ(0px);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.98);
   background-color: transparent;
   transition: height 0.3s ease-in 0s;
 }
@@ -49,9 +49,13 @@
   );
   height: var(--s2-one-hub-navigation-top-bar-height);
   transform: translateZ(0px);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.98);
   background-color: transparent;
   transition: height 0.3s ease-in 0s;
+}
+
+.one-color .container-header {
+  background-color: rgba(255, 255, 255, 0.98);
 }
 
 @media (min-width: 560px) {
@@ -120,7 +124,7 @@
   height: 24px;
   text-align: left;
   font-size: 0px;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.98);
   border-width: 0px;
   border-style: initial;
   border-color: initial;
@@ -128,6 +132,16 @@
   padding: 0px;
   margin: 0px;
   background: none;
+}
+
+.header.one-color .button-menu  {
+  color: rgb(0, 30, 80);
+}
+
+.header.one-color .button-menu:hover,
+.header.one-color .button-menu:focus {
+  color: rgb(0, 64, 197);
+  outline: 0px;
 }
 
 .header .button-menu:hover,
@@ -244,9 +258,11 @@
 .grid-box-line::after {
   content: "";
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.98);
 }
 
+.one-color .grid-box-line::before,
+.one-color .grid-box-line::after ,
 .alternative-scroll .grid-box-line::before,
 .alternative-scroll .grid-box-line::after {
   background: rgb(0, 30, 80);
@@ -262,11 +278,12 @@
 }
 
 .grid-box-line svg {
-  fill: rgb(255, 255, 255);
+  fill: rgba(255, 255, 255, 0.98);
   width: var(--logo-size);
   height: var(--logo-size);
 }
 
+.one-color .grid-box-line svg,
 .alternative-scroll .grid-box-line svg {
   fill: rgb(0, 30, 80);
 }

@@ -16,6 +16,13 @@ $(document).ready( function () {
   animationImageLink('.link-image')
   animationImageLink('.link-title')
 
+  carousel()
+
+  accordion()
+  cards()
+
+  atencinoAlCliente()
+
 })
 
 function resizer() {
@@ -130,4 +137,158 @@ function toggleWidgetButtons () {
      cw.addClass('open-widget')
     }
   })
+}
+
+function carousel () {
+  var $slider = $('.list-blocks')
+
+  if ($slider.length > 0 ) {
+    $slider.on("touchstart", function(event) {
+      var xClick = event.originalEvent.touches[0].pageX;
+      $(this).one("touchmove", function(event){
+          var xMove = event.originalEvent.touches[0].pageX;
+          if( Math.floor(xClick - xMove) > 5 ){
+            nextSlide()
+          }
+          else if( Math.floor(xClick - xMove) < -5 ){
+            prevSlide()
+          }
+      });
+      $(".carousel").on("touchend", function(){
+        $(this).off("touchmove");
+      });
+    });
+
+    // debugger
+  }
+
+  // grab all the slides 
+  var $slides = $slider.find("li");
+
+  var positions = $slides.map( function (index, slide) {
+    var ojbSlide = {}
+    ojbSlide.positionLeft = slide.offsetLeft
+    ojbSlide.clientWidth = slide.clientWidth
+    return ojbSlide
+  })
+  console.log('positions : ', positions)
+  // set initial slide
+  var currentSlide = 0;
+
+  function nextSlide() {
+      // current slide becomes hidden
+      $($slides[currentSlide]).removeClass('active');
+      // set the current slide as the next one
+      // currentSlide = (currentSlide + 1) % $slides.length;
+      currentSlide = (currentSlide + 1) % $slides.length;
+      currentSlide = currentSlide == 0 ? $slides.length - 1 : currentSlide;
+      // add the class showing to the slide to make it visible
+      $($slides[currentSlide]).addClass('active');
+      // move the slider
+
+      if (currentSlide === $slides.length-1) {
+        moviment = "translate3d(-" + 44 + "%, 0px, 0px)";
+      } else {
+        moviment = "translate3d(-" + (positions[currentSlide].positionLeft - 31) + "px, 0px, 0px)";
+      }
+      
+      $slider.css("transform", moviment);
+  }
+
+  function prevSlide() {
+       // current slide becomes hidden
+       $($slides[currentSlide]).addClass('active');
+      // set the current slide as the previous one
+      currentSlide = (currentSlide - 1) % $slides.length;
+      
+      if (currentSlide == -1) { 
+          // currentSlide = $slides.length-1; 
+          currentSlide = 0; 
+      }
+
+      moviment = "translate3d(-" + (positions[currentSlide].positionLeft - 30) + "px, 0px, 0px)";
+      
+      $slider.css("transform", moviment);
+      // add the class showing to the slide to make it visible
+      // $($slides[currentSlide]).removeClass('active');
+
+      $($slides).removeClass('active');
+      $($slides[currentSlide]).addClass('active');
+
+  }
+}
+
+function accordion () {
+  var $items = $('.accordion-section .container-item')
+
+  $items.click( function () {
+    var idElement = this.id
+    var $this = $(this);
+    var $parentContainer = $this.parents('.container.grid.grid-14-10')
+    var $containerImgs = $parentContainer.find('.container-img')
+
+    $actualContainerImg = $containerImgs.filter( function (index, element) {
+      return element.id === idElement
+    })
+
+    $items.removeClass('active')
+    $containerImgs.removeClass('active')
+    $this.addClass('active')
+    $actualContainerImg.addClass('active')
+  })
+}
+
+function cards () {
+  var $items = $('.container-elegi button')
+
+  $items.click( function () {
+    var idElement = this.id
+    var $this = $(this);
+    var $cards = $('.container-elegi .container-areas')
+
+    $card = $cards.filter( function (index, element) {
+      return element.id === idElement
+    })
+
+    $items.removeClass('active')
+    $cards.removeClass('active')
+    $this.addClass('active')
+    $card.addClass('active')
+  })
+}
+
+function atencinoAlCliente () {
+  if ($('.main').hasClass('atencion')) {
+
+    $('input[type=text]').focusin( function (e) {
+      var $this = $(this)
+      var $label = $this.prev()
+      $label.addClass('vfl-label-on-focus')
+    })
+
+    $('input[type=text]').focusout( function (e) {
+      var $this = $(this)
+      var $label = $this.prev()
+      var val = $this.val()
+      $label.removeClass('vfl-label-on-focus')
+      if (val.length === 0) {
+        // aca va el error handler
+        $label.removeClass('vfl-label-on-input')
+      }
+    })
+
+    $('input[type=text]').on('input', function() {
+      var $this = $(this)
+      var $label = $this.prev()
+      var val = $this.val()
+      if (val.length > 0) {
+        $label.addClass('vfl-label-on-input')
+      } else {
+        /// aca va el error handler
+        $label.remove('vfl-label-on-input')
+      }
+    });
+    
+
+  }
 }

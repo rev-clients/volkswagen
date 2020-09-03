@@ -1,0 +1,141 @@
+.encuentranos .container-headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100vw;
+  padding: 0px 4.16vw 20px;
+}
+
+@media (min-width: 960px) {
+  .encuentranos .container-headline {
+      flex-wrap: nowrap;
+      width: 70.83vw;
+  }
+}
+
+/* container section */
+.encuentranos .container-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 4.16vw;
+}
+
+@media (min-width: 960px) {
+  .encuentranos .container-section {
+      flex-wrap: nowrap;
+  }
+}
+
+/* area a */
+.encuentranos .area-a {
+  width: 91.66vw;
+}
+
+@media (min-width: 960px) {
+  .encuentranos .area-a {
+      width: 62.5vw;
+  }
+}
+
+/* area-b */
+
+.encuentranos .area-b {
+  position: relative;
+  width: 91.66vw;
+  
+  padding: 0 var(--size-grid001);
+}
+
+@media (min-width: 960px) {
+  .encuentranos .area-b {
+      width: 25vw;
+      padding: 20px 0px 20px 4.16vw;
+  }
+}
+
+/* Map */
+
+.encuentranos .container-map {
+  height: 50vh;
+  display: block;
+  background-color: skyblue;
+}
+
+@media (min-width: 960px) {
+  .encuentranos .container-map {
+      height: 68vh;
+  }
+}
+
+
+/* Card */
+
+.encuentranos .card {
+
+}
+
+@media (min-width: 960px) {
+  .encuentranos .card {
+      width: 185px;
+      padding: 5px
+  }
+
+  .encuentranos .card.services {
+    width: 100%;
+  }
+}
+
+.encuentranos .card > div {
+  display: flex;
+  align-items: center;
+}
+
+.encuentranos .card > div:not(:first-child) {
+  padding: 16px 0px 0px;
+  margin-bottom: 0.11rem;
+}
+
+.encuentranos .container-line {
+  display: block;
+  flex-wrap: unset;
+  flex-direction: unset;
+  margin: 0px 0px calc(0px);
+  padding: 20px 0px;
+}
+
+.encuentranos .line {
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  margin: 0px;
+  border-width: 2px 0px 0px;
+  border-image: initial;
+  border-top: 2px solid rgb(223, 228, 232);
+}
+
+.encuentranos .card svg {
+  color: rgb(0, 30, 80);
+}
+
+.encuentranos .services svg {
+  margin-right: 16px
+}
+
+/* Links Buttons */
+.encuentranos .container-links-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.encuentranos .container-links-buttons .button {
+  margin: 5px;
+}
+
+@media (min-width: 960px) {
+  
+}

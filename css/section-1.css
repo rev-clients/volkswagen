@@ -16,30 +16,6 @@
   position: relative;
 }
 
-.container-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.container-background > div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
-}
-
-.container-background img {
-  object-fit: cover;
-  object-position: 50% 50%;
-  height: 100%;
-
-  display: block;
-  width: 100%;
-  filter: brightness(80%);
-}
-
 /* Contenedor */
 
 .section-1 .container-block {

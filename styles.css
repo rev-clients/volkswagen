@@ -18,27 +18,6 @@
   padding-left: 4.16vw;
 }
 
-.button-menu:hover {
-  color: #4cc7f4;
-}
-
-.button-menu {
-  cursor: pointer;
-  display: block;
-  width: auto;
-  height: 24px;
-  text-align: left;
-  font-size: 0px;
-  color: rgb(255, 255, 255);
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  padding: 0px;
-  margin: 0px;
-  background: none;
-}
-
 .menu-svg {
   display: inline-block;
 }
