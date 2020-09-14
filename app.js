@@ -23,6 +23,8 @@ $(document).ready( function () {
 
   atencinoAlCliente()
 
+  cookies()
+
 })
 
 function resizer() {
@@ -290,5 +292,14 @@ function atencinoAlCliente () {
     });
     
 
+  }
+}
+
+function cookies () {
+  var $cookiesBanner = $('.cookies-banner')
+  if ($cookiesBanner.length > 0) {
+    $cookiesBanner.find('button').click( function () {
+      $cookiesBanner.hide()
+    })
   }
 }
