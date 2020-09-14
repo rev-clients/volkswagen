@@ -134,7 +134,7 @@
   background: none;
 }
 
-.header.one-color .button-menu  {
+.header.one-color .button-menu {
   color: rgb(0, 30, 80);
 }
 
@@ -262,7 +262,7 @@
 }
 
 .one-color .grid-box-line::before,
-.one-color .grid-box-line::after ,
+.one-color .grid-box-line::after,
 .alternative-scroll .grid-box-line::before,
 .alternative-scroll .grid-box-line::after {
   background: rgb(0, 30, 80);
