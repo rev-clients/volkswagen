@@ -39,8 +39,8 @@
 
 @media (min-width: 560px) {
   .section-5-1 .block-1 {
-    --container-0-grid002-560-grid006-960-grid002: var(--size-grid006);
-    --container-0-grid002-560-grid006-960-grid001: var(--size-grid006);
+    --container-0-grid002-560-grid006-960-grid002: var(--size-grid002);
+    --container-0-grid002-560-grid006-960-grid001: var(--size-grid002);
   }
 }
 
