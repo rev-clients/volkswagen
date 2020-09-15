@@ -1,0 +1,260 @@
+.modelos {
+  padding-top: var(--size-dynamic0350);
+  /* padding-bottom: var(--size-dynamic0350); */
+}
+
+.modelos .page-container {
+  --container-0-static0-560-grid002: 0;
+  display: block;
+  flex-flow: unset;
+  margin: 0px 0px calc(0px);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: var(--container-0-static0-560-grid002);
+  padding-left: var(--container-0-static0-560-grid002);
+}
+
+@media (min-width: 560px) {
+  .modelos .page-container {
+    --container-0-static0-560-grid002: var(--size-grid002);
+    --container-0-static0-560-grid002: var(--size-grid002);
+  }
+}
+
+/* Headline  */
+
+.modelos .container-headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin-bottom: 24px;
+  padding: 0 var(--size-grid002);
+}
+
+@media (min-width: 560px) {
+  .modelos .container-headline {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modelos .container-headline {
+    grid-template-columns: auto max-content;
+    margin-bottom: 52px;
+  }
+}
+
+/*  Section  */
+
+.modelos .section {
+  display: grid;
+  grid-template-areas:
+    "sidebar-header main-header"
+    "sidebar main";
+  grid-template-columns: fit-content(215px) 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px 52px;
+
+  display: block;
+}
+
+.modelos .sidebar-header {
+  grid-area: sidebar-header / sidebar-header / sidebar-header / sidebar-header;
+  min-height: 1.8em;
+  word-break: break-word;
+
+  display: none;
+}
+
+.modelos .sidebar {
+  grid-area: sidebar / sidebar / sidebar / sidebar;
+  word-break: break-word;
+
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .modelos .section {
+    display: grid;
+  }
+
+  .modelos .sidebar-header,
+  .modelos .sidebar {
+    display: inherit;
+  }
+}
+
+.modelos .main-header {
+  grid-area: main-header / main-header / main-header / main-header;
+  min-height: 1.8em;
+
+  margin-bottom: 24px;
+  padding: 0 var(--size-grid002);
+}
+
+@media (min-width: 560px) {
+  .modelos .main-header {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 960px) {
+  .modelos .main-header {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.modelos .main {
+  grid-area: main / main / main / main;
+}
+
+/* List cards */
+
+.modelos .list-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (min-width: 560px) {
+  .modelos .list-cards {
+    gap: 52px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+
+/* Img Link */
+
+.img-link {
+  display: flex;
+  cursor: pointer;
+  text-align: inherit;
+  text-decoration: none;
+  padding-bottom: 12%;
+}
+
+/* Background */
+.modelos .card .background {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.modelos .card .background {
+  background: rgb(71, 74, 81);
+}
+
+@media screen and (min-width: 560px) {
+  .modelos .card .background {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .modelos .card .background {
+    min-height: 140px;
+  }
+}
+
+/* Text */
+
+.modelos .container-text {
+  color: rgb(255, 255, 255);
+  padding: 0 var(--size-grid002);
+}
+
+@media screen and (min-width: 560px) {
+  .modelos .container-text {
+    padding: 0px 32px;
+  }
+}
+
+.modelos .container-text-2 {
+  color: rgb(0, 0, 0);
+  padding: 0 var(--size-grid002);
+}
+
+@media screen and (min-width: 560px) {
+  .modelos .container-text-2 {
+    padding: 0px 32px;
+  }
+}
+
+/* container img */
+.modelos .card .container-img {
+  position: relative;
+  padding-top: 37.8125%;
+  margin-top: 12px;
+  margin-bottom: -12%;
+}
+
+/* Checkbox */
+.checkbox {
+}
+
+.checkbox:not(:first-child) {
+  margin-top: 24px;
+}
+
+/* label */
+.modelos .label-checkbox {
+  position: relative;
+  color: rgb(0, 30, 80);
+  cursor: pointer;
+  display: block;
+}
+
+/* input */
+.modelos .input-checkbox {
+  position: absolute;
+  opacity: 0;
+  outline: 0px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* icon checkbox */
+.modelos .label-checkbox .container {
+  position: relative;
+  display: grid;
+  column-gap: 12px;
+  grid-template-columns: max-content auto;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.modelos .area-a svg:nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  top: 0;
+}
+
+.input-checkbox:checked + .container .area-a svg:nth-child(2) {
+  opacity: 1;
+}
+
+/* area b */
+
+.modelos .card .container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  word-break: break-word;
+}
+
+.modelos .card .container .link-2 {
+  margin-top: 12px;
+}

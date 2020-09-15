@@ -1,0 +1,446 @@
+.atencion {
+}
+
+.atencion .titulo {
+  letter-spacing: 0.019em;
+  font-size: 62.4px;
+  font-weight: 200;
+}
+
+/* Container */
+
+.atencion .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .atencion .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .atencion .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .atencion .container {
+    width: 1170px;
+  }
+}
+
+/* Section text */
+
+.atencion .title {
+  font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
+  font-size: 51px;
+  font-weight: 200;
+  letter-spacing: -0.015em;
+  color: #001e50;
+
+  padding: 0.8em 0 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 669px) {
+  .atencion .title {
+    font-size: 37.2px;
+  }
+}
+
+.atencion .text-2 {
+  margin: 1.7em auto 2.2em;
+}
+
+@media (max-width: 669px) {
+  .atencion .text-2 {
+    font-size: 25.2px;
+    margin: 1em auto 2.2em;
+    letter-spacing: 0;
+    padding-right: 1.3em;
+    line-height: 36px;
+  }
+}
+
+/* Form */
+
+@media (max-width: 1441px) {
+  form {
+    font-size: 12px;
+  }
+}
+
+.atencion form {
+  padding-top: 1.1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* row */
+
+.atencion .row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: block;
+}
+
+@media (min-width: 960px) {
+  .atencion .row {
+    display: flex;
+  }
+}
+
+.atencion form > .row.margin {
+  margin-bottom: 6.7em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.row:before {
+  display: table;
+  content: " ";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*  */
+
+.atencion .form-group {
+  margin-bottom: 15px;
+}
+
+.atencion .col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 992px) {
+  .atencion .col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    float: left;
+
+    width: 50%;
+  }
+}
+
+/*  */
+
+.atencion form h3 {
+  font-size: 2.3em;
+  font-family: vw-head, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.55em;
+}
+
+.atencion form .relative {
+  position: relative;
+}
+
+/* select */
+
+.atencion .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  color: #001e50;
+  /* border: 1px solid #ccc; */
+  border: none;
+  border-bottom: 1px solid #9b9b9b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 1.2em;
+  padding: 0;
+  letter-spacing: -0.035em;
+
+  outline: none;
+}
+
+.atencion form input,
+.atencion form select,
+.atencion form textarea {
+  color: #001e50;
+  border: none;
+  border-bottom: 1px solid #9b9b9b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 1.2em;
+  padding: 0;
+  letter-spacing: -0.035em;
+}
+
+.atencion form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*  */
+
+.atencion .col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  width: 100%;
+}
+
+/*  */
+
+.atencion .vfl-has-label {
+  position: relative;
+}
+
+.atencion label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.atencion .vfl-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0.1em;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  color: #aaa;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.atencion .vfl-label,
+.atencion .vfl-label-on-focus,
+.atencion .vfl-label-on-input {
+  color: #001e50;
+}
+
+.atencion .vfl-label-on-input {
+  top: -1.3em;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.atencion form input.efecto:focus ~ .focus-border,
+.atencion form select.efecto:focus ~ .focus-border,
+.atencion form textarea.efecto:focus ~ .focus-border {
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 0;
+}
+
+.atencion form input.efecto ~ .focus-border,
+.atencion form select.efecto ~ .focus-border,
+.atencion form textarea.efecto ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #001e50;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*  */
+
+.atencion form .separador2,
+.atencion form .separador {
+  display: block;
+  height: 1.4em;
+}
+
+/*  */
+
+.atencion form #legal {
+  font-size: 1.4em;
+  line-height: 1.3em;
+  letter-spacing: -0.022em;
+  font-weight: 200;
+}
+
+@media (min-width: 992px) {
+  .atencion form #legal {
+    margin-top: 6.7em;
+  }
+}
+
+/*  */
+
+.atencion .checkbox,
+.radio {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.atencion form .checkbox {
+  color: #001e50;
+  font-size: 1.4em;
+  margin-top: 2.1em;
+}
+
+.atencion .checkbox label,
+.atencion .radio label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.atencion form .checkbox label {
+  padding-left: 2em;
+  vertical-align: text-bottom;
+  line-height: 0.6em;
+  letter-spacing: -0.007em;
+}
+
+@media (max-width: 669px) {
+  .atencion form .checkbox label {
+    font-size: 21.6px;
+    line-height: 0.3em;
+  }
+}
+
+@media (max-width: 1441px) {
+  .atencion form .checkbox label {
+    line-height: 1.4em;
+  }
+}
+
+.atencion form .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.atencion form .checkbox .checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 2px solid #001e50;
+  border-radius: 0;
+}
+
+.atencion form .checkbox input:checked ~ .checkbox-custom {
+  background-color: #001e50;
+  -webkit-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid #001e50;
+}
+
+.atencion form .checkbox .checkbox-custom:after {
+  position: absolute;
+  content: "";
+  left: 12px;
+  top: 12px;
+  height: 0;
+  width: 0;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.atencion form .checkbox input:checked ~ .checkbox-custom:after {
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/*  */
+
+.atencion button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+.atencion .btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.65;
+}
+
+.atencion form .btn.btn-primary {
+  border-radius: 22px;
+  margin: 3em 0;
+  font-size: 1.2em;
+  padding: 0.4em 2.8em 0.6em;
+  letter-spacing: -0.04em;
+  color: #fff;
+  background: #001e50;
+  border: 1px solid #fff;
+  line-height: 1.42857143;
+}
+
+@media (min-width: 956px) {
+  .atencion form .btn.btn-primary {
+    margin: 7em 0;
+  }
+}

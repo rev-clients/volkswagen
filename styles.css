@@ -1,185 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "vw-head";
-  font-weight: 400;
-  font-display: swap;
-  src: url("types/vwhead-regular.woff2") format("woff2"),
-    url("types/vwhead-regular.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-head";
-  font-weight: 700;
-  font-display: swap;
-  src: url("types/vwhead-bold.woff2") format("woff2"),
-    url("types/vwhead-bold.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-head";
-  font-weight: 200;
-  font-display: swap;
-  src: url("types/vwhead-light.woff2") format("woff2"),
-    url("types/vwhead-light.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-text";
-  font-weight: 400;
-  font-display: swap;
-  src: url("types/vwtext-regular.woff2") format("woff2"),
-    url("types/vwtext-regular.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-text";
-  font-weight: 700;
-  font-display: swap;
-  src: url("types/vwtext-bold.woff2") format("woff2"),
-    url("types/vwtext-bold.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-head-ar";
-  font-weight: 700;
-  font-display: swap;
-  src: url("types/HelveticaNeueArabicBD.woff") format("woff");
-}
-@font-face {
-  font-family: "vw-text-ar";
-  font-weight: 400;
-  font-display: swap;
-  src: url("types/HelveticaNeueArabicLT.woff") format("woff");
-}
-
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  padding: 0 !important;
-  font-family: "vw-text", sans-serif;
-  font-weight: 400;
-  line-height: 1.15;
-  text-size-adjust: 100%;
-}
-body {
-  background-position: center 0px !important;
-  background-repeat: no-repeat !important;
-  overflow-x: hidden;
-  height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
-  position: relative;
-  font-family: "vw-head", sans-serif;
-  font-weight: 700;
-  color: #002f62;
-  margin-bottom: 0px;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: #00a8e5;
-  -moz-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
-}
-
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover {
-  color: #a11f05;
-}
-
-/*contenedor {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 29px 20px 25px 20px;
-    color: #ffffff;
-}
-.contenedor::before, .contenedor::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #ffffff;
-    margin: 0 21px 0 21px;
-}
-*/
-
-button:focus {
-  outline: none;
-}
-
-svg {
-  vertical-align: unset;
-}
-.space {
-  word-break: break-all;
-}
-
-/*Menu flotante */
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.main p {
-  width: 300px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  color: #001e50;
-  font-size: 15px;
-}
-.link-stretch {
-  font-size: 16px;
-  color: var(--hub-color-prussian-blue);
-  line-height: 16px;
-  opacity: 1;
-  transition: opacity 0.4s 0.1s ease;
-  position: absolute;
-  left: 64px;
-}
-
-.menu-btn {
-  background: #4cc7f4;
-  width: 64px;
-  transition: width 0.4s 0.1s;
-}
-
-.menu-btn2 {
-  cursor: pointer;
-  position: relative;
-  height: 64px;
-  width: 64px;
-  border-radius: 40px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-}
-
-.menu-btn2:hover {
-  width: 240px;
-}
-
-.menu-btn svg {
-  fill: #001e50;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  left: 20px;
-}
 
 /*Menu */
 
@@ -191,32 +10,12 @@ svg {
   align-items: center;
   padding-bottom: 12px;
   padding-top: 16px;
+  background-color: transparent;
 }
 
 .menu-button {
   display: flex;
-  padding-left: 6.16vw;
-}
-
-.button-menu:hover {
-  color: #4cc7f4;
-}
-
-.button-menu {
-  cursor: pointer;
-  display: block;
-  width: auto;
-  height: 24px;
-  text-align: left;
-  font-size: 0px;
-  color: rgb(255, 255, 255);
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  padding: 0px;
-  margin: 0px;
-  background: none;
+  padding-left: 4.16vw;
 }
 
 .menu-svg {
@@ -244,15 +43,6 @@ svg {
   margin: -1.5px 0px 1.5px;
 }
 
-/* Header */
-.header {
-  background-image: url(img/header.jpg);
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .amarok {
   font-size: 76px;
 }
@@ -270,31 +60,44 @@ svg {
 }
 
 .logito {
+  width: 100%;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #ffffff;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transform: translateY(
+    calc(
+      16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px
+    )
+  );
+  transform: translateY(28px);
+  transition: transform 0.3s ease-in 0s;
 }
 
-.logito::after,
-.logito::before {
+.logo-w {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: auto max-content auto;
+  grid-template-columns: 65.8% max-content auto;
+}
+
+.logo-w::before,
+.logo-w::after {
   content: "";
-  flex: 1;
-  /*border-bottom: 2px solid #ffffff;
-    margin: 0 21px 0 21px;*/
   height: 2px;
-  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  background: rgb(255, 255, 255);
 }
 
 .logito a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.logo-w {
-  margin: 0 15px 0 15px;
+  pointer-events: auto;
+  display: block;
+  margin: 0 10px;
 }
 
 /*Animation Header */
@@ -307,12 +110,17 @@ svg {
   background: rgb(0, 30, 80) none repeat scroll 0% 0%;
 }
 
-.hola svg {
+.scrolled {
+  background: #fff;
+}
+
+.scrolled .logo-w svg {
   color: rgb(0, 30, 80);
 }
 
-.scrolled {
-  background: #fff;
+.scrolled .logo-w::before,
+.scrolled .logo-w::after {
+  background-color: rgb(0, 30, 80);
 }
 
 .link {
@@ -480,33 +288,4 @@ svg {
 
 .animated:hover {
   transform: scale(1.03);
-}
-
-/*Footer */
-
-.links1,
-.links2,
-.links3,
-.links4 li {
-  list-style: none;
-}
-
-.links1,
-.links2,
-.links3,
-.links4 li a {
-  text-decoration: none;
-}
-
-.footer {
-  border-top: 2px solid rgb(0, 30, 80);
-  padding: 44px 0px;
-}
-
-@media (min-width: 560px) {
-  .footer {
-    padding-top: 72px;
-    padding-left: 4.16vw;
-    padding-right: 4.16vw;
-  }
 }
