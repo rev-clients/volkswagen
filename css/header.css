@@ -88,7 +88,7 @@
   display: grid;
   max-width: 2560px;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0";
+  grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0';
   margin: auto;
 }
 
@@ -189,9 +189,7 @@
   position: absolute;
   top: 0px;
   transform: translateY(
-    calc(
-      16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px
-    )
+    calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px)
   );
   transition: transform 0.3s ease-in 0s;
 }
@@ -199,10 +197,7 @@
 @media (min-width: 560px) {
   .box-line {
     transform: translateY(
-      calc(
-        16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 20px +
-          1px
-      )
+      calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 20px + 1px)
     );
   }
 }
@@ -210,10 +205,7 @@
 @media (min-width: 960px) {
   .box-line {
     transform: translateY(
-      calc(
-        16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 24px +
-          1px
-      )
+      calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 24px + 1px)
     );
   }
 }
@@ -228,35 +220,25 @@
   grid-template-columns: auto max-content auto;
 }
 
-@media (min-width: 560px) {
-  .grid-box-line {
-    --logo-size: 40px;
-    --margin-size: 10px;
-  }
-}
-
 @media (min-width: 960px) {
   .grid-box-line {
     --logo-size: 48px;
     --margin-size: 12px;
+    grid-template-columns: calc(var(--size-grid016) - var(--margin-size)) max-content auto;
   }
 }
 
 @media (min-width: 560px) {
   .grid-box-line {
+    --logo-size: 40px;
+    --margin-size: 10px;
     grid-template-columns: auto max-content auto;
-  }
-}
-
-@media (min-width: 960px) {
-  .grid-box-line {
-    grid-template-columns: calc(var(--size-grid016) - var(--margin-size)) max-content auto;
   }
 }
 
 .grid-box-line::before,
 .grid-box-line::after {
-  content: "";
+  content: '';
   height: 2px;
   background: rgba(255, 255, 255, 0.98);
 }
