@@ -1,12 +1,11 @@
 .cookies-banner {
-
 }
 
 .cookies-banner > div {
   background-color: #2f3538;
   opacity: 1;
   color: #fff;
-  font-family: 'vw-text', sans-serif;
+  font-family: "vw-text", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -28,9 +27,7 @@
   }
 }
 
-
 /*  */
-
 
 .btn-close {
   position: absolute;
@@ -52,11 +49,12 @@
   transform: rotate(-45deg);
 }
 
-.btn-close:before, .btn-close:after {
+.btn-close:before,
+.btn-close:after {
   position: absolute;
   left: 19px;
   top: 10px;
-  content: ' ';
+  content: " ";
   height: 20px;
   width: 4px;
   background-color: #fff;

@@ -8,8 +8,8 @@
 
 @media (min-width: 960px) {
   .encuentranos .container-headline {
-      flex-wrap: nowrap;
-      width: 70.83vw;
+    flex-wrap: nowrap;
+    width: 70.83vw;
   }
 }
 
@@ -22,7 +22,7 @@
 
 @media (min-width: 960px) {
   .encuentranos .container-section {
-      flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 }
 
@@ -33,7 +33,7 @@
 
 @media (min-width: 960px) {
   .encuentranos .area-a {
-      width: 62.5vw;
+    width: 62.5vw;
   }
 }
 
@@ -42,14 +42,14 @@
 .encuentranos .area-b {
   position: relative;
   width: 91.66vw;
-  
+
   padding: 0 var(--size-grid001);
 }
 
 @media (min-width: 960px) {
   .encuentranos .area-b {
-      width: 25vw;
-      padding: 20px 0px 20px 4.16vw;
+    width: 25vw;
+    padding: 20px 0px 20px 4.16vw;
   }
 }
 
@@ -63,21 +63,19 @@
 
 @media (min-width: 960px) {
   .encuentranos .container-map {
-      height: 68vh;
+    height: 68vh;
   }
 }
-
 
 /* Card */
 
 .encuentranos .card {
-
 }
 
 @media (min-width: 960px) {
   .encuentranos .card {
-      width: 185px;
-      padding: 5px
+    width: 185px;
+    padding: 5px;
   }
 
   .encuentranos .card.services {
@@ -121,7 +119,7 @@
 }
 
 .encuentranos .services svg {
-  margin-right: 16px
+  margin-right: 16px;
 }
 
 /* Links Buttons */
@@ -137,5 +135,4 @@
 }
 
 @media (min-width: 960px) {
-  
 }

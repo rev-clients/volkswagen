@@ -84,18 +84,18 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .menu-pagina .container-top {
-      margin-bottom: calc(2 * var(--size-dynamic0100));
+    margin-bottom: calc(2 * var(--size-dynamic0100));
   }
 }
 
 .menu-pagina .container-main {
   min-height: 75px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /* Content  */
@@ -113,7 +113,7 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .menu-pagina .container-button {
-      margin-bottom: calc(2 * var(--size-dynamic0100));
+    margin-bottom: calc(2 * var(--size-dynamic0100));
   }
 }
 
@@ -124,45 +124,46 @@ body.menu-active {
   max-width: 2560px;
   grid-template-columns: repeat(24, 1fr);
   grid-template-areas:
-      "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0"
-      "promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
-      "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
+    "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0"
+    "promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
+    "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
   row-gap: 92px;
   margin: auto;
 }
 
 @media (min-width: 560px) {
   .menu-pagina .container-content {
-      grid-template-columns: repeat(24, 1fr);
-      grid-template-areas:
-          "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0"
-          "promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
-          "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-areas:
+      "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0"
+      "promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
+      "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
   }
 }
 
 @media (min-width: 960px) {
   .menu-pagina .container-content {
-      grid-template-columns: repeat(24, 1fr);
-      grid-template-areas:
-          "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
-          "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-areas:
+      "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
+      "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
   }
 }
 
 @media (min-width: 1280px) {
   .menu-pagina .container-content {
-      grid-template-columns: repeat(24, 1fr);
-      grid-template-areas:
-          "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
-          "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-areas:
+      "main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 main-navigation-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0 promotional-area0"
+      "bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0 bottom-content-area0";
   }
 }
 
 /* Main */
 
 .menu-pagina .main-navigation {
-  grid-area: main-navigation-area0 / main-navigation-area0 / main-navigation-area0 / main-navigation-area0;
+  grid-area: main-navigation-area0 / main-navigation-area0 /
+    main-navigation-area0 / main-navigation-area0;
   overflow: visible;
 }
 
@@ -172,22 +173,25 @@ body.menu-active {
 
 @media (min-width: 560px) {
   .menu-pagina .main-navigation {
-      grid-area: main-navigation-area0 / main-navigation-area0 / main-navigation-area0 / main-navigation-area0;
+    grid-area: main-navigation-area0 / main-navigation-area0 /
+      main-navigation-area0 / main-navigation-area0;
   }
 }
 
 @media (min-width: 960px) {
   .menu-pagina .main-navigation {
-      grid-area: main-navigation-area0 / main-navigation-area0 / main-navigation-area0 / main-navigation-area0;
+    grid-area: main-navigation-area0 / main-navigation-area0 /
+      main-navigation-area0 / main-navigation-area0;
   }
 }
 
 @media (min-width: 1280px) {
   .menu-pagina .main-navigation {
-      grid-area: main-navigation-area0 / main-navigation-area0 / main-navigation-area0 / main-navigation-area0;
+    grid-area: main-navigation-area0 / main-navigation-area0 /
+      main-navigation-area0 / main-navigation-area0;
   }
 }
-  /* Container list */
+/* Container list */
 
 .menu-pagina .container-list {
   -webkit-box-flex: 1;
@@ -196,7 +200,7 @@ body.menu-active {
   padding-right: var(--size-grid003);
   transition: padding-left 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
 
-  font-family: var(--font-family-head,vw-head,Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
   color: rgb(255, 255, 255);
   word-break: inherit;
   font-weight: 200;
@@ -208,8 +212,8 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .menu-pagina .container-list {
-      padding-left: var(--size-grid002);
-      padding-right: var(--size-grid002);
+    padding-left: var(--size-grid002);
+    padding-right: var(--size-grid002);
   }
 }
 
@@ -235,8 +239,9 @@ body.menu-active {
   background: rgb(76, 199, 244);
 }
 
-.jDQIYm:hover, .jDQIYm:focus {
-    color: rgb(76, 199, 244);
+.jDQIYm:hover,
+.jDQIYm:focus {
+  color: rgb(76, 199, 244);
 }
 
 /* Container line */
@@ -253,14 +258,15 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .menu-pagina .container-line {
-      display: block;
+    display: block;
   }
 }
 
 /* Promotional */
 
 .menu-pagina .promotional {
-  grid-area: promotional-area0 / promotional-area0 / promotional-area0 / promotional-area0;
+  grid-area: promotional-area0 / promotional-area0 / promotional-area0 /
+    promotional-area0;
   overflow: visible;
   padding-left: var(--size-grid003);
   padding-right: var(--size-grid003);
@@ -268,19 +274,22 @@ body.menu-active {
 
 @media (min-width: 560px) {
   .menu-pagina .promotional {
-      grid-area: promotional-area0 / promotional-area0 / promotional-area0 / promotional-area0;
+    grid-area: promotional-area0 / promotional-area0 / promotional-area0 /
+      promotional-area0;
   }
 }
 
 @media (min-width: 960px) {
   .menu-pagina .promotional {
-      grid-area: promotional-area0 / promotional-area0 / promotional-area0 / promotional-area0;
+    grid-area: promotional-area0 / promotional-area0 / promotional-area0 /
+      promotional-area0;
   }
 }
 
 @media (min-width: 1280px) {
   .menu-pagina .promotional {
-      grid-area: promotional-area0 / promotional-area0 / promotional-area0 / promotional-area0;
+    grid-area: promotional-area0 / promotional-area0 / promotional-area0 /
+      promotional-area0;
   }
 }
 
@@ -292,8 +301,8 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .menu-pagina .promotional {
-      padding-right: var(--size-grid002);
-      padding-left: var(--size-grid001);
+    padding-right: var(--size-grid002);
+    padding-left: var(--size-grid001);
   }
 }
 
@@ -306,7 +315,7 @@ body.menu-active {
 }
 
 .jppkwY {
-  font-family: var(--font-family-text,vw-text,Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
   color: rgb(255, 255, 255);
   word-break: inherit;
   font-weight: bold;
@@ -321,7 +330,7 @@ body.menu-active {
 .menu-pagina .container-list-promotional {
   margin: 0px 0px 12px;
 
-  font-family: var(--font-family-text,vw-text,Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
   color: rgb(255, 255, 255);
   word-break: inherit;
   font-weight: normal;
@@ -331,17 +340,20 @@ body.menu-active {
   margin-bottom: 56px;
 }
 
-.eebzXp { /* li */
-    margin: 8px 0px;
+.eebzXp {
+  /* li */
+  margin: 8px 0px;
 }
 
-.bdomQM { /* a */
+.bdomQM {
+  /* a */
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-.bdomQM:hover, .bdomQM:focus {
+.bdomQM:hover,
+.bdomQM:focus {
   border-bottom-color: rgb(76, 199, 244);
   color: rgb(76, 199, 244);
 }
@@ -369,7 +381,8 @@ body.menu-active {
 /* Bottom */
 
 .menu-pagina .bottom {
-  grid-area: bottom-content-area0 / bottom-content-area0 / bottom-content-area0 / bottom-content-area0;
+  grid-area: bottom-content-area0 / bottom-content-area0 / bottom-content-area0 /
+    bottom-content-area0;
   overflow: visible;
   padding-left: var(--size-grid003);
   padding-right: var(--size-grid003);
@@ -377,21 +390,24 @@ body.menu-active {
 
 @media (min-width: 560px) {
   .menu-pagina .bottom {
-      grid-area: bottom-content-area0 / bottom-content-area0 / bottom-content-area0 / bottom-content-area0;
+    grid-area: bottom-content-area0 / bottom-content-area0 /
+      bottom-content-area0 / bottom-content-area0;
   }
 }
 
 @media (min-width: 960px) {
   .menu-pagina .bottom {
-      display: none;
-      grid-area: bottom-content-area0 / bottom-content-area0 / bottom-content-area0 / bottom-content-area0;
+    display: none;
+    grid-area: bottom-content-area0 / bottom-content-area0 /
+      bottom-content-area0 / bottom-content-area0;
   }
 }
 
 @media (min-width: 1280px) {
   .menu-pagina .bottom {
-      display: none;
-      grid-area: bottom-content-area0 / bottom-content-area0 / bottom-content-area0 / bottom-content-area0;
+    display: none;
+    grid-area: bottom-content-area0 / bottom-content-area0 /
+      bottom-content-area0 / bottom-content-area0;
   }
 }
 
@@ -431,14 +447,14 @@ body.menu-active {
 
 @media (min-width: 960px) {
   .cCIpcJ {
-      margin-left: var(--size-grid001);
-      --container-0-grid003-960-grid002: var(--size-grid002);
-      --container-0-grid003-960-grid001: var(--size-grid001);
+    margin-left: var(--size-grid001);
+    --container-0-grid003-960-grid002: var(--size-grid002);
+    --container-0-grid003-960-grid001: var(--size-grid001);
   }
 }
 
 .kboOBU {
-  font-family: var(--font-family-text,vw-text,Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
   color: rgb(255, 255, 255);
   word-break: inherit;
   font-weight: normal;
@@ -449,7 +465,7 @@ body.menu-active {
 }
 
 .goQAPu {
-  font-family: var(--font-family-text,vw-text,Helvetica,Arial,sans-serif);
+  font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
   color: rgb(255, 255, 255);
   word-break: inherit;
   font-weight: normal;
