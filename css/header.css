@@ -228,29 +228,19 @@
   grid-template-columns: auto max-content auto;
 }
 
-@media (min-width: 560px) {
-  .grid-box-line {
-    --logo-size: 40px;
-    --margin-size: 10px;
-  }
-}
-
 @media (min-width: 960px) {
   .grid-box-line {
     --logo-size: 48px;
     --margin-size: 12px;
+    grid-template-columns: calc(var(--size-grid016) - var(--margin-size)) max-content auto;
   }
 }
 
 @media (min-width: 560px) {
   .grid-box-line {
+    --logo-size: 40px;
+    --margin-size: 10px;
     grid-template-columns: auto max-content auto;
-  }
-}
-
-@media (min-width: 960px) {
-  .grid-box-line {
-    grid-template-columns: calc(var(--size-grid016) - var(--margin-size)) max-content auto;
   }
 }
 
