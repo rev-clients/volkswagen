@@ -5,7 +5,7 @@
 
 @media (min-width: 960px) {
   .section-5-1 .grid {
-    grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0";
+    grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0';
   }
 }
 
@@ -92,7 +92,7 @@
 
 @media (min-width: 960px) {
   .section-5-2 .grid {
-    grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0";
+    grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0';
   }
 }
 
@@ -159,7 +159,7 @@
 
 @media (min-width: 960px) {
   .section-5-3 .grid {
-    grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0";
+    grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0';
   }
 }
 
