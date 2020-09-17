@@ -3,16 +3,16 @@
  */
 
 $(document).ready(function () {
-  console.log('location =>  ', location)
-  if (!location.hostname === 'localhost' || !location.hostname === '127.0.0.1') {
+  if (!(location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
     function changeToServer() {
       $allA = $('a')
       newAllA = $allA
       newAllAs = []
       for (var i = 0; i < $allA.length; i++) {
         var href = new URL($allA[i].href)
-        if (newAllA[i].pathname.indexOf('/pages/') !== -1)
+        if (newAllA[i].pathname === '/' || newAllA[i].pathname.indexOf('/pages/') !== -1)
           newAllA[i].href = href.origin + '/' + 'volkswagen' + href.pathname
+        console.log('newAllA[i].href => ', newAllA[i].href)
       }
     }
     changeToServer()
