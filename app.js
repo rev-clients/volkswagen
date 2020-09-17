@@ -302,10 +302,10 @@ function atencinoAlCliente() {
 function cookies() {
   var $cookiesBanner = $('.cookies-banner')
   // desactivar o quitar las cookies
-  if (localStorage.getItem('acept-cookies')) {
-    $cookiesBanner.hide()
-    return
-  }
+  // if (localStorage.getItem('acept-cookies')) {
+  //   $cookiesBanner.hide()
+  //   return
+  // }
 
   if ($cookiesBanner.length > 0) {
     $cookiesBanner.find('button').click(function () {
