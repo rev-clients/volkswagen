@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function () {
+  console.log('location =>  ', location)
   if (!location.hostname === 'localhost' || !location.hostname === '127.0.0.1') {
     function changeToServer() {
       $allA = $('a')
