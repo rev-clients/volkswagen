@@ -4,17 +4,18 @@
 
 $(document).ready(function () {
   if (!location.hostname === 'localhost' || !location.hostname === '127.0.0.1') {
-  ;(function changeToServer() {
-    debugger
-    $allA = $('a')
-    newAllA = $allA
-    newAllAs = []
-    for (var i = 0; i < $allA.length; i++) {
-      var href = new URL($allA[i].href)
-      if (newAllA[i].pathname.indexOf('/pages/') !== -1)
-        newAllA[i].href = href.origin + '/' + 'volkswagen' + href.pathname
+    function changeToServer() {
+      $allA = $('a')
+      newAllA = $allA
+      newAllAs = []
+      for (var i = 0; i < $allA.length; i++) {
+        var href = new URL($allA[i].href)
+        if (newAllA[i].pathname.indexOf('/pages/') !== -1)
+          newAllA[i].href = href.origin + '/' + 'volkswagen' + href.pathname
+      }
     }
-  })()
+    changeToServer()
+  }
 
   $(window).on('load resize', function () {
     resizer()
@@ -299,9 +300,16 @@ function atencinoAlCliente() {
 
 function cookies() {
   var $cookiesBanner = $('.cookies-banner')
+  // desactivar o quitar las cookies
+  if (localStorage.getItem('acept-cookies')) {
+    $cookiesBanner.hide()
+    return
+  }
+
   if ($cookiesBanner.length > 0) {
     $cookiesBanner.find('button').click(function () {
       $cookiesBanner.hide()
+      localStorage.setItem('acept-cookies', true)
     })
   }
 }
