@@ -12,7 +12,6 @@ $(document).ready(function () {
         var href = new URL($allA[i].href)
         if (newAllA[i].pathname === '/' || newAllA[i].pathname.indexOf('/pages/') !== -1)
           newAllA[i].href = href.origin + '/' + 'volkswagen' + href.pathname
-        console.log('newAllA[i].href => ', newAllA[i].href)
       }
     }
     changeToServer()
