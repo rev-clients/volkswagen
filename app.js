@@ -3,15 +3,18 @@
  */
 
 $(document).ready(function () {
-  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
-    (function changeToServer() {
-      $allA = $('a')
-      $newAllA = []
-      for (var i = 0; i < $allA.length; i++) {
-        var string = new URL($allA[i].href)
-      }
-      debugger
-    })()
+  if (!location.hostname === 'localhost' || !location.hostname === '127.0.0.1') {
+  ;(function changeToServer() {
+    debugger
+    $allA = $('a')
+    newAllA = $allA
+    newAllAs = []
+    for (var i = 0; i < $allA.length; i++) {
+      var href = new URL($allA[i].href)
+      if (newAllA[i].pathname.indexOf('/pages/') !== -1)
+        newAllA[i].href = href.origin + '/' + 'volkswagen' + href.pathname
+    }
+  })()
 
   $(window).on('load resize', function () {
     resizer()
@@ -177,7 +180,6 @@ function carousel() {
     ojbSlide.clientWidth = slide.clientWidth
     return ojbSlide
   })
-  console.log('positions : ', positions)
   // set initial slide
   var currentSlide = 0
 
