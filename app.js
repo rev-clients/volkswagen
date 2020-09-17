@@ -300,6 +300,7 @@ function atencinoAlCliente() {
 
 function cookies() {
   var $cookiesBanner = $('.cookies-banner')
+
   // desactivar o quitar las cookies
   // if (localStorage.getItem('acept-cookies')) {
   //   $cookiesBanner.hide()
