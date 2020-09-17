@@ -302,15 +302,18 @@ function cookies() {
   var $cookiesBanner = $('.cookies-banner')
 
   // desactivar o quitar las cookies
-  // if (localStorage.getItem('acept-cookies')) {
-  //   $cookiesBanner.hide()
+  // if (Cookies.get('acept-cookies')) {
+  //   Cookies.remove('accept-cookies')
   //   return
   // }
 
   if ($cookiesBanner.length > 0) {
     $cookiesBanner.find('button').click(function () {
       $cookiesBanner.hide()
-      localStorage.setItem('acept-cookies', true)
+
+      Cookies.set('accept-cookies', true, {
+        expires: new Date(new Date().getTime() + EXPIRES_TIME * 60 * 1000)
+      })
     })
   }
 }
