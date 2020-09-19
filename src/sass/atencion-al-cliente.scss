@@ -1,3 +1,6 @@
+.atencion {
+}
+
 .atencion .titulo {
   letter-spacing: 0.019em;
   font-size: 62.4px;
@@ -5,6 +8,7 @@
 }
 
 /* Container */
+
 .atencion .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -31,12 +35,14 @@
 }
 
 /* Section text */
+
 .atencion .title {
   font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
   font-size: 51px;
   font-weight: 200;
   letter-spacing: -0.015em;
   color: #001e50;
+
   padding: 0.8em 0 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -63,6 +69,7 @@
 }
 
 /* Form */
+
 @media (max-width: 1441px) {
   form {
     font-size: 12px;
@@ -76,6 +83,7 @@
 }
 
 /* row */
+
 .atencion .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -103,6 +111,7 @@
 }
 
 /*  */
+
 .atencion .form-group {
   margin-bottom: 15px;
 }
@@ -120,12 +129,15 @@
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+
     float: left;
+
     width: 50%;
   }
 }
 
 /*  */
+
 .atencion form h3 {
   font-size: 2.3em;
   font-family: vw-head, Arial, Helvetica, sans-serif;
@@ -139,6 +151,7 @@
 }
 
 /* select */
+
 .atencion .form-control {
   display: block;
   width: 100%;
@@ -156,6 +169,7 @@
     -webkit-box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
   color: #001e50;
   /* border: 1px solid #ccc; */
   border: none;
@@ -166,6 +180,7 @@
   font-size: 1.2em;
   padding: 0;
   letter-spacing: -0.035em;
+
   outline: none;
 }
 
@@ -190,15 +205,18 @@
 }
 
 /*  */
+
 .atencion .col-xs-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+
   width: 100%;
 }
 
 /*  */
+
 .atencion .vfl-has-label {
   position: relative;
 }
@@ -262,6 +280,7 @@
 }
 
 /*  */
+
 .atencion form .separador2,
 .atencion form .separador {
   display: block;
@@ -269,6 +288,7 @@
 }
 
 /*  */
+
 .atencion form #legal {
   font-size: 1.4em;
   line-height: 1.3em;
@@ -283,6 +303,7 @@
 }
 
 /*  */
+
 .atencion .checkbox,
 .radio {
   position: relative;
@@ -390,6 +411,7 @@
 }
 
 /*  */
+
 .atencion button[disabled],
 html input[disabled] {
   cursor: default;

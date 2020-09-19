@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +46,7 @@ a:hover {
 
 button {
   text-rendering: auto;
-  color: -internal-light-dark(buttontext, #aaaaaa);
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -60,9 +62,9 @@ button:focus {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   appearance: button;
 }
 
@@ -90,7 +92,6 @@ textarea {
 svg {
   vertical-align: unset;
 }
-
 .space {
   word-break: break-all;
 }
@@ -100,12 +101,22 @@ ul {
   padding: 0;
 }
 
+
 a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
 
+
+// 
+// 
+// 
+// 
+// /
+// 
+
 /*Menu */
+
 .menu {
   display: flex;
   -webkit-box-pack: justify;
@@ -172,9 +183,7 @@ a:not([href]) {
   position: absolute;
   top: 0px;
   transform: translateY(
-    calc(
-      16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px
-    )
+    calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px)
   );
   transform: translateY(28px);
   transition: transform 0.3s ease-in 0s;
@@ -191,9 +200,9 @@ a:not([href]) {
 
 .logo-w::before,
 .logo-w::after {
-  content: "";
+  content: '';
   height: 2px;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 .logito a {
@@ -205,12 +214,13 @@ a:not([href]) {
 }
 
 /*Animation Header */
+
 .menucolor {
-  color: #001e50;
+  color: rgb(0, 30, 80);
 }
 
 .menucolor1 {
-  background: #001e50 none repeat scroll 0% 0%;
+  background: rgb(0, 30, 80) none repeat scroll 0% 0%;
 }
 
 .scrolled {
@@ -218,12 +228,12 @@ a:not([href]) {
 }
 
 .scrolled .logo-w svg {
-  color: #001e50;
+  color: rgb(0, 30, 80);
 }
 
 .scrolled .logo-w::before,
 .scrolled .logo-w::after {
-  background-color: #001e50;
+  background-color: rgb(0, 30, 80);
 }
 
 .link {
@@ -240,6 +250,7 @@ a:not([href]) {
 }
 
 /*Cars*/
+
 .cars {
   margin-top: 100px;
 }
@@ -297,6 +308,7 @@ a:not([href]) {
 }
 
 /*empeza tu camino */
+
 .road-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -314,6 +326,7 @@ a:not([href]) {
 }
 
 /*Live container */
+
 .live-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -330,6 +343,7 @@ a:not([href]) {
 }
 
 /*autoahorro container */
+
 .autoahorro-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -346,12 +360,14 @@ a:not([href]) {
 }
 
 /*parte del camino container */
+
 .road-part-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
 
 /*Volkswagen informa */
+
 .inform-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -378,6 +394,7 @@ a:not([href]) {
 }
 
 /* Animation img */
+
 .animated {
   transition: transform 2.2s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
 }

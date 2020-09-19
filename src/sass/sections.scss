@@ -4,6 +4,7 @@
 }
 
 /* Main Title */
+
 .container-title {
   --container-0-grid002-560-grid004: var(--size-grid002);
   display: flex;
@@ -22,7 +23,7 @@
 .container-title .container-text {
   flex-grow: 1;
   font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: 200;
   font-size: var(--textappearances-headline400-fontsize);
@@ -33,6 +34,7 @@
 }
 
 /*  Images */
+
 .container-img {
   position: relative;
   width: 100%;
@@ -52,23 +54,24 @@
 }
 
 /* Link title */
+
 .link-title {
   display: block;
   cursor: pointer;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: color 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99);
 }
 
 .link-title:hover,
 .link-title:focus {
-  color: #6a767d;
+  color: rgb(106, 118, 125);
   outline: 0px;
 }
 
 .titulo-hover .link-title,
 .titulo-hover .link-title {
-  color: #6a767d;
+  color: rgb(106, 118, 125);
   outline: 0px;
 }
 
@@ -84,9 +87,10 @@
 }
 
 /* Link Subtitle */
+
 .link-text-subtitle {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: bold;
   font-size: var(--textappearances-copy200-fontsize);
@@ -97,7 +101,7 @@
 
 .link-subtitle {
   position: relative;
-  color: #001e50;
+  color: rgb(0, 30, 80);
   padding-bottom: 2px;
   text-decoration: none;
   border-bottom: 1px solid currentcolor;
@@ -105,11 +109,12 @@
 
 .link-subtitle:hover,
 .link-subtitle:focus {
-  border-bottom-color: #0040c5;
-  color: #0040c5;
+  border-bottom-color: rgb(0, 64, 197);
+  color: rgb(0, 64, 197);
 }
 
 /* link - image */
+
 .link-image {
   display: block;
   cursor: pointer;
@@ -141,6 +146,7 @@
 }
 
 /* SVG */
+
 .svg-link {
   /* svg */
   width: 0.85em;
@@ -152,6 +158,7 @@
 }
 
 /* Default capsula SPAN */
+
 .capsula > :first-child {
   margin-top: 0px;
 }
@@ -178,10 +185,11 @@ strong {
 }
 
 /*  Blocks  */
+
 /* Titulo */
 .title-block {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy200-fontsize);
@@ -197,7 +205,7 @@ strong {
 
 .subtitle-block h2 {
   font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: 200;
   font-size: var(--textappearances-headline300-fontsize);
@@ -206,9 +214,10 @@ strong {
 }
 
 /* content-block */
+
 .content-block {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy200-fontsize);

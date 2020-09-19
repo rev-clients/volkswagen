@@ -29,7 +29,6 @@
   src: url("../types/vwtext-regular.woff2") format("woff2"),
     url("../types/vwtext-regular.woff") format("woff");
 }
-
 @font-face {
   font-family: "vw-text";
   font-weight: 700;
@@ -37,14 +36,12 @@
   src: url("../types/vwtext-bold.woff2") format("woff2"),
     url("../types/vwtext-bold.woff") format("woff");
 }
-
 @font-face {
   font-family: "vw-head-ar";
   font-weight: 700;
   font-display: swap;
   src: url("../types/HelveticaNeueArabicBD.woff") format("woff");
 }
-
 @font-face {
   font-family: "vw-text-ar";
   font-weight: 400;

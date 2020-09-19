@@ -22,10 +22,12 @@
 }
 
 /* Headline  */
+
 .modelos .container-headline {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
   margin-bottom: 24px;
   padding: 0 var(--size-grid002);
 }
@@ -44,12 +46,16 @@
 }
 
 /*  Section  */
+
 .modelos .section {
   display: grid;
-  grid-template-areas: "sidebar-header main-header" "sidebar main";
+  grid-template-areas:
+    "sidebar-header main-header"
+    "sidebar main";
   grid-template-columns: fit-content(215px) 1fr;
   grid-template-rows: auto 1fr;
   gap: 20px 52px;
+
   display: block;
 }
 
@@ -57,12 +63,14 @@
   grid-area: sidebar-header / sidebar-header / sidebar-header / sidebar-header;
   min-height: 1.8em;
   word-break: break-word;
+
   display: none;
 }
 
 .modelos .sidebar {
   grid-area: sidebar / sidebar / sidebar / sidebar;
   word-break: break-word;
+
   display: none;
 }
 
@@ -70,6 +78,7 @@
   .modelos .section {
     display: grid;
   }
+
   .modelos .sidebar-header,
   .modelos .sidebar {
     display: inherit;
@@ -79,6 +88,7 @@
 .modelos .main-header {
   grid-area: main-header / main-header / main-header / main-header;
   min-height: 1.8em;
+
   margin-bottom: 24px;
   padding: 0 var(--size-grid002);
 }
@@ -102,6 +112,7 @@
 }
 
 /* List cards */
+
 .modelos .list-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -118,6 +129,7 @@
 }
 
 /* Img Link */
+
 .img-link {
   display: flex;
   cursor: pointer;
@@ -137,7 +149,7 @@
 }
 
 .modelos .card .background {
-  background: #474a51;
+  background: rgb(71, 74, 81);
 }
 
 @media screen and (min-width: 560px) {
@@ -153,8 +165,9 @@
 }
 
 /* Text */
+
 .modelos .container-text {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 var(--size-grid002);
 }
 
@@ -165,7 +178,7 @@
 }
 
 .modelos .container-text-2 {
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 0 var(--size-grid002);
 }
 
@@ -184,6 +197,9 @@
 }
 
 /* Checkbox */
+.checkbox {
+}
+
 .checkbox:not(:first-child) {
   margin-top: 24px;
 }
@@ -191,7 +207,7 @@
 /* label */
 .modelos .label-checkbox {
   position: relative;
-  color: #001e50;
+  color: rgb(0, 30, 80);
   cursor: pointer;
   display: block;
 }
@@ -229,6 +245,7 @@
 }
 
 /* area b */
+
 .modelos .card .container {
   margin-top: 48px;
   display: flex;

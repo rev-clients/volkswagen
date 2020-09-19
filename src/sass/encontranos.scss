@@ -38,9 +38,11 @@
 }
 
 /* area-b */
+
 .encuentranos .area-b {
   position: relative;
   width: 91.66vw;
+
   padding: 0 var(--size-grid001);
 }
 
@@ -52,6 +54,7 @@
 }
 
 /* Map */
+
 .encuentranos .container-map {
   height: 50vh;
   display: block;
@@ -65,11 +68,16 @@
 }
 
 /* Card */
+
+.encuentranos .card {
+}
+
 @media (min-width: 960px) {
   .encuentranos .card {
     width: 185px;
     padding: 5px;
   }
+
   .encuentranos .card.services {
     width: 100%;
   }
@@ -103,11 +111,11 @@
   margin: 0px;
   border-width: 2px 0px 0px;
   border-image: initial;
-  border-top: 2px solid #dfe4e8;
+  border-top: 2px solid rgb(223, 228, 232);
 }
 
 .encuentranos .card svg {
-  color: #001e50;
+  color: rgb(0, 30, 80);
 }
 
 .encuentranos .services svg {
@@ -124,4 +132,7 @@
 
 .encuentranos .container-links-buttons .button {
   margin: 5px;
+}
+
+@media (min-width: 960px) {
 }
