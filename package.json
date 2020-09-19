@@ -10,7 +10,7 @@
   },
   "scripts": {
     "sass": "node-sass src/sass -o css",
-    "sass-watch": "node-sass -w src/sass -o build/css"
+    "sass-watch": "node-sass -w src/sass -o css prettier --write ."
   },
   "dependencies": {
     "prettier": "^2.1.2"

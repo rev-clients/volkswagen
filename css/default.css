@@ -36,7 +36,6 @@ a:hover {
   text-decoration: none; }
 
 button {
-  -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
   color: -internal-light-dark(buttontext, #aaaaaa);
   letter-spacing: normal;
@@ -84,6 +83,10 @@ svg {
 ul {
   list-style: none;
   padding: 0; }
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none; }
 
 /*Menu */
 .menu {

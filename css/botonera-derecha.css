@@ -3,65 +3,59 @@
   position: fixed;
   bottom: 320px;
   right: 10px; }
-
-@media only screen and (max-width: 767px) {
-  .buttons-widget {
-    bottom: calc(10px + 292px) !important;
-    right: 10px !important;
-    margin-bottom: 76px; } }
-
-.buttons-widget .container-widget {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  font-family: "vw-text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857; }
-
-.buttons-widget .position-buttons {
-  position: absolute;
-  right: 0px; }
-
-.buttons-widget .position-buttons .container-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.button-widget {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  height: 64px;
-  width: 64px;
-  border-radius: 40px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-  width: 64px;
-  transition: 0.4s; }
-
-.button-widget-backgroundColor {
-  background: #4cc7f4; }
-
-.buttons-widget .button-mobile {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  height: 64px;
-  width: 64px;
-  border-radius: 40px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-  padding: 0;
-  background: #4cc7f4;
-  border-style: none;
-  visibility: hidden;
-  transition: width 0.4s 0.1s; }
+  @media only screen and (max-width: 767px) {
+    .buttons-widget {
+      bottom: calc(10px + 292px) !important;
+      right: 10px !important;
+      margin-bottom: 76px; } }
+  .buttons-widget .container-widget {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'vw-text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857; }
+  .buttons-widget .position-buttons {
+    position: absolute;
+    right: 15px;
+    overflow: hidden; }
+    .buttons-widget .position-buttons .container-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+  .buttons-widget .button-widget {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border-radius: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    width: 64px;
+    transition: 0.4s; }
+    .buttons-widget .button-widget .button-mobile {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      height: 64px;
+      width: 64px;
+      border-radius: 40px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      opacity: 1;
+      padding: 0;
+      background: #4cc7f4;
+      border-style: none;
+      visibility: hidden;
+      transition: width 0.4s 0.1s; }
+  .buttons-widget .button-widget-backgroundColor {
+    background: #4cc7f4; }
 
 .button-widget-invisible {
   visibility: hidden !important;
@@ -127,9 +121,5 @@
   right: 0px;
   top: 304px;
   overflow: hidden; }
-
-a:not([href]) {
-  color: inherit;
-  text-decoration: none; }
 
 /* Finf Menu flotante derecha */

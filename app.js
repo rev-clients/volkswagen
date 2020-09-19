@@ -303,10 +303,10 @@ function cookies() {
 
   var authorized = getCookie('authorized')
 
-  // if (authorized) {
-  //   $cookiesBanner.hide()
-  //   return
-  // }
+  if (authorized) {
+    $cookiesBanner.hide()
+    return
+  }
 
   $cookiesBanner.find('button').click(function () {
     $cookiesBanner.hide()

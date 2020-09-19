@@ -101,6 +101,20 @@ ul {
   padding: 0;
 }
 
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+// 
+// 
+// 
+// 
+// /
+// 
+
 /*Menu */
 
 .menu {

@@ -513,14 +513,12 @@
   flex-wrap: unset;
   flex-direction: unset;
   -webkit-box-pack: center;
-  justify-content: center;
-  margin: 0px 0px calc(-16px); }
+  justify-content: center; }
 
 @media (min-width: 560px) {
   .container-buttons {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0px calc(-8px) calc(-16px); } }
+    flex-wrap: wrap; } }
 
 .container-button {
   max-width: 100%;
