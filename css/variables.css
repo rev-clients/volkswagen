@@ -117,7 +117,8 @@ body {
   --size-dynamic0270: 56px;
   --size-dynamic0300: 72px;
   --size-dynamic0350: 100px;
-  --size-dynamic0450: 156px; }
+  --size-dynamic0450: 156px;
+}
 
 /* Clase principal del objeto
     Variables que necesitara para ses espacio
@@ -163,7 +164,9 @@ body {
     --size-dynamic0270: 80px;
     --size-dynamic0300: 96px;
     --size-dynamic0350: 132px;
-    --size-dynamic0450: 172px; } }
+    --size-dynamic0450: 172px;
+  }
+}
 
 @media (min-width: 1600px) {
   body {
@@ -256,4 +259,6 @@ body {
     --size-dynamic0270: 100px;
     --size-dynamic0300: 120px;
     --size-dynamic0350: 196px;
-    --size-dynamic0450: 184px; } }
+    --size-dynamic0450: 184px;
+  }
+}
