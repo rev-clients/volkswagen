@@ -1,3 +1,6 @@
+.cookies-banner {
+}
+
 .cookies-banner > div {
   background-color: #2f3538;
   opacity: 1;
@@ -15,13 +18,17 @@
   left: 0 !important;
   right: 0;
   bottom: auto;
-  padding: 20px 101px 20px 20px; }
+  padding: 20px 101px 20px 20px;
+}
 
 @media (min-width: 768px) {
   .cookies-banner > div {
-    padding: 45px 100px; } }
+    padding: 45px 100px;
+  }
+}
 
 /*  */
+
 .btn-close {
   position: absolute;
   right: 42px;
@@ -31,13 +38,16 @@
   height: 40px;
   background-color: #202427;
   border-radius: 50%;
-  border: none; }
+  border: none;
+}
 
 .btn-close:before {
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+}
 
 .btn-close:after {
-  transform: rotate(-45deg); }
+  transform: rotate(-45deg);
+}
 
 .btn-close:before,
 .btn-close:after {
@@ -47,4 +57,5 @@
   content: " ";
   height: 20px;
   width: 4px;
-  background-color: #fff; }
+  background-color: #fff;
+}
