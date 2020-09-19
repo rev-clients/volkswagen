@@ -1,2 +1,38 @@
 @import './modelo/sangria.scss';
 @import './modelo/galeria-4.scss';
+
+
+
+/*  */
+
+.cards-section {
+  .area-b {
+    --padding-drop-down-area-b-left: var(--size-grid002);
+    --padding-drop-down-area-b-rigth: var(--size-grid002);
+    padding-left: var(--padding-drop-down-area-b-left);
+    padding-right: var(--padding-drop-down-area-b-rigth);
+    margin-top: 25px;
+  }
+  
+  @media (min-width: 960px) {
+    /* desktop */
+    .area-b {
+      --padding-drop-down-area-b-left: var(--size-grid001);
+      --padding-drop-down-area-b-rigth: var(--size-grid002);
+    }
+  }
+  
+  .container-buttons {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 560px) {
+    /* desktop */
+    .container-buttons {
+      flex-flow: row;
+    }
+  }
+}
+
