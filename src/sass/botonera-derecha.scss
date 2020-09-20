@@ -23,7 +23,7 @@
 
   .position-buttons {
     position: absolute;
-    right: 15px;
+    right: 0;
     overflow: hidden;
 
     .container-buttons {
@@ -46,27 +46,6 @@
     opacity: 1;
     width: 64px;
     transition: 0.4s;
-
-    .button-mobile {
-      display: block;
-      cursor: pointer;
-      position: relative;
-      height: 64px;
-      width: 64px;
-      border-radius: 40px;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      opacity: 1;
-
-      padding: 0;
-
-      background: #4cc7f4;
-      border-style: none;
-      visibility: hidden;
-
-      transition: width 0.4s 0.1s;
-    }
   }
 
   .button-widget-backgroundColor {
@@ -89,11 +68,10 @@
   display: flex;
 }
 
-.buttons-widget  {
+.buttons-widget {
   .button-mobile svg:nth-child(1) {
     display: block;
   }
-
 
   .button-mobile svg:nth-child(2) {
     display: none;
@@ -105,16 +83,6 @@
 
   .open-widget .button-mobile svg:nth-child(2) {
     display: block;
-  }
-
-  @media only screen and (max-width: 767px) {
-    .container-mobile .button-mobile {
-      visibility: visible;
-      opacity: 1 !important;
-    }
-    .button-mobile {
-      visibility: hidden;
-    }
   }
 
   .text {
@@ -148,7 +116,7 @@
     position: absolute;
     left: 20px;
   }
-  
+
   .container-mobile {
     position: absolute;
     right: 0px;
@@ -161,7 +129,36 @@
     }
   }
 
-  
+  .button-mobile {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    border-radius: 40px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+
+    padding: 0;
+
+    background: #4cc7f4;
+    border-style: none;
+    visibility: hidden;
+
+    transition: width 0.4s 0.1s;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container-mobile .button-mobile {
+      visibility: visible;
+      opacity: 1 !important;
+    }
+    .button-mobile {
+      visibility: hidden;
+    }
+  }
 }
 
 /* Finf Menu flotante derecha */

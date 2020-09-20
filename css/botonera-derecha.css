@@ -23,7 +23,7 @@
 }
 .buttons-widget .position-buttons {
   position: absolute;
-  right: 15px;
+  right: 0;
   overflow: hidden;
 }
 .buttons-widget .position-buttons .container-buttons {
@@ -44,23 +44,6 @@
   opacity: 1;
   width: 64px;
   transition: 0.4s;
-}
-.buttons-widget .button-widget .button-mobile {
-  display: block;
-  cursor: pointer;
-  position: relative;
-  height: 64px;
-  width: 64px;
-  border-radius: 40px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-  padding: 0;
-  background: #4cc7f4;
-  border-style: none;
-  visibility: hidden;
-  transition: width 0.4s 0.1s;
 }
 .buttons-widget .button-widget-backgroundColor {
   background: #4cc7f4;
@@ -94,16 +77,6 @@
 
 .buttons-widget .open-widget .button-mobile svg:nth-child(2) {
   display: block;
-}
-
-@media only screen and (max-width: 767px) {
-  .buttons-widget .container-mobile .button-mobile {
-    visibility: visible;
-    opacity: 1 !important;
-  }
-  .buttons-widget .button-mobile {
-    visibility: hidden;
-  }
 }
 
 .buttons-widget .text {
@@ -144,10 +117,38 @@
   top: 304px;
   overflow: hidden;
 }
-@media only screen and (max-width: 767px) {
+@media (min-width: 767px) {
   .buttons-widget .container-mobile {
     visibility: hidden;
     opacity: 0;
+  }
+}
+
+.buttons-widget .button-mobile {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  height: 64px;
+  width: 64px;
+  border-radius: 40px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  padding: 0;
+  background: #4cc7f4;
+  border-style: none;
+  visibility: hidden;
+  transition: width 0.4s 0.1s;
+}
+
+@media only screen and (max-width: 767px) {
+  .buttons-widget .container-mobile .button-mobile {
+    visibility: visible;
+    opacity: 1 !important;
+  }
+  .buttons-widget .button-mobile {
+    visibility: hidden;
   }
 }
 
