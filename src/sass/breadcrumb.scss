@@ -18,8 +18,9 @@
   display: flex;
   margin-right: 8px;
   margin-bottom: 8px;
+
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy150-fontsize);
@@ -28,12 +29,12 @@
 }
 
 .breadcrumb .item:not(:first-child)::before {
-  content: "";
+  content: '';
   margin-right: 8px;
   margin-top: 7px;
   width: 0px;
   height: 0px;
-  border-left: 5px solid #001e50;
+  border-left: 5px solid rgb(0, 30, 80);
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
 }
@@ -41,7 +42,7 @@
 .breadcrumb .item a {
   display: block;
   position: relative;
-  color: #001e50;
+  color: rgb(0, 30, 80);
   text-decoration: none;
   border-bottom: 1px solid currentcolor;
   height: 23px;

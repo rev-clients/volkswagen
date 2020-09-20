@@ -1,0 +1,22 @@
+{
+  "name": "volkswagen",
+  "version": "1.0.0",
+  "repository": "git@github.com:rev-clients/volkswagen.git",
+  "author": "Revi <oliiv@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "sass": "node-sass src/sass -o css",
+    "prettier": "prettier --write css",
+    "sass-watch": "node-sass -w src/sass -o css prettier --write ."
+  },
+  "dependencies": {
+    "prettier": "^2.1.2"
+  },
+  "hunsky": {
+    "pre-commit": "prettier --write ."
+  }
+}

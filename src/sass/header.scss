@@ -1,4 +1,5 @@
 /* Inicio Header */
+
 .header {
   position: fixed;
   top: 0px;
@@ -87,7 +88,7 @@
   display: grid;
   max-width: 2560px;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0";
+  grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0';
   margin: auto;
 }
 
@@ -134,23 +135,23 @@
 }
 
 .header.one-color .button-menu {
-  color: #001e50;
+  color: rgb(0, 30, 80);
 }
 
 .header.one-color .button-menu:hover,
 .header.one-color .button-menu:focus {
-  color: #0040c5;
+  color: rgb(0, 64, 197);
   outline: 0px;
 }
 
 .header .button-menu:hover,
 .header .button-menu:focus {
-  color: #4cc7f4;
+  color: rgb(76, 199, 244);
   outline: 0px;
 }
 
 .header .alternative-scroll .button-menu {
-  color: #001e50;
+  color: rgb(0, 30, 80);
 }
 
 .header .container-icon {
@@ -188,9 +189,7 @@
   position: absolute;
   top: 0px;
   transform: translateY(
-    calc(
-      16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px
-    )
+    calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 16px + 1px)
   );
   transition: transform 0.3s ease-in 0s;
 }
@@ -198,10 +197,7 @@
 @media (min-width: 560px) {
   .box-line {
     transform: translateY(
-      calc(
-        16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 20px +
-          1px
-      )
+      calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 20px + 1px)
     );
   }
 }
@@ -209,10 +205,7 @@
 @media (min-width: 960px) {
   .box-line {
     transform: translateY(
-      calc(
-        16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 24px +
-          1px
-      )
+      calc(16px + var(--textappearances-copy150-lineheight) + 12px + 0px - 24px + 1px)
     );
   }
 }
@@ -245,7 +238,7 @@
 
 .grid-box-line::before,
 .grid-box-line::after {
-  content: "";
+  content: '';
   height: 2px;
   background: rgba(255, 255, 255, 0.98);
 }
@@ -254,7 +247,7 @@
 .one-color .grid-box-line::after,
 .alternative-scroll .grid-box-line::before,
 .alternative-scroll .grid-box-line::after {
-  background: #001e50;
+  background: rgb(0, 30, 80);
 }
 
 .grid-box-line .container-icon {
@@ -274,7 +267,7 @@
 
 .one-color .grid-box-line svg,
 .alternative-scroll .grid-box-line svg {
-  fill: #001e50;
+  fill: rgb(0, 30, 80);
 }
 
 /* Fin Menu */

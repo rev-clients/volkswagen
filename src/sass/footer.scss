@@ -1,4 +1,5 @@
 /*Footer */
+
 .links1,
 .links2,
 .links3,
@@ -14,7 +15,7 @@
 }
 
 .footer {
-  border-top: 2px solid #001e50;
+  border-top: 2px solid rgb(0, 30, 80);
   padding: 44px 0px;
 }
 
@@ -34,7 +35,7 @@ footer {
 }
 
 .container-footer {
-  border-top: 2px solid #001e50;
+  border-top: 2px solid rgb(0, 30, 80);
   padding: 44px 0px;
 }
 
@@ -54,9 +55,11 @@ footer {
   .footer-block {
     width: var(--size-grid004);
   }
+
   .footer-block:last-child {
     margin-right: calc(-1 * var(--size-grid001));
   }
+
   .c-b-footer {
     display: flex;
     -webkit-box-pack: justify;
@@ -66,12 +69,13 @@ footer {
 
 .title-footer {
   font-family: var(--font-family-head, vw-head, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: bold;
   font-size: var(--textappearances-headline200-fontsize);
   line-height: var(--textappearances-headline200-lineheight);
   letter-spacing: var(--textappearances-headline200-letterspacing);
+
   margin-bottom: 24px;
 }
 
@@ -83,7 +87,7 @@ footer {
 
 .list-links-footer li {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy150-fontsize);
@@ -99,17 +103,18 @@ footer {
 
 .list-links-footer li a {
   position: relative;
-  color: #001e50;
+  color: rgb(0, 30, 80);
   text-decoration: none;
 }
 
 footer a:hover,
 footer a:focus {
-  border-bottom-color: #0040c5;
-  color: #0040c5;
+  border-bottom-color: rgb(0, 64, 197);
+  color: rgb(0, 64, 197);
 }
 
 /* bottom footer */
+
 .bottom-footer {
   display: block;
 }
@@ -124,6 +129,7 @@ footer a:focus {
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
+
   .bottom-footer .block-1 {
     order: 1;
     padding-left: 44px;
@@ -134,7 +140,7 @@ footer a:focus {
 
 .c-f-text {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy100-fontsize);
@@ -159,7 +165,7 @@ footer a:focus {
 
 .c-b-f-link div {
   font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
-  color: black;
+  color: rgb(0, 0, 0);
   word-break: inherit;
   font-weight: normal;
   font-size: var(--textappearances-copy150-fontsize);
@@ -170,13 +176,14 @@ footer a:focus {
 
 .c-b-f-link div a {
   position: relative;
-  color: #001e50;
+  color: rgb(0, 30, 80);
   text-decoration: none;
 }
 
 /* Line footer  */
+
 .line-footer {
-  border-top: 1px solid #dfe4e8;
+  border-top: 1px solid rgb(223, 228, 232);
   padding: 44px 0px 12px;
 }
 
