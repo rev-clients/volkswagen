@@ -1,0 +1,320 @@
+.video-section {
+  margin: 10rem auto;
+  width: calc((100vw / 24) * 12);
+  position: relative;
+  flex: 1 1 0%;
+
+  @media (min-width: 560px) and (max-width: 960px) {
+    width: calc((100vw / 24) * 20);
+  }
+
+  @media (max-width: 560px) {
+    width: calc((100vw / 24) * 22);
+  }
+
+  .container-img,
+  .container-video {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56.25%;
+  }
+
+  .container-video > * {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  // Start with button
+  .start-video {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+  }
+
+  .start-button {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background: transparent;
+    width: 52px;
+    height: 52px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .start-button svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  @media (hover: hover) {
+    .start-button svg:hover path {
+      fill: rgb(76, 199, 244);
+    }
+  }
+
+  // No molestar - no mostrar
+  .no-mostrar {
+    display: none;
+  }
+}
+
+// botonera ...
+
+.video-interaction {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
+
+  .container {
+    position: absolute;
+    bottom: 0px;
+    direction: ltr;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 24px;
+  }
+
+  .option:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  // button play
+  .play-pause {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    svg {
+      display: none;
+    }
+
+    svg:nth-child(1) {
+      display: block;
+    }
+  }
+
+  .play-pause.pause {
+    width: 24px;
+    height: 24px;
+
+    svg {
+      display: none;
+    }
+
+    svg:nth-child(2) {
+      display: block;
+    }
+  }
+
+  svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  @media (hover: hover) {
+    svg:hover path {
+      fill: rgb(76, 199, 244);
+    }
+  }
+
+  // Slider video
+
+  .slider-video {
+    --scrubber-btn-size: 0.0833333;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    touch-action: pan-x;
+    width: 100%;
+    height: 24px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+
+  .slider-video:hover {
+    --scrubber-btn-size: 1;
+  }
+
+  .line {
+    flex: 1 1 0%;
+    background: rgb(255, 255, 255);
+    pointer-events: none;
+    height: 2px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+
+  .line-persist {
+    position: relative;
+    z-index: 2;
+    background: rgb(76, 199, 244);
+    height: 100%;
+  }
+
+  .line-over {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background: rgb(76, 199, 244);
+    pointer-events: none;
+    height: 2px;
+  }
+
+  .ball {
+    position: absolute;
+    z-index: 3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(76, 199, 244);
+    transform: translate3d(-50%, 0, 0) scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
+  }
+
+  // Text time video
+  .time-video {
+    color: rgb(255, 255, 255);
+    word-break: inherit;
+    margin: -0.11em 0px 0.11em;
+    font-family: var(--font-family-text, vw-text, Helvetica, Arial, sans-serif);
+    font-weight: normal;
+    font-size: var(--textappearances-copy100-fontsize);
+    line-height: var(--textappearances-copy100-lineheight);
+    letter-spacing: var(--textappearances-copy100-letterspacing);
+  }
+
+  // Audio
+  .audio {
+    align-self: flex-end;
+    overflow: hidden;
+    --styled-sound-controls-opacity: 0;
+    --styled-sound-controls-height: 0;
+    --styled-sound-controls-opacity: 1;
+    --styled-sound-controls-height: 5rem;
+    --styled-sound-controls-transition: height 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99),
+      opacity 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0.3s;
+  }
+
+  .option-audio {
+    flex-shrink: 0;
+    max-width: 100%;
+    margin: 0px 0px 12px;
+  }
+  .option-audio:last-child {
+    margin: 0px;
+  }
+
+  // slider audio
+  .container-slider {
+    width: 24px;
+    height: var(--styled-sound-controls-height);
+    opacity: var(--styled-sound-controls-opacity);
+    transition: var(--styled-sound-controls-transition);
+  }
+
+  .slider-audio {
+    --scrubber-btn-size: 1;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    touch-action: pan-x;
+    width: 24px;
+    height: 100%;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .line-audio {
+    flex: 1 1 0%;
+    background: rgb(255, 255, 255);
+    pointer-events: none;
+    width: 2px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .line-audio-over {
+    position: relative;
+    z-index: 2;
+    background: rgb(76, 199, 244);
+    width: 100%;
+  }
+
+  // Icon Audio
+
+  .ball-audio {
+    position: absolute;
+    z-index: 3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(76, 199, 244);
+    transform: translate3d(0, 50%, 0) scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
+
+    bottom: 80%;
+  }
+
+  .container-icon svg path {
+    fill: rgb(255, 255, 255);
+  }
+  @media (hover: hover) {
+    .container-icon svg:hover path {
+      fill: rgb(76, 199, 244);
+    }
+  }
+
+  //  Full screen
+  .fullscreen {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .fullscreen svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  @media (hover: hover) {
+    .fullscreen svg:hover path {
+      fill: rgb(76, 199, 244);
+    }
+  }
+}
