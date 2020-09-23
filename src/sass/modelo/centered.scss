@@ -1,0 +1,19 @@
+.centered-section {
+  --container-0-grid002-560-grid004: var(--size-grid002);
+  display: block;
+  flex-wrap: unset;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: var(--container-0-grid002-560-grid004);
+  padding-left: var(--container-0-grid002-560-grid004);
+
+  @media (min-width: 560px) {
+    --container-0-grid002-560-grid004: var(--size-grid004);
+    --container-0-grid002-560-grid004: var(--size-grid004);
+  }
+
+  .container-img {
+    padding-bottom: 56.25%;
+  }
+}
