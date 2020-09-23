@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/fonts.css" />
     <link rel="stylesheet" href="../css/default.css" />
 
-    
     <link rel="stylesheet" href="../css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../css/header.css" />
@@ -20,6 +19,7 @@
 
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/modelo.css" />
+    <link rel="stylesheet" href="../css/video.css" />
   </head>
 
   <body>
@@ -282,7 +282,7 @@
           </div>
 
           <!-- Galeria 4 images -->
-           <div class="section-container  galeria-4-section">
+          <div class="section-container galeria-4-section">
             <div class="container grid">
               <div class="area-a">
                 <div class="container-img">
@@ -319,354 +319,466 @@
           <!-- Video whitout options -->
           <div class="section-container video"></div>
           <!-- Video with options -->
-          <div class="section-container video"></div>
-          <!-- Cards -->
-          <div class="section-container cards-section">
-            <div class="container-subtitle spacing">
-              <h2>
-                <span class="capsula">Elegí tu versión<br /></span>
-              </h2>
+          <div class="section-container video-section">
+            <!-- Video -->
+            <div class="container-video">
+              <video
+                title=""
+                playsinline=""
+                preload="metadata"
+                controls
+
+                src="https://assets.volkswagen.com/is/content/volkswagenag/Gol-AppConnect-0x360-730k"
+              ></video>
             </div>
-
-            <div class="container container-elegi">
-              <div class="container-list">
-                <div class="container-button">
-                  <button id="card1" class="button-without-style button-2 active">take up!</button>
-                </div>
-                <div class="container-button">
-                  <button id="card2" class="button-without-style button-2">high up!</button>
-                </div>
-                <div class="container-button">
-                  <button id="card3" class="button-without-style button-2">croos up! TS!</button>
-                </div>
-              </div>
-
+            <!-- Preview image -->
+            <div class="no-mostrar container-img">
+              <img
+                src="https://s7g10.scene7.com/is/image/volkswagenag/Detalle-1-5?Zml0PWNyb3AsMSZmbXQ9anBnJnFsdD03OSZ3aWQ9ODAwJmhlaT00NTAmYWxpZ249MC4wMCwwLjAwJmRhMTk="
+              />
+            </div>
+            <!-- Button Start the video -->
+            <div class="no-mostrar start-video">
+              <button data-cy="videoBigPlayButton" class="start-button">
+                <svg viewBox="0 0 52 52">
+                  <path
+                    d="M26 2C12.204 2 2 12.261 2 26s10.204 24 24 24c13.863 0 24-10.223 24-24S39.863 2 26 2zm0-2c15.08 0 26 11.232 26 26S41.08 52 26 52C11.024 52 0 40.768 0 26S11.024 0 26 0zm10.71 24.483l-14.16-8.16a2.39 2.39 0 0 0-2.4 0 2.14 2.14 0 0 0-1.15 1.86v16.92a2.14 2.14 0 0 0 1.11 1.87 2.41 2.41 0 0 0 1.19.32 2.33 2.33 0 0 0 1.2-.33l14.17-8.16a2.55 2.55 0 0 0 1.33-2.16 2.59 2.59 0 0 0-1.29-2.16zm-1 2.59l-14.18 8.16a.36.36 0 0 1-.39 0 .17.17 0 0 1-.1-.13v-16.92a.17.17 0 0 1 .1-.13.39.39 0 0 1 .2-.06.41.41 0 0 1 .2.06l14.16 8.16a.62.62 0 0 1 .3.43.58.58 0 0 1-.29.43z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Buttons Inreactive with video -->
+            <div class="video-interaction">
               <div class="container">
-                <div id="card1" class="container-areas active">
-                  <!-- area a  -->
-                  <div>
-                    <div class="container-images">
-                      <div class="img-model">
-                        <div class="background" style="background: rgb(222, 222, 222)">
-                          <div class="container-img model-img">
-                            <img
-                              alt="take up!"
-                              src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnjyyyJ8H3WDZ4HvCJii8YMNCoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d22rZZsgjSiiIz%25GffQLIr22UTNdnn4tzWuugB9I00zZK6FF3QStxxcN7HBBhC6oTTkRnzWWHWN3GGKYBQJJMJX1llvlG8EEL66jVVbc2yXXYZPMttOGYs55PLXa99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwQ3GGKC6aJJMgKhllv%25j7EELA4TVVbBoWXXY6zmttOmWZ55PG%25l99dDO7ZZslsYiiIxn4ffQXDu22UMDznn4kvNuugXnr00zjCoFF3yn%25xxcxOHBBh20gTTknxzWWHhYvGGKu6fJJMl0vllvxOlEELsEHVVbN9yXXYZzdttOUUJ55P%25AI99dnHqZZsaQUiiI%25jRffQfDr22U2g5nn41ULuugLue00zZphFF3yiSxxc7khBBhIrATTkbx%25WWHMhD&amp;width=864"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- area b  -->
-                  <div>
-                    <h3 class="title-3">Características del equipamiento take up!</h3>
-                    <ul class="container-list-area-b">
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Doble airbag frotal y ABS</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div>Radio con Bluetooth, USB y Aux-IN</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Aire acondicionado</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Motor 1.0 de 75 CV</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Caja manual de 5 velocidades</div>
-                      </li>
-                    </ul>
+                <!-- BUtton Start  -->
+                <div class="option">
+                  <div data-cy="videoSmallPlayButton" class="play-pause">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M2 12.858l10.105-5.159L2 2.541v10.317zm-2 0V2.54A2 2 0 0 1 2.91.76l10.104 5.158a2 2 0 0 1 0 3.563L2.91 14.639A2 2 0 0 1 0 12.858z"
+                        transform="translate(5 5)"
+                      ></path>
+                    </svg>
+                    <svg viewBox="0 0 24 24"><path d="M0 0h2v12H0V0zm6 0h2v12H6V0z" transform="translate(8 6)"></path></svg>
                   </div>
                 </div>
-
-                <div id="card2" class="container-areas">
-                  <!-- area a  -->
-                  <div>
-                    <div class="container-images">
-                      <div class="img-model">
-                        <div class="background" style="background: rgb(175, 181, 185)">
-                          <div class="container-img model-img">
-                            <img
-                              alt="high up!"
-                              src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnP8yyJ8H3WDZ4HvCJii8iBHPoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d2UbZZsgjSiiIz%25GffQLIr22UTNvnn4tzWuugB9e00zZK6FF3QStxxcN7HBBhC6oTTkRnzWWHYl4GGKYKjJJMJX1llvlG8EEL66OVVbc2yXXYZPVttOGYs55PLXa99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwniGGKC6oJJMgKhllv%25j7EELA4TVVbBoWXXY6zmttOmWZ55PG%25l99dDO7ZZslnYiiIxn4ffQXDu22UMDznn4kvmuugXnr00zjCoFF3yn%25xxcxOZBBh20gTTknxwWWHhYvGGKCuwJJMw6rllvdlkEEL65jVVbVTdXXYQQGttOoqs55P2kN99dDIQZZso8CiiIi%25LffQf4t22UaQvnn4vnSuug9mc00zjL6FF3wh0xxcsRqBBhLX7TTkKcM&amp;width=864"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                <!-- slider reproduction  -->
+                <div class="option" style="flex-grow: 1">
+                  <div role="slider" class="slider-video">
+                    <div class="line">
+                      <div class="line-persist" style="width: 0%"></div>
+                      <div class="line-over" style="width: 0%"></div>
                     </div>
-                  </div>
-                  <!-- area b  -->
-                  <div>
-                    <h3 class="title-3">Características del equipamiento high up!</h3>
-                    <ul class="container-list-area-b">
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Doble airbag frotal y ABS</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div>Radio con Bluetooth, USB y Aux-IN</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Aire acondicionado</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Motor 1.0 de 75 CV</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Caja manual de 5 velocidades</div>
-                      </li>
-                    </ul>
+                    <div
+                      role="button"
+                      orientation="horizontal"
+                      class="ball"
+                      style="left: 0%"
+                    ></div>
                   </div>
                 </div>
-
-                <div id="card3" class="container-areas">
-                  <!-- area a  -->
-                  <div >
-                    <div class="container-images">
-                      <div class="img-model">
-                        <div class="background" style="background: rgb(71, 74, 81)">
-                          <div class="container-img model-img">
-                            <img
-                              alt="cross up! TSI"
-                              src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOn9jyyJ8H3WDZ4HvCJii8H%25wloo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d2UbZZsgjSiiIz%25GffQLIr22UTNvnn4tzbuugB9800zZK6FF3QStxxcN7HBBhC6KTTkRnzWWHYl4GGKYKjJJMJXbllvlG8EEL66OVVbc2yXXYZPVttOGYs55PLBK99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwniGGKC6oJJMgKhllv%25j7EELA4cVVbBoWXXY6zGttOmWZ55PG%25l99dDO7ZZslnYiiIxn4ffQXDu22UMDznn4kvmuugXnL00zjCoFF3yn%25xxcxOZBBh20gTTknxwWWHhYvGGKCaMJJMw6rllvdlkEEL65jVVbVTdXXYQQGttOoqs55P2BT99dDIQZZso8CiiIi%25LffQf4t22UaQvnn4vnBuug9mc00zPpDFF3ybNxxc7kFBBhIrATTkbtCWWHMhv&amp;width=864"
-                            />
+                <!-- Time reproduction -->
+                <div class="option"><div class="time-video">0:12</div></div>
+                <!-- Sound button and slider -->
+                <div class="option">
+                  <div class="audio">
+                    <div class="option-audio">
+                      <div class="container-slider">
+                        <div role="slider" class="slider-audio">
+                          <div class="line-audio">
+                            <div class="line-audio-over" style="height: 16.2109%"></div>
                           </div>
+                          <div
+                            role="button"
+                            orientation="vertical"
+                            class="ball-audio"
+                            style="bottom: 16.2109%"
+                          ></div>
                         </div>
                       </div>
                     </div>
+                    <div class="option-audio">
+                      <div class="container-icon">
+                      <svg class="no-mostrar mute" width="24" height="24">
+                        <path
+                          d="M19.707 10.593L21 9.3l1.414 1.414-1.293 1.293 1.293 1.293L21 14.714l-1.293-1.293-1.293 1.293L17 13.3l1.293-1.293L17 10.714 18.414 9.3l1.293 1.293zM4 14.673V8.77H2v5.904h2zm2 .107a4 4 0 0 1 1.005.385l4.73 2.59V5.688l-4.73 2.59A4 4 0 0 1 6 8.663v6.117zM0 7.77a1 1 0 0 1 1-1h4.084a2 2 0 0 0 .96-.247l6.21-3.4A1 1 0 0 1 13.736 4v15.443a1 1 0 0 1-1.48.877l-6.21-3.4a2 2 0 0 0-.961-.247H1a1 1 0 0 1-1-1V7.77z"
+                        ></path>
+                      </svg>
+                      <svg class="middle-sound" width="24" height="24">
+                        <path
+                          d="M4 8.77H2v5.903h2V8.77zm2-.107v6.117a4 4 0 0 1 1.005.385l4.73 2.59V5.688l-4.73 2.59A4 4 0 0 1 6 8.663zm-6-.894a1 1 0 0 1 1-1h4.084a2 2 0 0 0 .96-.246l6.21-3.4A1 1 0 0 1 13.736 4v15.443a1 1 0 0 1-1.48.877l-6.21-3.4a2 2 0 0 0-.961-.247H1a1 1 0 0 1-1-1V7.77zm15.22-.144l1.56-1.25C18.249 8.21 19 10.09 19 12c0 1.91-.752 3.79-2.22 5.625l-1.56-1.25C16.418 14.875 17 13.423 17 12s-.581-2.876-1.78-4.375z"
+                        ></path>
+                      </svg>
+                      <svg class="no-mostrar high-sound" width="24" height="24">
+                        <path
+                          d="M4 8.77H2v5.903h2V8.77zm2-.107v6.117a4 4 0 0 1 1.005.385l4.73 2.59V5.688l-4.73 2.59A4 4 0 0 1 6 8.663zm-6-.894a1 1 0 0 1 1-1h4.084a2 2 0 0 0 .96-.246l6.21-3.4A1 1 0 0 1 13.736 4v15.443a1 1 0 0 1-1.48.877l-6.21-3.4a2 2 0 0 0-.961-.247H1a1 1 0 0 1-1-1V7.77zm19.132-2.273l1.736-.992C22.285 6.984 23 9.486 23 12c0 2.514-.715 5.017-2.132 7.496l-1.736-.992C20.382 16.316 21 14.152 21 12c0-2.152-.618-4.316-1.868-6.504zm-3.913 2.129l1.562-1.25C18.248 8.21 19 10.09 19 12c0 1.91-.752 3.79-2.22 5.625l-1.56-1.25C16.418 14.875 17 13.423 17 12s-.581-2.876-1.78-4.375z"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
-                  <!-- area b  -->
-                  <div>
-                    <h3 class="title-3">Características del equipamiento croos up! TS!</h3>
-                    <ul class="container-list-area-b">
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Doble airbag frotal y ABS</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div>Radio con Bluetooth, USB y Aux-IN</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Aire acondicionado</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Motor 1.0 de 75 CV</div>
-                      </li>
-                      <li>
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 12 12"
-                          width="12"
-                          height="12"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="currentColor"
-                          role="img"
-                        >
-                          <path
-                            d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
-                          ></path>
-                        </svg>
-                        <div class="text-2">Caja manual de 5 velocidades</div>
-                      </li>
-                    </ul>
-                  </div>
+                </div>
+              </div>
+              <!-- Full Screen -->
+              <div class="option">
+                <div data-cy="videoEnableFullScreenButton" class="fullscreen">
+                  <svg width="24" height="24">
+                    <path
+                      d="M2 9H0V2a2 2 0 0 1 2-2h7.003v2H2v7zm0 4v7h6.997v2H2a2 2 0 0 1-2-2v-7h2zm18.002-4V2h-6.297V0h6.297a2 2 0 0 1 2 2v7h-2zM20 13h2v7a2 2 0 0 1-2 2h-6.999v-2H20v-7z"
+                      transform="translate(1 1)"
+                    ></path>
+                  </svg>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Buttons -->
-          <div class="section-container buttons-section">
-            <div class="container-buttons">
+        </div>
+        <!-- Cards -->
+        <div class="section-container cards-section">
+          <div class="container-subtitle spacing">
+            <h2>
+              <span class="capsula">Elegí tu versión<br /></span>
+            </h2>
+          </div>
+
+          <div class="container container-elegi">
+            <div class="container-list">
               <div class="container-button">
-                <button class="button button-primary">Pedi más información</button>
+                <button id="card1" class="button-without-style button-2 active">take up!</button>
               </div>
               <div class="container-button">
-                <button class="button button-secondary">Probalo</button>
+                <button id="card2" class="button-without-style button-2">high up!</button>
+              </div>
+              <div class="container-button">
+                <button id="card3" class="button-without-style button-2">croos up! TS!</button>
+              </div>
+            </div>
+
+            <div class="container">
+              <div id="card1" class="container-areas active">
+                <!-- area a  -->
+                <div>
+                  <div class="container-images">
+                    <div class="img-model">
+                      <div class="background" style="background: rgb(222, 222, 222)">
+                        <div class="container-img model-img">
+                          <img
+                            alt="take up!"
+                            src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnjyyyJ8H3WDZ4HvCJii8YMNCoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d22rZZsgjSiiIz%25GffQLIr22UTNdnn4tzWuugB9I00zZK6FF3QStxxcN7HBBhC6oTTkRnzWWHWN3GGKYBQJJMJX1llvlG8EEL66jVVbc2yXXYZPMttOGYs55PLXa99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwQ3GGKC6aJJMgKhllv%25j7EELA4TVVbBoWXXY6zmttOmWZ55PG%25l99dDO7ZZslsYiiIxn4ffQXDu22UMDznn4kvNuugXnr00zjCoFF3yn%25xxcxOHBBh20gTTknxzWWHhYvGGKu6fJJMl0vllvxOlEELsEHVVbN9yXXYZzdttOUUJ55P%25AI99dnHqZZsaQUiiI%25jRffQfDr22U2g5nn41ULuugLue00zZphFF3yiSxxc7khBBhIrATTkbx%25WWHMhD&amp;width=864"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- area b  -->
+                <div>
+                  <h3 class="title-3">Características del equipamiento take up!</h3>
+                  <ul class="container-list-area-b">
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Doble airbag frotal y ABS</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div>Radio con Bluetooth, USB y Aux-IN</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Aire acondicionado</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Motor 1.0 de 75 CV</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Caja manual de 5 velocidades</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card2" class="container-areas">
+                <!-- area a  -->
+                <div>
+                  <div class="container-images">
+                    <div class="img-model">
+                      <div class="background" style="background: rgb(175, 181, 185)">
+                        <div class="container-img model-img">
+                          <img
+                            alt="high up!"
+                            src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnP8yyJ8H3WDZ4HvCJii8iBHPoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d2UbZZsgjSiiIz%25GffQLIr22UTNvnn4tzWuugB9e00zZK6FF3QStxxcN7HBBhC6oTTkRnzWWHYl4GGKYKjJJMJX1llvlG8EEL66OVVbc2yXXYZPVttOGYs55PLXa99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwniGGKC6oJJMgKhllv%25j7EELA4TVVbBoWXXY6zmttOmWZ55PG%25l99dDO7ZZslnYiiIxn4ffQXDu22UMDznn4kvmuugXnr00zjCoFF3yn%25xxcxOZBBh20gTTknxwWWHhYvGGKCuwJJMw6rllvdlkEEL65jVVbVTdXXYQQGttOoqs55P2kN99dDIQZZso8CiiIi%25LffQf4t22UaQvnn4vnSuug9mc00zjL6FF3wh0xxcsRqBBhLX7TTkKcM&amp;width=864"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- area b  -->
+                <div>
+                  <h3 class="title-3">Características del equipamiento high up!</h3>
+                  <ul class="container-list-area-b">
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Doble airbag frotal y ABS</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div>Radio con Bluetooth, USB y Aux-IN</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Aire acondicionado</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Motor 1.0 de 75 CV</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Caja manual de 5 velocidades</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="card3" class="container-areas">
+                <!-- area a  -->
+                <div>
+                  <div class="container-images">
+                    <div class="img-model">
+                      <div class="background" style="background: rgb(71, 74, 81)">
+                        <div class="container-img model-img">
+                          <img
+                            alt="cross up! TSI"
+                            src="https://media.volkswagen.com/vw-6A6-my2020/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AkiyyJ1vTvsd2SMppEKhjTtKSK8Cb96MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOn9jyyJ8H3WDZ4HvCJii8H%25wloo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfRD%25xIIrsJYUP01bCCtBvyrm3xLLyH0kYbAwh88WTU9j%25I4bBMdfAA2Zjeqz5qMZKMI7UbSK8C7g21bL6xDAON3xyT9rr9UOXs3OTMttOAcA55PJ0N99d2UbZZsgjSiiIz%25GffQLIr22UTNvnn4tzbuugB9800zZK6FF3QStxxcN7HBBhC6KTTkRnzWWHYl4GGKYKjJJMJXbllvlG8EEL66OVVbc2yXXYZPVttOGYs55PLBK99dDkGZZsEtCiiI32RffQsVM22UaWznn4xksuug9gc00zHpAFF3WwUxxc77EBBhLraTTknPzWWHwniGGKC6oJJMgKhllv%25j7EELA4cVVbBoWXXY6zGttOmWZ55PG%25l99dDO7ZZslnYiiIxn4ffQXDu22UMDznn4kvmuugXnL00zjCoFF3yn%25xxcxOZBBh20gTTknxwWWHhYvGGKCaMJJMw6rllvdlkEEL65jVVbVTdXXYQQGttOoqs55P2BT99dDIQZZso8CiiIi%25LffQf4t22UaQvnn4vnBuug9mc00zPpDFF3ybNxxc7kFBBhIrATTkbtCWWHMhv&amp;width=864"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- area b  -->
+                <div>
+                  <h3 class="title-3">Características del equipamiento croos up! TS!</h3>
+                  <ul class="container-list-area-b">
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Doble airbag frotal y ABS</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div>Radio con Bluetooth, USB y Aux-IN</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Aire acondicionado</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Motor 1.0 de 75 CV</div>
+                    </li>
+                    <li>
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 12 12"
+                        width="12"
+                        height="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        role="img"
+                      >
+                        <path
+                          d="M4.39 11.39a.81.81 0 01-.51-.18L0 8.11l.88-1 3.39 2.67L10.86.39l1.14.76L4.88 11.3l-.37.08z"
+                        ></path>
+                      </svg>
+                      <div class="text-2">Caja manual de 5 velocidades</div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <!-- Buttons -->
+        <div class="section-container buttons-section">
+          <div class="container-buttons">
+            <div class="container-button">
+              <button class="button button-primary">Pedi más información</button>
+            </div>
+            <div class="container-button">
+              <button class="button button-secondary">Probalo</button>
+            </div>
+          </div>
+        </div>
 
         <!-- Link to compare with volkwagen -->
         <div class="container-link-volkwagen">
@@ -864,7 +976,7 @@
                 </div>
               </div>
               <div class="promotional">
-                <div wrap="always" class="StyledChildWrapper-sc-1d21nde fxjPIw">
+                <div class="fxjPIw">
                   <div class="StyledTextComponent-sc-hqqa9q jppkwY">
                     Conocé más sobre Volkswagen
                   </div>
@@ -942,7 +1054,7 @@
           </div>
 
           <div class="container-bottom">
-            <div class="StyledChildWrapper-sc-1d21nde cCIpcJ">
+            <div class="cCIpcJ">
               <span class="StyledTextComponent-sc-hqqa9q kboOBU">
                 <span class="sc-kIPQKe cjbXxL">
                   <span class="StyledTextComponent-sc-hqqa9q goQAPu">
