@@ -32,6 +32,7 @@
 @media (min-width: 560px) {
   .buttons-widget .position-buttons {
     opacity: 1;
+    visibility: visible;
   }
 }
 .buttons-widget .position-buttons .container-buttons {

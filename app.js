@@ -1,3 +1,104 @@
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-passiveeventlisteners-setclasses !*/
+!(function (e, n, s) {
+  function o(e) {
+    var n = l.className,
+      s = Modernizr._config.classPrefix || ''
+    if ((c && (n = n.baseVal), Modernizr._config.enableJSClass)) {
+      var o = new RegExp('(^|\\s)' + s + 'no-js(\\s|$)')
+      n = n.replace(o, '$1' + s + 'js$2')
+    }
+    Modernizr._config.enableClasses &&
+      ((n += ' ' + s + e.join(' ' + s)), c ? (l.className.baseVal = n) : (l.className = n))
+  }
+  function a(e, n) {
+    return typeof e === n
+  }
+  function t() {
+    var e, n, s, o, t, f, l
+    for (var c in r)
+      if (r.hasOwnProperty(c)) {
+        if (
+          ((e = []),
+          (n = r[c]),
+          n.name &&
+            (e.push(n.name.toLowerCase()),
+            n.options && n.options.aliases && n.options.aliases.length))
+        )
+          for (s = 0; s < n.options.aliases.length; s++) e.push(n.options.aliases[s].toLowerCase())
+        for (o = a(n.fn, 'function') ? n.fn() : n.fn, t = 0; t < e.length; t++)
+          (f = e[t]),
+            (l = f.split('.')),
+            1 === l.length
+              ? (Modernizr[l[0]] = o)
+              : (!Modernizr[l[0]] ||
+                  Modernizr[l[0]] instanceof Boolean ||
+                  (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])),
+                (Modernizr[l[0]][l[1]] = o)),
+            i.push((o ? '' : 'no-') + l.join('-'))
+      }
+  }
+  var i = [],
+    r = [],
+    f = {
+      _version: '3.6.0',
+      _config: { classPrefix: '', enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+      _q: [],
+      on: function (e, n) {
+        var s = this
+        setTimeout(function () {
+          n(s[e])
+        }, 0)
+      },
+      addTest: function (e, n, s) {
+        r.push({ name: e, fn: n, options: s })
+      },
+      addAsyncTest: function (e) {
+        r.push({ name: null, fn: e })
+      }
+    },
+    Modernizr = function () {}
+  ;(Modernizr.prototype = f),
+    (Modernizr = new Modernizr()),
+    Modernizr.addTest('passiveeventlisteners', function () {
+      var n = !1
+      try {
+        var s = Object.defineProperty({}, 'passive', {
+          get: function () {
+            n = !0
+          }
+        })
+        e.addEventListener('test', null, s)
+      } catch (o) {}
+      return n
+    })
+  var l = n.documentElement,
+    c = 'svg' === l.nodeName.toLowerCase()
+  t(), o(i), delete f.addTest, delete f.addAsyncTest
+  for (var u = 0; u < Modernizr._q.length; u++) Modernizr._q[u]()
+  e.Modernizr = Modernizr
+})(window, document)
+
+jQuery.event.special.touchstart = {
+  setup: function (_, ns, handle) {
+    this.addEventListener(
+      'touchstart',
+      handle,
+      Modernizr.passiveeventlisteners ? { passive: true } : false
+    )
+  }
+}
+
+jQuery.event.special.touchmove = {
+  setup: function (_, ns, handle) {
+    this.addEventListener(
+      'touchmove',
+      handle,
+      Modernizr.passiveeventlisteners ? { passive: true } : false
+    )
+  }
+}
+
 /**
  * Ready to use
  */
@@ -117,7 +218,8 @@ function buttonMenu() {
 
 function scrollHandler() {
   var lastScrollTop = 0
-  $(document).scroll(function () {
+  $(document).scroll(listenScroll)
+  function listenScroll() {
     var st = $(this).scrollTop()
     var pbh = $('.section-1').height()
 
@@ -133,7 +235,7 @@ function scrollHandler() {
       $('.container-header').removeClass('alternative-scroll')
     }
     lastScrollTop = st
-  })
+  }
 }
 
 /**
@@ -153,92 +255,49 @@ function toggleWidgetButtons() {
 }
 
 function carousel() {
-  var $slider = $('.list-blocks')
+  var $slider = $('.list-blocks') // class to use for init carousel
 
   if ($slider.length > 0) {
-    $slider.on('touchstart', touch)
-    $slider.on('mousedown', touch)
-
-    function touch(event) {
-      // Cundo toca
-      $slider.xClick = event.originalEvent.touches
-        ? event.originalEvent.touches[0].pageX
-        : event.originalEvent.pageX
-      // Evento de mover
-      event.originalEvent.touches
-        ? $(this).one('touchmove', moviment)
-        : $(this).one('mousemove', moviment)
-
-      // Limpiar el evento
+    var $slides = $slider.find('li') // grab all the slides
+    var positions = $slides.map(function (index, slide) {
+      // make a customs positions of slides
+      var ojbSlide = {}
+      ojbSlide.positionLeft = slide.offsetLeft
+      ojbSlide.clientWidth = slide.clientWidth
+      return ojbSlide
+    })
+    var currentSlide = 0 // set initial current slide
+    // Init subscriptio events touch
+    $slider.on('touchstart', function (event) {
+      var xClick = event.originalEvent.touches[0].pageX
+      $(this).one('touchmove', function (event) {
+        var xMove = event.originalEvent.touches[0].pageX
+        if (Math.floor(xClick - xMove) > 5) {
+          nextSlide()
+        } else if (Math.floor(xClick - xMove) < -5) {
+          prevSlide()
+        }
+      })
       $('.carousel').on('touchend', function () {
         $(this).off('touchmove')
       })
-      $('.carousel').on('mouseup', function () {
-        $(this).off('mousemove')
-      })
-    }
-
-    function moviment(event) {
-      // movimiento vertical
-      var xMove = event.originalEvent.touches
-        ? event.originalEvent.touches[0].pageX
-        : event.originalEvent.pageX
-      // si la diferecia en x desde el click es mayor a 5 tons
-
-      if (Math.floor($slider.xClick > xMove)) {
-        // Activa hacia adelante
-        nextSlide()
-      } else if (Math.floor($slider.xClick < xMove)) {
-        // Activa hacia atras
-        prevSlide()
-      }
-    }
+    })
   }
 
-  // grab all the slides
-  var $slides = $slider.find('li')
-
-  var positions = $slides.map(function (index, slide) {
-    var ojbSlide = {}
-    ojbSlide.positionLeft = slide.offsetLeft
-    ojbSlide.clientWidth = slide.clientWidth
-    return ojbSlide
-  })
-  // set initial slide
-  var currentSlide = 0
-
   function nextSlide() {
-    // current slide becomes hidden
-    $($slides[currentSlide]).removeClass('active')
-    // set the current slide as the next one
-    // currentSlide = (currentSlide + 1) % $slides.length;
     currentSlide = (currentSlide + 1) % $slides.length
     currentSlide = currentSlide == 0 ? $slides.length - 1 : currentSlide
-    // add the class showing to the slide to make it visible
-    $($slides[currentSlide]).addClass('active')
-    // move the slider
-    if (currentSlide === 0) {
-      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
-    } else if (currentSlide === $slides.length - 1) {
-      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
-    } else {
-      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
-    }
-
-    $slider.css('transform', moviment)
+    style(currentSlide)
   }
 
   function prevSlide() {
-    // current slide becomes hidden
-    $($slides[currentSlide]).addClass('active')
-    // set the current slide as the previous one
     currentSlide = (currentSlide - 1) % $slides.length
+    currentSlide = currentSlide == -1 ? 0 : currentSlide
+    style(currentSlide)
+  }
 
-    if (currentSlide == -1) {
-      // currentSlide = $slides.length-1;
-      currentSlide = 0
-    }
-
+  function style(currentSlide) {
+    // get current style depending of a left o right
     if (currentSlide === 0) {
       moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
     } else if (currentSlide === $slides.length - 1) {
@@ -246,11 +305,9 @@ function carousel() {
     } else {
       moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
     }
-
+    // css movimient carousel apply
     $slider.css('transform', moviment)
-    // add the class showing to the slide to make it visible
-    // $($slides[currentSlide]).removeClass('active');
-
+    // Move the active class
     $($slides).removeClass('active')
     $($slides[currentSlide]).addClass('active')
   }
