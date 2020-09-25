@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   cookies()
 
-  videoo()
+  video()
 })
 
 function resizer() {
@@ -156,22 +156,43 @@ function carousel() {
   var $slider = $('.list-blocks')
 
   if ($slider.length > 0) {
-    $slider.on('touchstart', function (event) {
-      var xClick = event.originalEvent.touches[0].pageX
-      $(this).one('touchmove', function (event) {
-        var xMove = event.originalEvent.touches[0].pageX
-        if (Math.floor(xClick - xMove) > 5) {
-          nextSlide()
-        } else if (Math.floor(xClick - xMove) < -5) {
-          prevSlide()
-        }
-      })
+    $slider.on('touchstart', touch)
+    $slider.on('mousedown', touch)
+
+    function touch(event) {
+      // Cundo toca
+      $slider.xClick = event.originalEvent.touches
+        ? event.originalEvent.touches[0].pageX
+        : event.originalEvent.pageX
+      // Evento de mover
+      event.originalEvent.touches
+        ? $(this).one('touchmove', moviment)
+        : $(this).one('mousemove', moviment)
+
+      // Limpiar el evento
       $('.carousel').on('touchend', function () {
         $(this).off('touchmove')
       })
-    })
+      $('.carousel').on('mouseup', function () {
+        $(this).off('mousemove')
+      })
+    }
 
-    // debugger
+    function moviment(event) {
+      // movimiento vertical
+      var xMove = event.originalEvent.touches
+        ? event.originalEvent.touches[0].pageX
+        : event.originalEvent.pageX
+      // si la diferecia en x desde el click es mayor a 5 tons
+
+      if (Math.floor($slider.xClick > xMove)) {
+        // Activa hacia adelante
+        nextSlide()
+      } else if (Math.floor($slider.xClick < xMove)) {
+        // Activa hacia atras
+        prevSlide()
+      }
+    }
   }
 
   // grab all the slides
@@ -196,11 +217,12 @@ function carousel() {
     // add the class showing to the slide to make it visible
     $($slides[currentSlide]).addClass('active')
     // move the slider
-
-    if (currentSlide === $slides.length - 1) {
-      moviment = 'translate3d(-' + 44 + '%, 0px, 0px)'
-    } else {
+    if (currentSlide === 0) {
       moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
+    } else if (currentSlide === $slides.length - 1) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
+    } else {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
     }
 
     $slider.css('transform', moviment)
@@ -217,7 +239,13 @@ function carousel() {
       currentSlide = 0
     }
 
-    moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 30) + 'px, 0px, 0px)'
+    if (currentSlide === 0) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
+    } else if (currentSlide === $slides.length - 1) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
+    } else {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
+    }
 
     $slider.css('transform', moviment)
     // add the class showing to the slide to make it visible
@@ -249,11 +277,13 @@ function accordion() {
 }
 
 function cards() {
-  var $items = $('.container-elegi button')
+  var $items = $('.container-elegi .container-button button')
 
-  $items.click(function () {
-    var idElement = this.id
-    var $this = $(this)
+  $items.click(update)
+
+  function update(ele) {
+    var idElement = ele.id ? ele.id : ele.target.id
+    var $this = ele.id ? $(ele) : $(this)
     var $cards = $('.container-elegi .container-areas')
 
     $card = $cards.filter(function (index, element) {
@@ -264,7 +294,67 @@ function cards() {
     $cards.removeClass('active')
     $this.addClass('active')
     $card.addClass('active')
+  }
+
+  // Mobile
+  // slider para mobile
+  var currSlide = 0
+  $('.slider-left').attr('disabled', true)
+  $('.container-elegi .buttons-slider .slider-left').click(function () {
+    // switch
+    prevSlide()
   })
+
+  $('.container-elegi .buttons-slider .slider-right').click(function () {
+    // switch
+    nextSlide()
+  })
+
+  function nextSlide() {
+    // current slide becomes hidden
+    $($items[currSlide]).parent().removeClass('selected')
+    // set the current slide as the next one
+    // currentSlide = (currentSlide + 1) % $slides.length;
+    currSlide = (currSlide + 1) % $items.length
+    currSlide = currSlide == 0 ? $items.length - 1 : currSlide
+    // add the class showing to the slide to make it visible
+    $($items[currSlide]).parent().addClass('selected')
+    // move the slider
+    $('.slider-left').attr('disabled', false)
+    if (currSlide === 0) {
+      // primero disabled left button
+      $('.slider-left').attr('disabled', true)
+    } else if (currSlide === $items.length - 1) {
+      // ultimo disabled right button
+      $('.slider-right').attr('disabled', true)
+    } else {
+      // normal
+    }
+
+    update($($items[currSlide])[0])
+  }
+
+  function prevSlide() {
+    // current slide becomes hidden
+    $($items[currSlide]).parent().removeClass('selected')
+    // set the current slide as the previous one
+    currSlide = (currSlide - 1) % $items.length
+    currSlide = currSlide == -1 ? 0 : currSlide
+
+    $($items[currSlide]).parent().addClass('selected')
+    $('.slider-right').attr('disabled', false)
+    if (currSlide === 0) {
+      // primero disabled left button
+      $('.slider-left').attr('disabled', true)
+    } else if (currSlide === $items.length - 1) {
+      // ultimo disabled right button
+      $('.slider-right').attr('disabled', true)
+    } else {
+      // normal
+    }
+
+    update($($items[currSlide])[0])
+  }
 }
 
 function atencinoAlCliente() {
@@ -305,16 +395,15 @@ function cookies() {
 
   var authorized = Cookie.get('authorized')
 
-  if (authorized) {
-    $cookiesBanner.hide()
-    return
+  if (!authorized) {
+    $('.cookies-banner').addClass('show')
+    $cookiesBanner.find('button').click(function () {
+      $cookiesBanner.hide()
+      Cookie.set('authorized', true, 1)
+    })
+  } else {
+    $('.cookies-banner').removeClass('show')
   }
-
-  $cookiesBanner.find('button').click(function () {
-    $cookiesBanner.hide()
-
-    setCookie('authorized', true, 1)
-  })
 }
 
 var Cookie = {
@@ -343,9 +432,11 @@ var Cookie = {
 }
 
 function video() {
-  var video = $(' video')[0]
-  video.controlsList = 'nodownload'
-  video.disablePictureInPicture = true
-  video.autoPictureInPicture = true
-  video.disableRemotePlayback = true
+  if ($(' video').length > 0) {
+    var video = $(' video')[0]
+    video.controlsList = 'nodownload'
+    video.disablePictureInPicture = true
+    video.autoPictureInPicture = true
+    video.disableRemotePlayback = true
+  }
 }

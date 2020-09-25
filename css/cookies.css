@@ -1,3 +1,11 @@
+.cookies-banner {
+  opacity: 0;
+  overflow: hidden;
+}
+.cookies-banner.show {
+  opacity: 1;
+  overflow: visible;
+}
 .cookies-banner > div {
   background-color: #2f3538;
   opacity: 1;
@@ -17,7 +25,6 @@
   bottom: auto;
   padding: 20px 101px 20px 20px;
 }
-
 @media (min-width: 768px) {
   .cookies-banner > div {
     padding: 45px 100px;

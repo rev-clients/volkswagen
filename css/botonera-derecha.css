@@ -25,6 +25,14 @@
   position: absolute;
   right: 0;
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 1s;
+}
+@media (min-width: 560px) {
+  .buttons-widget .position-buttons {
+    opacity: 1;
+  }
 }
 .buttons-widget .position-buttons .container-buttons {
   display: flex;
@@ -55,28 +63,12 @@
   transition: 0.5s;
 }
 
-.open-widget .button-widget {
-  visibility: visible !important;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  width: 240px;
-  display: flex;
-}
-
 .buttons-widget .button-mobile svg:nth-child(1) {
   display: block;
 }
 
 .buttons-widget .button-mobile svg:nth-child(2) {
   display: none;
-}
-
-.buttons-widget .open-widget .button-mobile svg:nth-child(1) {
-  display: none;
-}
-
-.buttons-widget .open-widget .button-mobile svg:nth-child(2) {
-  display: block;
 }
 
 .buttons-widget .text {
@@ -87,10 +79,6 @@
   transition: opacity 0.4s 0.1s ease;
   position: absolute;
   left: 64px;
-}
-
-.buttons-widget .open-widget .text {
-  opacity: 1;
 }
 
 .buttons-widget p.text {
@@ -134,22 +122,45 @@
   margin-bottom: 12px;
   display: flex;
   align-items: center;
-  opacity: 1;
   padding: 0;
   background: #4cc7f4;
   border-style: none;
-  visibility: hidden;
   transition: width 0.4s 0.1s;
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 560px) {
   .buttons-widget .container-mobile .button-mobile {
     visibility: visible;
     opacity: 1 !important;
   }
   .buttons-widget .button-mobile {
-    visibility: hidden;
+    opacity: 0;
   }
+}
+
+.buttons-widget .open-widget .position-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttons-widget .open-widget .button-widget {
+  visibility: visible !important;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  width: 240px;
+  display: flex;
+}
+
+.buttons-widget .open-widget .button-mobile svg:nth-child(1) {
+  display: none;
+}
+
+.buttons-widget .open-widget .button-mobile svg:nth-child(2) {
+  display: block;
+}
+
+.buttons-widget .open-widget .text {
+  opacity: 1;
 }
 
 /* Finf Menu flotante derecha */
