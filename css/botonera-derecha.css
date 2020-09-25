@@ -27,6 +27,7 @@
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
+  transition: all ease 1s;
 }
 @media (min-width: 560px) {
   .buttons-widget .position-buttons {
@@ -137,7 +138,12 @@
   }
 }
 
-.buttons-widget .open-widget.button-widget {
+.buttons-widget .open-widget .position-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buttons-widget .open-widget .button-widget {
   visibility: visible !important;
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -145,15 +151,15 @@
   display: flex;
 }
 
-.buttons-widget .open-widget.button-mobile svg:nth-child(1) {
+.buttons-widget .open-widget .button-mobile svg:nth-child(1) {
   display: none;
 }
 
-.buttons-widget .open-widget.button-mobile svg:nth-child(2) {
+.buttons-widget .open-widget .button-mobile svg:nth-child(2) {
   display: block;
 }
 
-.buttons-widget .open-widget.text {
+.buttons-widget .open-widget .text {
   opacity: 1;
 }
 

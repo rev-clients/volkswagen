@@ -221,11 +221,13 @@ function carousel() {
     // add the class showing to the slide to make it visible
     $($slides[currentSlide]).addClass('active')
     // move the slider
-
-    if (currentSlide === $slides.length - 1) {
-      moviment = 'translate3d(-' + 44 + '%, 0px, 0px)'
-    } else {
+    console.log(':: currentSlide => ', currentSlide)
+    if (currentSlide === 0) {
       moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
+    } else if (currentSlide === $slides.length - 1) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
+    } else {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
     }
 
     $slider.css('transform', moviment)
@@ -242,7 +244,13 @@ function carousel() {
       currentSlide = 0
     }
 
-    moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 30) + 'px, 0px, 0px)'
+    if (currentSlide === 0) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
+    } else if (currentSlide === $slides.length - 1) {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
+    } else {
+      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 80) + 'px, 0px, 0px)'
+    }
 
     $slider.css('transform', moviment)
     // add the class showing to the slide to make it visible

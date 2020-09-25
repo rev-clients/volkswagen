@@ -2,6 +2,7 @@
   margin: 10rem auto;
   width: calc((100vw / 24) * 12);
   position: relative;
+  flex: 1 1 0%;
 }
 @media (min-width: 560px) and (max-width: 960px) {
   .video-section {
@@ -137,6 +138,7 @@
   --scrubber-btn-size: 1;
 }
 .video-interaction .line {
+  flex: 1 1 0%;
   background: white;
   pointer-events: none;
   height: 2px;
@@ -224,6 +226,7 @@
   margin-bottom: 8px;
 }
 .video-interaction .line-audio {
+  flex: 1 1 0%;
   background: white;
   pointer-events: none;
   width: 2px;
