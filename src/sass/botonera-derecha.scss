@@ -1,5 +1,6 @@
 /* Inicio buttons-widget */
 
+// Inicio
 .buttons-widget {
   position: fixed;
   bottom: 320px;
@@ -10,6 +11,7 @@
     right: 10px !important;
     margin-bottom: 76px;
   }
+  // Container
   .container-widget {
     box-sizing: border-box;
     margin: 0;
@@ -20,11 +22,17 @@
     font-size: 14px;
     line-height: 1.42857;
   }
-
+  // Position - Container Buttons
   .position-buttons {
     position: absolute;
     right: 0;
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+
+    @media (min-width: 560px) {
+      opacity: 1;
+    }
 
     .container-buttons {
       display: flex;
@@ -33,6 +41,7 @@
     }
   }
 
+  // Buttons
   .button-widget {
     display: block;
     cursor: pointer;
@@ -52,20 +61,11 @@
     background: #4cc7f4;
   }
 }
-
+// Buttons
 .button-widget-invisible {
   visibility: hidden !important;
   opacity: 0;
   transition: 0.5s;
-}
-
-.open-widget .button-widget {
-  visibility: visible !important;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-
-  width: 240px;
-  display: flex;
 }
 
 .buttons-widget {
@@ -77,14 +77,6 @@
     display: none;
   }
 
-  .open-widget .button-mobile svg:nth-child(1) {
-    display: none;
-  }
-
-  .open-widget .button-mobile svg:nth-child(2) {
-    display: block;
-  }
-
   .text {
     font-size: 16px;
     color: var(--hub-color-prussian-blue);
@@ -93,10 +85,6 @@
     transition: opacity 0.4s 0.1s ease;
     position: absolute;
     left: 64px;
-  }
-
-  .open-widget .text {
-    opacity: 1;
   }
 
   p.text {
@@ -139,24 +127,44 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    opacity: 1;
-
     padding: 0;
 
     background: #4cc7f4;
     border-style: none;
-    visibility: hidden;
 
     transition: width 0.4s 0.1s;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media (min-width: 560px) {
     .container-mobile .button-mobile {
       visibility: visible;
       opacity: 1 !important;
     }
     .button-mobile {
-      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  .open-widget {
+    &.button-widget {
+      visibility: visible !important;
+      opacity: 1;
+      animation-name: fadeInOpacity;
+
+      width: 240px;
+      display: flex;
+    }
+
+    &.button-mobile svg:nth-child(1) {
+      display: none;
+    }
+
+    &.button-mobile svg:nth-child(2) {
+      display: block;
+    }
+
+    &.text {
+      opacity: 1;
     }
   }
 }

@@ -1,32 +1,36 @@
 .cookies-banner {
-}
+  opacity: 0;
+  overflow: hidden;
 
-.cookies-banner > div {
-  background-color: #2f3538;
-  opacity: 1;
-  color: #fff;
-  font-family: "vw-text", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  border-radius: 0;
-  position: fixed;
-  z-index: 99999;
-  width: auto;
-  top: 0;
-  left: 0 !important;
-  right: 0;
-  bottom: auto;
-  padding: 20px 101px 20px 20px;
-}
+  &.show {
+    opacity: 1;
+    overflow: visible;
+  }
 
-@media (min-width: 768px) {
-  .cookies-banner > div {
-    padding: 45px 100px;
+  & > div {
+    background-color: #2f3538;
+    opacity: 1;
+    color: #fff;
+    font-family: 'vw-text', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0;
+    position: fixed;
+    z-index: 99999;
+    width: auto;
+    top: 0;
+    left: 0 !important;
+    right: 0;
+    bottom: auto;
+    padding: 20px 101px 20px 20px;
+
+    @media (min-width: 768px) {
+      padding: 45px 100px;
+    }
   }
 }
-
 /*  */
 
 .btn-close {
@@ -54,7 +58,7 @@
   position: absolute;
   left: 19px;
   top: 10px;
-  content: " ";
+  content: ' ';
   height: 20px;
   width: 4px;
   background-color: #fff;

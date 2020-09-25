@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   cookies()
 
-  videoo()
+  video()
 })
 
 function resizer() {
@@ -156,22 +156,47 @@ function carousel() {
   var $slider = $('.list-blocks')
 
   if ($slider.length > 0) {
-    $slider.on('touchstart', function (event) {
-      var xClick = event.originalEvent.touches[0].pageX
-      $(this).one('touchmove', function (event) {
-        var xMove = event.originalEvent.touches[0].pageX
-        if (Math.floor(xClick - xMove) > 5) {
-          nextSlide()
-        } else if (Math.floor(xClick - xMove) < -5) {
-          prevSlide()
-        }
-      })
+    $slider.on('touchstart', touch)
+    $slider.on('mousedown', touch)
+
+    function touch(event) {
+      console.log(':: clicked  ==> ')
+      // Cundo toca
+      $slider.xClick = event.originalEvent.touches
+        ? event.originalEvent.touches[0].pageX
+        : event.originalEvent.pageX
+      // Evento de mover
+      event.originalEvent.touches
+        ? $(this).one('touchmove', moviment)
+        : $(this).one('mousemove', moviment)
+
+      // Limpiar el evento
       $('.carousel').on('touchend', function () {
         $(this).off('touchmove')
       })
-    })
+      $('.carousel').on('mouseup', function () {
+        $(this).off('mousemove')
+      })
+    }
 
-    // debugger
+    function moviment(event) {
+      console.log(':: moviment  ==> ')
+      // movimiento vertical
+      var xMove = event.originalEvent.touches
+        ? event.originalEvent.touches[0].pageX
+        : event.originalEvent.pageX
+      // si la diferecia en x desde el click es mayor a 5 tons
+
+      console.log($slider.xClick - xMove)
+
+      if (Math.floor($slider.xClick > xMove)) {
+        // Activa hacia adelante
+        nextSlide()
+      } else if (Math.floor($slider.xClick < xMove)) {
+        // Activa hacia atras
+        prevSlide()
+      }
+    }
   }
 
   // grab all the slides
@@ -305,16 +330,15 @@ function cookies() {
 
   var authorized = Cookie.get('authorized')
 
-  if (authorized) {
-    $cookiesBanner.hide()
-    return
+  if (!authorized) {
+    $('.cookies-banner').addClass('show')
+    $cookiesBanner.find('button').click(function () {
+      $cookiesBanner.hide()
+      Cookie.set('authorized', true, 1)
+    })
+  } else {
+    $('.cookies-banner').removeClass('show')
   }
-
-  $cookiesBanner.find('button').click(function () {
-    $cookiesBanner.hide()
-
-    setCookie('authorized', true, 1)
-  })
 }
 
 var Cookie = {
@@ -343,9 +367,11 @@ var Cookie = {
 }
 
 function video() {
-  var video = $(' video')[0]
-  video.controlsList = 'nodownload'
-  video.disablePictureInPicture = true
-  video.autoPictureInPicture = true
-  video.disableRemotePlayback = true
+  if ($(' video').length > 0) {
+    var video = $(' video')[0]
+    video.controlsList = 'nodownload'
+    video.disablePictureInPicture = true
+    video.autoPictureInPicture = true
+    video.disableRemotePlayback = true
+  }
 }

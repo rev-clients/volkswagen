@@ -165,7 +165,8 @@
   height: 12px;
   border-radius: 50%;
   background: #4cc7f4;
-  transform: translate3d(-50%, 0, 0) scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
+  transform: translate3d(-50%, 0, 0)
+    scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
   transform-origin: center center;
   backface-visibility: hidden;
   transition: transform 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
@@ -187,7 +188,8 @@
   --styled-sound-controls-height: 0;
   --styled-sound-controls-opacity: 1;
   --styled-sound-controls-height: 5rem;
-  --styled-sound-controls-transition: height 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99),
+  --styled-sound-controls-transition: height 0.3s
+      cubic-bezier(0.14, 1.12, 0.67, 0.99),
     opacity 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0.3s;
 }
 .video-interaction .option-audio {
@@ -241,7 +243,8 @@
   height: 12px;
   border-radius: 50%;
   background: #4cc7f4;
-  transform: translate3d(0, 50%, 0) scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
+  transform: translate3d(0, 50%, 0)
+    scale(var(--scrubber-btn-size), var(--scrubber-btn-size));
   transform-origin: center center;
   backface-visibility: hidden;
   transition: transform 0.3s cubic-bezier(0.14, 1.12, 0.67, 0.99) 0s;
