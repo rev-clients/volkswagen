@@ -299,7 +299,7 @@ function carousel() {
   function style(currentSlide) {
     // get current style depending of a left o right
     if (currentSlide === 0) {
-      moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 31) + 'px, 0px, 0px)'
+      moviment = 'translate3d(0px, 0px, 0px)'
     } else if (currentSlide === $slides.length - 1) {
       moviment = 'translate3d(-' + (positions[currentSlide].positionLeft - 111) + 'px, 0px, 0px)'
     } else {
