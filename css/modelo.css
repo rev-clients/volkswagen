@@ -101,6 +101,7 @@
   .galeria-4-section .desktop {
     visibility: visible;
     opacity: 1;
+    display: block;
   }
 }
 
