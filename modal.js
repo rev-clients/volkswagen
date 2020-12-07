@@ -14,8 +14,12 @@ $(document).ready(function () {
     $('.button-close').on('click', function (e) {
       e.preventDefault()
       console.log('veces que entra')
-      modal.classList.toggle('show')
+      modal.classList.add('disappear')
       body.classList.toggle('open-modal')
+      setTimeout(() => {
+        modal.classList.toggle('show')
+        modal.classList.remove('disappear')
+      }, 1000)
     })
   }
 })
