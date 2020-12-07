@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/modal.css" />
 
     <title>Volkswagen Argentina</title>
   </head>
@@ -39,6 +40,107 @@
     <div class="contenedor-principal">
       <!-- Page Main -->
       <div class="main gaxEIq">
+        <div class="container-open-modal">
+          <button class="button button-primary open-modal">Open Modal</button>
+        </div>
+
+        <div class="container-modal">
+          <div class="modal-">
+            <button class="button-close" aria-label="Close consent Widget"></button>
+
+            <form autocomplete="off">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3>Datos personales</h3>
+                </div>
+              </div>
+              <div class="row">
+                <p class="text-2">
+                  Si querés comunicarte por teléfono, llamanos al 0800-888-8338 (lunes a viernes de
+                  9:00 a 18:00 h).
+                </p>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <div class="vfl-has-label">
+                    <label class="vfl-label"> Nombre </label
+                    ><input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Nombre"
+                      data-vv-as="Nombre"
+                      class="form-control efecto"
+                      aria-required="true"
+                      aria-invalid="false"
+                    /><span class="focus-border"></span>
+                  </div>
+                  <!---->
+                </div>
+                <div class="form-group col-md-6">
+                  <div class="vfl-has-label">
+                    <label class="vfl-label"> Apellido </label
+                    ><input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      placeholder="Apellido"
+                      data-vv-as="Apellido"
+                      class="form-control efecto"
+                      aria-required="true"
+                      aria-invalid="false"
+                    /><span class="focus-border"></span>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div class="row margin">
+                <div class="form-group col-md-6">
+                  <div class="vfl-has-label">
+                    <label class="vfl-label"> Email </label
+                    ><input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      data-vv-as="Email"
+                      class="form-control efecto"
+                      aria-required="false"
+                      aria-invalid="false"
+                    /><span class="focus-border"></span>
+                  </div>
+                  <!---->
+                </div>
+                <div class="form-group col-md-6">
+                  <div class="relative">
+                    <select
+                      name="contact_preference"
+                      id="contact_preference"
+                      placeholder="Seleccione su forma de contacto preferida."
+                      data-vv-as="Forma de Contacto"
+                      class="form-control efecto"
+                      aria-required="true"
+                      aria-invalid="false"
+                    >
+                      <option selected="selected" disabled="disabled" value="">
+                        Elegí la forma en que querés que nos comuniquemos con vos
+                      </option>
+                      <option value="16">Teléfono</option>
+                      <option value="17">Email</option></select
+                    ><span class="focus-border"></span>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <button type="submit" class="btn btn-default btn-primary">
+                  <span>Enviar</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- Incio section 1 -->
         <div class="section-1">
           <div class="container-background">
@@ -1360,6 +1462,7 @@
     ></script>
 
     <script src="app.js"></script>
+    <script src="modal.js"></script>
     <!-- Optional JavaScript -->
   </body>
 </html>
