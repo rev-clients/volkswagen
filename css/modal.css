@@ -99,7 +99,8 @@ form {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   color: #001e50;
@@ -222,6 +223,12 @@ form p.text-2 {
 }
 
 form .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
   margin-bottom: 1.25em;
 }
 
@@ -233,6 +240,16 @@ form .row {
 
 form .row:last-child {
   margin-bottom: 0;
+}
+
+form .col-md-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
 }
 
 /*  */
