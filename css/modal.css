@@ -266,6 +266,7 @@ form .form-group {
   background-color: transparent;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .button-close:before {
