@@ -1,0 +1,78 @@
+.whatsapp-dropdown {
+  position: relative;
+  position: fixed;
+
+  width: 60px;
+  height: 60px;
+
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-dropdown.active {
+  width: 177px;
+  height: 230px;
+}
+
+.whatsapp-dropdown.active ul {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.whatsapp-dropdown ul {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  list-style: none;
+  transform: translateY(70px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.whatsapp-dropdown .logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 9999999999;
+  text-align: center;
+  font-size: 33px;
+  text-decoration: none;
+
+  -webkit-box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 40%);
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 40%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-dropdown .logo svg {
+  width: 55%;
+  fill: white;
+}
+
+.whatsapp-dropdown ul li {
+  text-align: right;
+  padding-top: 8px;
+}
+
+.whatsapp-dropdown ul li a {
+  background: #25d366;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 12px 32px;
+  border-radius: 28px;
+  font-size: 1.1em;
+  -webkit-box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 40%);
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 40%);
+  z-index: 9999999999;
+  transition: all 0.3s;
+}
