@@ -141,6 +141,8 @@ $(document).ready(function () {
   cookies()
 
   video()
+
+  whatsappDropdown()
 })
 
 function resizer() {
@@ -210,6 +212,36 @@ function buttonMenu() {
       menuPagina.addClass('active')
     }
   }
+}
+
+
+/**
+ * Whatsapp Dropdown
+ */
+
+function whatsappDropdown() {
+  const dropdown = $('.whatsapp-dropdown')
+
+  function clickLogo() {
+    if (dropdown.hasClass('active')) {
+      dropdown.removeClass('active')
+    } else {
+      dropdown.addClass('active')
+    }
+  }
+
+  dropdown.mouseenter(function () {
+    dropdown.addClass('active')
+    setTimeout(function () {
+      dropdown.on( "click", ".logo", clickLogo)
+    }, 1)
+  })
+
+  dropdown.mouseleave(function () {
+    dropdown.removeClass('active')
+
+    dropdown.off( "click", ".logo", clickLogo)
+  })
 }
 
 /**

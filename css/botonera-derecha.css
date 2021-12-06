@@ -1,12 +1,11 @@
 /* Inicio buttons-widget */
 .buttons-widget {
   position: fixed;
-  bottom: 320px;
+  bottom: 400px;
   right: 10px;
 }
 @media only screen and (max-width: 767px) {
   .buttons-widget {
-    bottom: calc(10px + 292px) !important;
     right: 10px !important;
     margin-bottom: 76px;
   }
